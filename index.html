@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% if site.open %}
+
+  <div class="wrapper">
+
+    {% include header.html%}
+      
+    {% include profile.html %}
+
+    {% include experiences.html %}
+
+    {% include projects.html %}
+
+    {% include skills.html %}
+
+    {% include education.html %}
+
+    {% include language.html %}
+
+    {% include interests.html %}
+
+    {% include publications.html %}
+
+    {% include evaluation.html %}
+
+  </div>
+
+  {% include footer.html %}
+
+{% else %}
+
+  {% include close.html %}
+
+{% endif %}

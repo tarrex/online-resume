@@ -1,0 +1,9 @@
+{% assign footer = site.data.data.footer %}
+{% if footer and footer.display %}
+<footer class="footer">
+    <div class="text-center">
+        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+        <small class="copyright">{{ footer.content }} <span class="fa fa-heart"></span> Lastmod: {{ site.time | date: date_format }}</small>
+    </div>
+</footer>
+{% endif %}

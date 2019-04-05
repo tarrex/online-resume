@@ -1,0 +1,38 @@
+{% assign publications = site.data.data.publications %}
+{% if publications and publications.display %}
+<section class="section publications-section">
+
+  <div class="section-title">
+    {{ publications.title }}
+  </div>
+
+  {% if publications.intro %}
+  <div class="intro">
+    {{ publications.intro | markdownify }}
+  </div>
+  {% endif %}
+
+  {% for publication in publications.items %}
+  <div class="item">
+    {% if publication.title %}
+      <div class="pub-title">
+        {% if publication.link %}
+          <a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a>
+        {% else %}
+          {{ publication.title }}
+        {% endif %}
+      </div>
+      
+      {% if publication.authors %}
+        <div class="pub-authors">{{ publication.authors }}</div>
+      {% endif %}
+  
+      {% if publication.conference %}
+        <div class="pub-conference">{{ publication.conference }}</div>
+      {% endif %}
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}

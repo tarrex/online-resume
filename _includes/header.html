@@ -1,0 +1,46 @@
+{% assign intro = site.data.data.intro %}
+<section class="section intro-section">
+
+  {% if intro.avatar.path and intro.avatar.display %}
+    <div class="avatar-container">
+        <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ intro.avatar.path }}" alt="avatar">
+    </div>
+    
+    <div class="intro-container text-left">
+      {% if intro.name %}
+        <div class="header">
+            <h2 class="name">{{ intro.name }}</h2>
+            {% if intro.title %}
+            <h3 class="title">{{ intro.title }}</h3>
+            {% endif %}
+        </div>
+      {% endif %}
+    
+        <div class="contact">
+
+          {% include contact.html %}
+        
+        </div>
+    </div>
+
+  {% else %}
+
+    <div class="intro-container text-center">
+      {% if intro.name %}
+      <div class="header">
+          <h2 class="name">{{ intro.name }}</h2>
+          {% if intro.title %}
+          <h3 class="title">{{ intro.title }}</h3>
+          {% endif %}
+      </div>
+      {% endif %}
+    
+      <div class="contact">
+    
+        {% include contact.html %}
+      
+      </div>
+    </div>
+  {% endif %}
+
+</section>

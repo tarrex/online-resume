@@ -1,0 +1,25 @@
+@media print
+   {
+    @page {
+        size: A4;
+    }
+    body {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    a:after{
+        content:"" !important;
+    }
+    
+    .wrapper {
+        .avatar {
+            max-width: 100px !important;
+        }
+    }
+
+    footer {
+        display: none;
+    }
+
+}
