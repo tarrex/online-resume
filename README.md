@@ -1,6 +1,6 @@
 # online-resume
 
-Yet another resume template based on jekyll. You can wirte you resume using markdown, it will be rendered into html and can be printed as pdf.
+Yet another resume template based on jekyll. You can wirte your resume using markdown, it will be rendered into html and can be printed as pdf.
 
 ## Getting Started
 
