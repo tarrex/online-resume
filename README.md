@@ -45,6 +45,7 @@ If you want to use it locally, you shoule clone this repo then just like deployi
 ### Customization
 
 + `_data/data.yml`: All the resume content.
++ `assets/images/profile.png`: Your profile photo.
 + `_config.yml`: Site's general settings.
 + `index.html`: Change the resume content's display order.
 + `_sass/_base.scss`: Change the resume display style.
