@@ -52,15 +52,25 @@ education:
     items:
         - university: Example University
           time: 2015 - 2018
-          major: Machine Learing
+          major: Machine Learning
           degree: Master
           details: |
+            Experience in this university:
+            + First
+            + Second
+            
+            ...
         
         - university: Example University
           time: 2011 - 2015
           major: Computer Science
           degree: Bachelor
           details: |
+            Experience in this university:
+            + First
+            + Second
+            
+            ...
 
 experiences:
     display: true
