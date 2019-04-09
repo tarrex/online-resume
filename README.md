@@ -6,10 +6,10 @@ Features:
 
 + Easy to use/edit/hide
 + Jekyll + Markdown + Github Pages
-+ Multiple languages as you write
++ Multiple languages
 + Multiple skins
-+ Resume content modular
-+ Adaptive screen display
++ Content modular
++ Responsive display
 + Print friendly
 
 Enjoy yourself!
