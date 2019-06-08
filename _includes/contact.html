@@ -13,6 +13,18 @@
   </li>
   {% endif %}
 
+  {% if contact.wechat %}
+  <li class="weixin"><i class="fab fa-weixin"></i>
+    <a href="{{ contact.wechat }}" target="_blank">{{ contact.wechat }}</a>
+  </li>
+  {% endif %}
+
+  {% if contact.telegram %}
+  <li class="telegram"><i class="fab fa-telegram"></i>
+    <a href="https://t.me/{{ contact.telegram }}" target="_blank">{{ contact.telegram }}</a>
+  </li>
+  {% endif %}
+
   {% if contact.website %}
   <li class="website"><i class="fas fa-globe-americas"></i>
     <a href="{{ contact.website }}" target="_blank">{{ contact.website }}</a>
