@@ -1,5 +1,9 @@
 # online-resume
 
+[English](README.md) | [简体中文](README_CN.md)
+
+---
+
 Yet another resume template based on jekyll. You can wirte your resume using markdown, it will be rendered into html and can be printed as pdf.
 
 Features:
@@ -20,9 +24,9 @@ Enjoy yourself!
 
 #### Quickly
 
-Folk this repo:
+Fork this repo:
 
-![](./assets/images/folk.png "folk this repo")
+![](./assets/images/fork.png "fork this repo")
 
 Edit the yaml file located in `_data/data.yml`:
 
