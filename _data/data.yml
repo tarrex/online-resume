@@ -8,17 +8,17 @@ intro:
 contact:
     email: me@example.com
     phone: +86-111-1111-1111
-    wechat:
-    telegram:
+    wechat: 
+    telegram: 
     website: https://example.com
     linkedin: 
     github: github
-    gitlab:
-    bitbucket:
+    gitlab: 
+    bitbucket: 
     twitter: twitter
-    stackoverflow:
-    codewars:
-    goodreads:
+    stackoverflow: 
+    codewars: 
+    goodreads: 
 
 languages:
     display: true
