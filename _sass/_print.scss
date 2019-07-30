@@ -4,12 +4,11 @@
         size: A4;
     }
     body {
-        font-size: 14px;
         padding: 0px;
     }
 
     a:after{
-        content:"" !important;
+        content: "" !important;
     }
     
     .wrapper {
@@ -21,5 +20,4 @@
     footer {
         display: none;
     }
-
 }

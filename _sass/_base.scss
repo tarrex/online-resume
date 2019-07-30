@@ -1,10 +1,9 @@
 /* ======= Base ======= */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: $text-color-secondary;
-    background: $smoky-white;
-    font-size: 14px;
-    padding: 20px;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background: $background-color;
+    padding: $spacing-unit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -25,45 +24,46 @@ a {
 }
 
 p {
-    line-height: 1.5;
+    line-height: $base-line-height;
+    margin-bottom: $spacing-unit / 4;
 }
 
 .wrapper {
-    background: #fff;
-    max-width: 1000px;
+    background: $wrapper-color;
+    max-width: $content-width;
     margin: 0 auto;
     position: relative;
     @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
-    padding: 20px;
+    padding: $spacing-unit * 2;
     
     .section-title {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: $large-font-size;
         font-weight: 500;
         color: darken($theme-color, 15%);
         position: relative;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: $spacing-unit / 2;
         border-bottom: 2px dashed rgba(darken($theme-color, 15%), 25%);
     }
 
     .section {
-        margin-bottom: 10px;
+        margin-bottom: $spacing-unit / 2;
     }
 
     .name {
-        font-size: 32px;
+        font-size: $huge-font-size;
         font-weight: 900;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: $spacing-unit / 2;
     }
 
     .title {
         color: $text-grey;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: $middle-font-size;
+        font-weight: $base-font-weight;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: $spacing-unit / 2;
     }
 
     .contact-list {
@@ -81,16 +81,16 @@ p {
     .avatar {
         float: right;
         max-width: 100px;
-        margin-bottom: 15px;
+        margin-bottom: $spacing-unit;
         border: 0px solid #fff;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     .item {
-        padding-bottom: 5px;
+        padding-bottom: $spacing-unit / 2;
 
         .details {
-            padding: 0px 10px;
+            padding: 0 $spacing-unit;
         }
     }
 
@@ -117,7 +117,8 @@ p {
 
     .intro, .details {
         ul {
-            padding-left: 20px;
+            margin-bottom: $spacing-unit / 4;
+            padding-left: $spacing-unit;
         }
     }
 
@@ -137,7 +138,6 @@ p {
     }
 
     .pub-title {
-        font-weight: 400;
         color: $text-color;
         margin-bottom: 1px;
     }
@@ -150,12 +150,10 @@ p {
 }
 
 .footer {
-    padding-top: 10px;
+    padding-top: $spacing-unit / 2;
 
     .copyright {
-        line-height: 1.6;
         color: $text-color-secondary;
-        font-size: 13px;
     }
 
     .fa-heart {
