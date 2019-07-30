@@ -6,14 +6,14 @@
     }
 
     .wrapper {
-        padding: 20px;
+        padding: $spacing-unit;
     }
 
     .wrapper {
         .avatar {
             float: none;
             display: block;
-            margin: 0 auto;
+            margin: $spacing-unit auto;
             border-radius: 100%;
         }
 
@@ -35,7 +35,7 @@
         .time, .degree, .location {
             position: static;
             display: block;
-            margin-top: 5px;
+            margin-top: $spacing-unit / 4;
         }
 
         .upper-row {
