@@ -16,12 +16,12 @@ $spacing-unit:     20px !default;
 $content-width:    1000px !default;
 
 // Default color settings
-$text-color: #333333;
-$text-color-secondary: #3F4650;
-$text-grey: #97AAC3;
-$background-color: #f5f5f5;
-$wrapper-color: #ffffff;
-$heart: #fb866a;
+$text-color:            #333333;
+$text-color-secondary:  #3F4650;
+$text-grey:             #97AAC3;
+$background-color:      #f5f5f5;
+$wrapper-color:         #ffffff;
+$heart:                 #fb866a;
 
 @import 
     "mixins",

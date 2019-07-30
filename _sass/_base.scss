@@ -9,10 +9,10 @@ body {
 }
 
 a {
-    color: darken($theme-color, 15%);
+    color: $theme-color;
     &:hover {
-        text-decoration: underline;
-        color: darken($theme-color, 30%);
+        text-decoration: none;
+        color: darken($theme-color, 10%);
     }
     &:focus {
         text-decoration: none;
@@ -36,11 +36,11 @@ p {
         text-transform: uppercase;
         font-size: $large-font-size;
         font-weight: 500;
-        color: darken($theme-color, 15%);
+        color: $theme-color;
         position: relative;
         margin-top: 0;
         margin-bottom: $spacing-unit / 2;
-        border-bottom: 2px dashed rgba(darken($theme-color, 15%), 25%);
+        border-bottom: 2px dashed rgba($theme-color, 25%);
     }
 
     .section {
@@ -78,7 +78,7 @@ p {
         float: right;
         max-width: 100px;
         margin-bottom: $spacing-unit;
-        border: 0px solid #fff;
+        border: 0px solid $wrapper-color;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
 
