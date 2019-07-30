@@ -2,9 +2,15 @@
    {
     @page {
         size: A4;
+        margin: 1cm 0.5cm;
     }
+
+    @page :first {
+        margin-top: 0.5cm;
+    }
+
     body {
-        padding: 0px;
+        padding: 0 !important;
     }
 
     a:after{

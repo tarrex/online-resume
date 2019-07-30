@@ -14,4 +14,4 @@ open: true                  # open or close your site
 force_https: true           # force http to https
 date_format: "%Y-%m-%d"     # date format
 google_analytics:           # your google analytics
-theme_color: "#42A8C0"      # your favorite theme color
+theme_color: "#1ec0ff"      # your favorite theme color

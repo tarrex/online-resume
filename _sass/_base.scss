@@ -8,10 +8,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6  {
-    font-weight: 700;
-}
-
 a {
     color: darken($theme-color, 15%);
     &:hover {
@@ -59,7 +55,7 @@ p {
     }
 
     .title {
-        color: $text-grey;
+        color: $text-color-secondary;
         font-size: $middle-font-size;
         font-weight: $base-font-weight;
         margin-top: 0;
