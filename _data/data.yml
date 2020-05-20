@@ -7,18 +7,19 @@ intro:
 
 contact:
     email: me@example.com
-    phone: +86-111-1111-1111
-    wechat: 
-    telegram: 
-    website: https://example.com
-    linkedin: 
+    phone: +86-111-2222-3333
+    whatsapp:
+    telegram:
+    website: example.com
+    medium:
+    linkedin:
     github: github
-    gitlab: 
-    bitbucket: 
+    gitlab:
+    bitbucket:
     twitter: twitter
-    stackoverflow: 
-    codewars: 
-    goodreads: 
+    stackoverflow:
+    quora:
+    goodreads:
 
 languages:
     display: true
@@ -37,7 +38,7 @@ interests:
         - item: Reading
           link:
         - item: Cooking
-    
+
 profile:
     display: true
     title: Profile
@@ -60,9 +61,9 @@ education:
             Experience in this university:
             + First
             + Second
-            
+
             ...
-        
+
         - university: Example University
           time: 2011 - 2015
           major: Computer Science
@@ -71,7 +72,7 @@ education:
             Experience in this university:
             + First
             + Second
-            
+
             ...
 
 experiences:
@@ -88,7 +89,7 @@ experiences:
             + Second
 
             ...
-        
+
         - role: Backend Developer
           time: 2017.03 - 2018.03
           company: First Company
@@ -105,15 +106,15 @@ projects:
     title: Projects
     intro: |
       This is all the projects I'm involved in.
-    
+
     items:
         - name: Foo
-          link: 
+          link:
           details: |
             Project Foo's detail, you can write markdown format text.
 
         - name: Bar
-          link: 
+          link:
           details: |
             Project Bar's detail, you can write markdown format text.
 
@@ -128,7 +129,7 @@ publications:
           authors: Foo Bar
           conference: Foobar, 2019
           link: https://www.google.com
-        
+
         - title: The Art of Bar
           authors: Foo Bar
           conference: Foobar, 2019
@@ -145,17 +146,17 @@ skills:
       ...
 
 evaluation:
-  display: true
-  title: Self-evaluation
-  details: |
-    Here is my self evaluation.
-    + First
-    + Second
+    display: true
+    title: Self-evaluation
+    details: |
+      Here is my self evaluation.
+      + First
+      + Second
 
-    ...
+      ...
 
-footer: 
-  display: true
+footer:
+    display: true
 
 close: >
-  Sorry, my resume has been hidden. You can contanct me at me {at} example.com.
+  Sorry, my resume has been hidden.

@@ -1,4 +1,4 @@
-{% assign contact = site.data.data.contact %}
+{% assign contact = data.contact %}
 <ul class="list-unstyled contact-list">
 
   {% if contact.email %}
@@ -13,21 +13,27 @@
   </li>
   {% endif %}
 
-  {% if contact.wechat %}
-  <li class="weixin"><i class="fab fa-weixin"></i>
-    <a href="wechat://{{ contact.wechat }}" target="_blank">{{ contact.wechat }}</a>
+  {% if contact.whatsapp %}
+  <li class="whatsapp"><i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
   </li>
   {% endif %}
 
   {% if contact.telegram %}
-  <li class="telegram"><i class="fab fa-telegram-plane"></i>
+  <li class="telegram"><i class="fab fa-telegram"></i>
     <a href="https://t.me/{{ contact.telegram }}" target="_blank">{{ contact.telegram }}</a>
   </li>
   {% endif %}
 
   {% if contact.website %}
   <li class="website"><i class="fas fa-globe"></i>
-    <a href="{{ contact.website }}" target="_blank">{{ contact.website }}</a>
+    <a href="https://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
+  </li>
+  {% endif %}
+
+  {% if contact.medium %}
+  <li class="medium"><i class="fab fa-medium-m"></i>
+    <a href="https://medium.com/@{{ contact.medium }}" target="_blank">{{ contact.medium }}</a>
   </li>
   {% endif %}
 
@@ -61,20 +67,20 @@
   </li>
   {% endif %}
 
-  {% if contact.stack-overflow %}
-  <li class="stack-overflow"><i class="fab fa-stack-overflow"></i>
-    <a href="https://stackoverflow.com/users/{{ contact.stack-overflow }}" target="_blank">{{ contact.stack-overflow }}</a>
+  {% if contact.stackoverflow %}
+  <li class="stackoverflow"><i class="fab fa-stack-overflow"></i>
+    <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}" target="_blank">{{ contact.stackoverflow }}</a>
   </li>
   {% endif %}
 
-  {% if contact.codewars %}
-  <li class="codewars"><i class="fas fa-code"></i>
-    <a href="https://www.codewars.com/users/{{ contact.codewars }}/completed_solutions" target="_blank">{{ contact.codewars }}</a>
+  {% if contact.quora %}
+  <li class="quora"><i class="fab fa-quora"></i>
+    <a href="https://www.quora.com/profile/{{ contact.quora }}" target="_blank">{{ contact.quora }}</a>
   </li>
   {% endif %}
 
   {% if contact.goodreads %}
-  <li class="goodreads-g"><i class="fab fa-goodreads-g"></i>
+  <li class="goodreads"><i class="fab fa-goodreads-g"></i>
     <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
   </li>
   {% endif %}

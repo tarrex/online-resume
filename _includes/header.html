@@ -1,26 +1,26 @@
-{% assign intro = site.data.data.intro %}
+{% assign intro = data.intro %}
 <section class="section intro-section">
 
   {% if intro.avatar.path and intro.avatar.display %}
     <div class="avatar-container">
-        <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ intro.avatar.path }}" alt="avatar">
+      <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ intro.avatar.path }}" alt="avatar">
     </div>
     
     <div class="intro-container">
       {% if intro.name %}
-        <div class="header">
-            <h2 class="name">{{ intro.name }}</h2>
-            {% if intro.title %}
-            <h3 class="title">{{ intro.title }}</h3>
-            {% endif %}
-        </div>
+      <div class="header">
+        <h2 class="name">{{ intro.name }}</h2>
+        {% if intro.title %}
+        <h3 class="title">{{ intro.title }}</h3>
+        {% endif %}
+      </div>
       {% endif %}
     
-        <div class="contact">
+      <div class="contact">
 
-          {% include contact.html %}
+        {% include contact.html %}
         
-        </div>
+      </div>
     </div>
 
   {% else %}

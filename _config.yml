@@ -8,10 +8,9 @@ sass:
     sass_dir: _sass
     style:    compressed
 
-# Custom Values
+# Custom
 lang: en                    # html lang
 open: true                  # open or close your site
-force_https: true           # force http to https
 date_format: "%Y-%m-%d"     # date format
 google_analytics:           # your google analytics
-theme_color: "#00ADB5"      # your favorite theme color
+theme_color: "#1DA1F2"      # your favorite theme color
