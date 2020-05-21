@@ -2,31 +2,31 @@
 {% if projects and projects.display %}
 <section class="section projects-section">
 
-  <div class="section-title">
-    {{ projects.title }}
-  </div>
+    <div class="section-title">
+        {{ projects.title }}
+    </div>
 
-  {% if projects.intro %}
-  <div class="intro">
-      <p>{{ projects.intro | markdownify }}</p>
-  </div>
-  {% endif %}
+    {% if projects.intro %}
+    <div class="intro">
+        <p>{{ projects.intro | markdownify }}</p>
+    </div>
+    {% endif %}
 
-  {% for project in projects.items %}
+    {% for project in projects.items %}
     <div class="item">
 
-      <p class="project-title">
-        <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
-      </p>
-  
-      {% if project.details %}
-      <div class="details">
-        {{ project.details | markdownify }}
-      </div>
-      {% endif %}
+        <p class="project-title">
+            <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+        </p>
+
+        {% if project.details %}
+        <div class="details">
+            {{ project.details | markdownify }}
+        </div>
+        {% endif %}
 
     </div>
-  {% endfor %}
+    {% endfor %}
 
 </section>
 {% endif %}

@@ -2,13 +2,13 @@
 {% if evaluation and evaluation.display %}
 <section class="section evaluation-section">
 
-  <div class="section-title">
-    {{ evaluation.title }}
-  </div>
+    <div class="section-title">
+        {{ evaluation.title }}
+    </div>
 
-  <div class="details">
-    {{ evaluation.details | markdownify }}
-  </div>
-    
+    <div class="details">
+        {{ evaluation.details | markdownify }}
+    </div>
+
 </section>
 {% endif %}

@@ -1,162 +1,161 @@
 intro:
-    name: Foo Bar
-    title: Backend Developer
-    avatar:
-        display: true
-        path: profile.png
+  name: Foo Bar
+  title: Backend Developer
+  avatar:
+    display: true
+    path: profile.png
 
 contact:
-    email: me@example.com
-    phone: +86-111-2222-3333
-    whatsapp:
-    telegram:
-    website: example.com
-    medium:
-    linkedin:
-    github: github
-    gitlab:
-    bitbucket:
-    twitter: twitter
-    stackoverflow:
-    quora:
-    goodreads:
+  email: me@example.com
+  phone: +86-111-2222-3333
+  whatsapp:
+  telegram:
+  website: example.com
+  medium:
+  linkedin:
+  github: github
+  gitlab:
+  bitbucket:
+  twitter: twitter
+  stackoverflow:
+  quora:
+  goodreads:
 
 languages:
-    display: true
-    title: Languages
-    items:
-        - idiom: Chinese
-          level: Native
-
-        - idiom: English
-          level: Professional
+  display: true
+  title: Languages
+  items:
+    - idiom: Chinese
+      level: Native
+    - idiom: English
+      level: Professional
 
 interests:
-    display: true
-    title: Interests
-    items:
-        - item: Reading
-          link:
-        - item: Cooking
+  display: true
+  title: Interests
+  items:
+    - item: Reading
+      link:
+    - item: Cooking
+      link:
 
 profile:
-    display: true
-    title: Profile
-    details: |
-      It's your career profile, you can wirte markdown format text.
-      + First
-      + Second
+  display: true
+  title: Profile
+  details: |
+    It's your career profile, you can wirte markdown format text.
+    + First
+    + Second
 
-      ...
+    ...
 
 education:
-    display: true
-    title: Education
-    items:
-        - university: Example University
-          time: 2015 - 2018
-          major: Machine Learning
-          degree: Master
-          details: |
-            Experience in this university:
-            + First
-            + Second
+  display: true
+  title: Education
+  items:
+    - university: Example University
+      time: 2015 - 2018
+      major: Machine Learning
+      degree: Master
+      details: |
+        Experience in this university:
+        + First
+        + Second
 
-            ...
+        ...
 
-        - university: Example University
-          time: 2011 - 2015
-          major: Computer Science
-          degree: Bachelor
-          details: |
-            Experience in this university:
-            + First
-            + Second
+    - university: Example University
+      time: 2011 - 2015
+      major: Computer Science
+      degree: Bachelor
+      details: |
+        Experience in this university:
+        + First
+        + Second
 
-            ...
+        ...
 
 experiences:
-    display: true
-    title: Experiences
-    items:
-        - role: Backend Developer
-          time: 2018.03 - 2019.03
-          company: Second Company
-          location: Beijing
-          details: |
-            Experience in this company:
-            + First
-            + Second
+  display: true
+  title: Experiences
+  items:
+    - role: Backend Developer
+      time: 2018.03 - 2019.03
+      company: Second Company
+      location: Beijing
+      details: |
+        Experience in this company:
+        + First
+        + Second
 
-            ...
+        ...
 
-        - role: Backend Developer
-          time: 2017.03 - 2018.03
-          company: First Company
-          location: Beijing
-          details: |
-            Experience in this company:
-            + First
-            + Second
+    - role: Backend Developer
+      time: 2017.03 - 2018.03
+      company: First Company
+      location: Beijing
+      details: |
+        Experience in this company:
+        + First
+        + Second
 
-            ...
+        ...
 
 projects:
-    display: true
-    title: Projects
-    intro: |
-      This is all the projects I'm involved in.
+  display: true
+  title: Projects
+  intro: |
+    This is all the projects I'm involved in.
 
-    items:
-        - name: Foo
-          link:
-          details: |
-            Project Foo's detail, you can write markdown format text.
+  items:
+    - name: Foo
+      link:
+      details: |
+        Project Foo's detail, you can write markdown format text.
 
-        - name: Bar
-          link:
-          details: |
-            Project Bar's detail, you can write markdown format text.
+    - name: Bar
+      link:
+      details: |
+        Project Bar's detail, you can write markdown format text.
 
 publications:
-    display: true
-    title: Publications
-    intro: |
-      This is all the books I wrote.
+  display: true
+  title: Publications
+  intro: |
+    This is all the books I wrote.
 
-    items:
-        - title: Foo in Action
-          authors: Foo Bar
-          conference: Foobar, 2019
-          link: https://www.google.com
-
-        - title: The Art of Bar
-          authors: Foo Bar
-          conference: Foobar, 2019
-          link: https://www.google.com
+  items:
+    - title: Foo in Action
+      authors: Foo Bar
+      conference: Foobar, 2019
+      link: https://www.google.com
+    - title: The Art of Bar
+      authors: Foo Bar
+      conference: Foobar, 2019
+      link: https://www.google.com
 
 skills:
-    display: true
-    title: Skills
-    details: |
-      Here is my skills:
-      + First
-      + Second
+  display: true
+  title: Skills
+  details: |
+    Here is my skills:
+    + First
+    + Second
 
-      ...
+    ...
 
 evaluation:
-    display: true
-    title: Self-evaluation
-    details: |
-      Here is my self evaluation.
-      + First
-      + Second
+  display: true
+  title: Self-evaluation
+  details: |
+    Here is my self evaluation.
+    + First
+    + Second
 
-      ...
+    ...
 
 footer:
-    display: true
+  display: true
 
 close: >
   Sorry, my resume has been hidden.

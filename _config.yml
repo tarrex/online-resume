@@ -5,8 +5,8 @@ baseurl:
 
 # Sass setting
 sass:
-    sass_dir: _sass
-    style:    compressed
+  sass_dir: _sass
+  style:    compressed
 
 # Custom
 lang: en                    # html lang
