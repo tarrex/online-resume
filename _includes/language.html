@@ -7,11 +7,11 @@
     </div>
 
     <ul class="list-unstyled languages-list">
-        {%for language in languages.items %}
+        {% for language in languages.items %}
         <li>
             {{ language.idiom }}
             {% if language.level %}
-            <span class="lang-level">[{{ language.level }}]</span>
+            <small>[{{ language.level }}]</small>
             {% endif %}
         </li>
         {% endfor %}

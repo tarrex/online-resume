@@ -82,6 +82,7 @@ experiences:
     - role: Backend Developer
       time: 2018.03 - 2019.03
       company: Second Company
+      tag:
       location: Beijing
       details: |
         Experience in this company:
@@ -93,6 +94,7 @@ experiences:
     - role: Backend Developer
       time: 2017.03 - 2018.03
       company: First Company
+      tag: Remote, part-time
       location: Beijing
       details: |
         Experience in this company:
@@ -109,7 +111,7 @@ projects:
 
   items:
     - name: Foo
-      link:
+      link: https://www.google.com
       details: |
         Project Foo's detail, you can write markdown format text.
 
@@ -132,7 +134,7 @@ publications:
     - title: The Art of Bar
       authors: Foo Bar
       conference: Foobar, 2019
-      link: https://www.google.com
+      link:
 
 skills:
   display: true

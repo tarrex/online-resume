@@ -14,9 +14,13 @@
 
     {% for project in projects.items %}
     <div class="item">
-
-        <p class="project-title">
+        {% if project.name %}
+        <p class="project-name">
+            {% if project.link %}
             <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+            {% else %}
+            {{ project.name }}
+            {% endif %}
         </p>
 
         {% if project.details %}
@@ -24,7 +28,7 @@
             {{ project.details | markdownify }}
         </div>
         {% endif %}
-
+        {% endif %}
     </div>
     {% endfor %}
 

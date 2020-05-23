@@ -9,7 +9,12 @@
     <div class="item">
 
         <div class="upper-row">
-            <div class="company">{{ experience.company }}</div>
+            <div class="company">
+                {{ experience.company }}
+                {% if experience.tag %}
+                <small>[{{ experience.tag }}]</small>
+                {% endif %}
+            </div>
             <div class="time">{{ experience.time }}</div>
         </div>
 

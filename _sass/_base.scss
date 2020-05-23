@@ -103,7 +103,7 @@ p {
         font-style: italic;
     }
 
-    .company, .university {
+    .company, .university, .project-name, .pub-title {
         font-weight: 700;
     }
 
@@ -125,18 +125,13 @@ p {
         }
     }
 
-    .lang-level {
-        color: $text-grey;
-    }
-
-    .pub-title {
+    .pub-title, .project-name {
         color: $text-color;
         margin-bottom: 1px;
     }
 
     .pub-authors {
         font-style: italic;
-        color: $text-grey;
         margin-bottom: 1px;
     }
 }
