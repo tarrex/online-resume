@@ -6,7 +6,7 @@
     }
 
     .wrapper {
-        padding: $spacing-unit;
+        padding: $spacing-unit / 2;
     }
 
     .wrapper {
@@ -25,10 +25,10 @@
             li {
                 display: block;
                 text-align: left;
-            }
 
-            li:not(:last-child)::after {
-                content: "";
+                &:not(:last-child)::after {
+                    content: "";
+                }
             }
         }
 

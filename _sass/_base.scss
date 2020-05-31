@@ -10,10 +10,12 @@ body {
 
 a {
     color: $theme-color;
+
     &:hover {
         text-decoration: none;
         color: darken($theme-color, 10%);
     }
+
     &:focus {
         text-decoration: none;
     }
@@ -44,14 +46,14 @@ p {
     }
 
     .section {
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 4;
     }
 
     .name {
         font-size: $huge-font-size;
         font-weight: 900;
         margin-top: 0;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 4;
     }
 
     .title {
@@ -59,18 +61,20 @@ p {
         font-size: $middle-font-size;
         font-weight: $base-font-weight;
         margin-top: 0;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 4;
     }
 
     .contact-list {
+        margin-bottom: $spacing-unit / 4;
+
         li {
             display: inline;
             white-space: nowrap;
-        }
 
-        li:not(:last-child)::after {
-            content: "|";
-            margin: 0 .25em;
+            &:not(:last-child)::after {
+                content: "|";
+                margin: 0 .25em;
+            }
         }
     }
 
@@ -83,7 +87,7 @@ p {
     }
 
     .item {
-        padding-bottom: $spacing-unit / 2;
+        padding-bottom: $spacing-unit / 4;
     }
 
     .upper-row {
@@ -115,13 +119,16 @@ p {
     }
 
     .languages-list, .interests-list {
+        margin-bottom: $spacing-unit / 4;
+
         li {
             display: inline;
-        }
+            white-space: nowrap;
 
-        li:not(:last-child)::after {
-            content: "/";
-            margin: 0 .25em;
+            &:not(:last-child)::after {
+                content: "/";
+                margin: 0 .25em;
+            }
         }
     }
 
