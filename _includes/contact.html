@@ -13,6 +13,12 @@
     </li>
     {% endif %}
 
+    {% if contact.wechat %}
+    <li class="wechat"><i class="fab fa-weixin"></i>
+        <a href="javascript:;">{{ contact.wechat }}</a>
+    </li>
+    {% endif %}
+
     {% if contact.whatsapp %}
     <li class="whatsapp"><i class="fab fa-whatsapp"></i>
         <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
@@ -43,6 +49,18 @@
     </li>
     {% endif %}
 
+    {% if contact.google-scholar %}
+    <li class="google-scholar"><i class="ai ai-google-scholar"></i>
+        <a href="https://scholar.google.com/citations?user={{ contact.google-scholar }}" target="_blank">{{ contact.google-scholar }}</a>
+    </li>
+    {% endif %}
+
+    {% if contact.researchgate %}
+    <li class="researchgate"><i class="fab fa-researchgate"></i>
+        <a href="https://www.researchgate.net/profile/{{ contact.researchgate }}" target="_blank">{{ contact.researchgate }}</a>
+    </li>
+    {% endif %}
+
     {% if contact.github %}
     <li class="github"><i class="fab fa-github"></i>
         <a href="https://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
@@ -69,8 +87,7 @@
 
     {% if contact.stackoverflow %}
     <li class="stackoverflow"><i class="fab fa-stack-overflow"></i>
-        <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}"
-            target="_blank">{{ contact.stackoverflow }}</a>
+        <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}" target="_blank">{{ contact.stackoverflow }}</a>
     </li>
     {% endif %}
 
@@ -82,8 +99,7 @@
 
     {% if contact.goodreads %}
     <li class="goodreads"><i class="fab fa-goodreads"></i>
-        <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}"
-            target="_blank">{{ contact.goodreads }}</a>
+        <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
     </li>
     {% endif %}
 
