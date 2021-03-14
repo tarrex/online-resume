@@ -24,25 +24,25 @@
 
 Fork仓库：
 
-![](./assets/images/fork.png "fork this repository")
+![](https://github.com/tarrex/online-resume/raw/master/assets/images/fork.png "fork this repository")
 
 编辑`_data/data.yml`文件：
 
-![](./assets/images/edit.png "edit the yaml file")
+![](https://github.com/tarrex/online-resume/raw/master/assets/images/edit.png "edit the yaml file")
 
 设置Github Pages源分支`settings -> Github Pages -> source`，选择`master branch`：
 
-![](./assets/images/source.png "select github pages source branch")
+![](https://github.com/tarrex/online-resume/raw/master/assets/images/source.png "select github pages source branch")
 
 等一会儿之后在浏览器中打开`https://YOUR_GITHUB_USERNAME.github.io/online-resume`就可以看到自己的简历了。
 
 带照片简历：
 
-![](./assets/images/resume1.png "resume with profile photo")
+![](https://github.com/tarrex/online-resume/raw/master/assets/images/resume1.png "resume with profile photo")
 
 不带照片简历：
 
-![](./assets/images/resume2.png "resume without profile photo")
+![](https://github.com/tarrex/online-resume/raw/master/assets/images/resume2.png "resume without profile photo")
 
 如果想打印简历，直接在浏览器中打印，或者保存为PDF文件。
 
@@ -62,7 +62,3 @@ Fork仓库：
 ## 协议
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-## 感谢
-
-灵感源于[online-cv](https://github.com/sharu725/online-cv)，是非常不错的一个简历模板。
