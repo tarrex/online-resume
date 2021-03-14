@@ -16,8 +16,6 @@
 + 响应式设计
 + 打印格式友好
 
-希望能够帮助你创建自己的简历！
-
 ## 起步
 
 ### 使用
@@ -26,7 +24,7 @@
 
 Fork仓库：
 
-![](./assets/images/fork.png "fork this repo")
+![](./assets/images/fork.png "fork this repository")
 
 编辑`_data/data.yml`文件：
 
@@ -38,7 +36,13 @@ Fork仓库：
 
 等一会儿之后在浏览器中打开`https://YOUR_GITHUB_USERNAME.github.io/online-resume`就可以看到自己的简历了。
 
-![](./assets/images/resume.png "resume")
+带照片简历：
+
+![](./assets/images/resume1.png "resume with profile photo")
+
+不带照片简历：
+
+![](./assets/images/resume2.png "resume without profile photo")
 
 如果想打印简历，直接在浏览器中打印，或者保存为PDF文件。
 

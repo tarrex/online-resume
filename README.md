@@ -4,7 +4,7 @@
 
 ---
 
-Yet another resume template based on jekyll. You can wirte your resume using markdown, it will be rendered into html and can be printed as pdf.
+Yet another resume template based on Jekyll. You can write your resume using Markdown, it will be rendered into HTML and can be printed as PDF file.
 
 Features:
 
@@ -14,9 +14,7 @@ Features:
 + Multiple skins
 + Content modular
 + Responsive display
-+ Print friendly
-
-Enjoy yourself!
++ Print-friendly
 
 ## Getting Started
 
@@ -24,27 +22,33 @@ Enjoy yourself!
 
 #### Quickly
 
-Fork this repo:
+Fork this repository:
 
-![](./assets/images/fork.png "fork this repo")
+![](./assets/images/fork.png "fork this repository")
 
-Edit the yaml file located in `_data/data.yml`:
+Edit the YAML file located in `_data/data.yml`:
 
 ![](./assets/images/edit.png "edit the yaml file")
 
-Setting the github pages source branch in `settings -> Github Pages -> source`, select `master branch`:
+Setting the Github pages source branch in `settings -> Github Pages -> source`, select `master branch`:
 
 ![](./assets/images/source.png "select github pages source branch")
 
 Wait a little while, open `https://YOUR_GITHUB_USERNAME.github.io/online-resume` in your browser. You can see your resume.
 
-![](./assets/images/resume.png "resume")
+with profile photo:
 
-If you want to print your resume, just press shortcut of print. Also it can be saved as a pdf file.
+![](./assets/images/resume1.png "resume with profile photo")
+
+without profile photo:
+
+![](./assets/images/resume2.png "resume without profile photo")
+
+If you want to print your resume, just press the shortcut of print. Also, it can be saved as a PDF file.
 
 #### Locally
 
-If you want to use it locally, you shoule clone this repo then just like deploying a regular jekyll website.
+If you want to use it locally, you should clone this repository then just like deploying a regular Jekyll website.
 
 ### Customization
 
