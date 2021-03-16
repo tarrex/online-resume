@@ -7,42 +7,85 @@
 
     .wrapper {
         padding: $spacing-unit / 2;
-    }
 
-    .wrapper {
-        .avatar {
-            float: none;
-            display: block;
-            margin: $spacing-unit auto;
-            border-radius: 100%;
-        }
+        .intro-section {
+            .avatar-container {
+                .avatar {
+                    float: none;
+                    display: block;
+                    margin: $spacing-unit auto;
+                    border-radius: 100%;
+                }
+            }
 
-        .intro-container {
-            text-align: center;
-        }
+            .intro-container {
+                text-align: center;
 
-        .contact-list, .languages-list, .interests-list {
-            li {
-                display: block;
-                text-align: left;
-
-                &:not(:last-child)::after {
-                    content: "";
+                .contact-list {
+                    li {
+                        display: block;
+                        text-align: left;
+        
+                        &:not(:last-child)::after {
+                            content: "";
+                        }
+                    }
                 }
             }
         }
-
-        .time, .degree, .location {
-            position: static;
-            display: block;
-            margin-top: $spacing-unit / 4;
+        
+        .experiences-section {
+            .upper-row {
+                margin-bottom: 0;
+            }
+    
+            .time, .location {
+                position: static;
+                display: block;
+                margin-top: $spacing-unit / 4;
+            }
         }
+    
+        .educations-section {
+            .upper-row {
+                margin-bottom: 0;
+            }
 
-        .upper-row {
-            margin-bottom: 0;
+            .time, .degree {
+                position: static;
+                display: block;
+                margin-top: $spacing-unit / 4;
+            }
+        }
+    
+        .languages-section {
+            .languages-list {
+                li {
+                    display: block;
+                    text-align: left;
+    
+                    &:not(:last-child)::after {
+                        content: "";
+                    }
+                }
+            }
+        }
+    
+        .interests-section {
+            .interests-list {
+                li {
+                    display: block;
+                    text-align: left;
+    
+                    &:not(:last-child)::after {
+                        content: "";
+                    }
+                }
+            }
         }
     }
 }
+
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 

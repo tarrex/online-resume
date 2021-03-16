@@ -34,112 +34,197 @@ p {
     @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
     padding: $spacing-unit * 2;
 
-    .section-title {
-        text-transform: uppercase;
-        font-size: $large-font-size;
-        font-weight: 500;
-        color: $theme-color;
-        position: relative;
-        margin-top: 0;
-        margin-bottom: $spacing-unit / 2;
-        border-bottom: 1px dashed rgba($theme-color, 25%);
-    }
-
     .section {
         margin-bottom: $spacing-unit / 4;
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: $large-font-size;
+            font-weight: 500;
+            color: $theme-color;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: $spacing-unit / 2;
+            border-bottom: 1px dashed rgba($theme-color, 25%);
+        }
+
+        .intro, .details {
+            ul {
+                margin-bottom: $spacing-unit / 4;
+                padding-left: $spacing-unit;
+            }
+        }
+
+        // .item {
+        //     padding-bottom: $spacing-unit / 4;
+        // }
     }
 
-    .name {
-        font-size: $huge-font-size;
-        font-weight: 900;
-        margin-top: 0;
-        margin-bottom: $spacing-unit / 4;
-    }
+    .intro-section {
+        .avatar-container {
+            .avatar {
+                float: right;
+                max-width: 100px;
+                margin-bottom: $spacing-unit;
+                border: 0px solid $wrapper-color;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            }
+        }
 
-    .title {
-        color: $text-color-secondary;
-        font-size: $middle-font-size;
-        font-weight: $base-font-weight;
-        margin-top: 0;
-        margin-bottom: $spacing-unit / 4;
-    }
-
-    .contact-list {
-        margin-bottom: $spacing-unit / 4;
-
-        li {
-            display: inline;
-            white-space: nowrap;
-
-            &:not(:last-child)::after {
-                content: "|";
-                margin: 0 .25em;
+        .intro-container {
+            .name {
+                font-size: $huge-font-size;
+                font-weight: 900;
+                margin-top: 0;
+                margin-bottom: $spacing-unit / 4;
+            }
+        
+            .title {
+                color: $text-color-secondary;
+                font-size: $middle-font-size;
+                font-weight: $base-font-weight;
+                margin-top: 0;
+                margin-bottom: $spacing-unit / 4;
+            }
+        
+            .contact-list {
+                margin-bottom: $spacing-unit / 4;
+        
+                li {
+                    display: inline;
+                    white-space: nowrap;
+        
+                    &:not(:last-child)::after {
+                        content: "|";
+                        margin: 0 .25em;
+                    }
+                }
             }
         }
     }
 
-    .avatar {
-        float: right;
-        max-width: 100px;
-        margin-bottom: $spacing-unit;
-        border: 0px solid $wrapper-color;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    .experiences-section {
+        .upper-row {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-weight: 700;
+        }
+
+        .time, .location {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $text-grey;
+        }
+
+        .role {
+            font-style: italic;
+        }
     }
 
-    // .item {
-    //     padding-bottom: $spacing-unit / 4;
-    // }
+    .projects-section {
+        .name {
+            font-weight: 700;
 
-    .upper-row {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 2px;
+            color: $text-color;
+            margin-bottom: 1px;
+        }
     }
 
-    .time, .degree, .location {
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: $text-grey;
+    .certificates-section {
+        .upper-row {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+        }
+
+        .name {
+            font-weight: 700;
+        }
+
+        .time {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $text-grey;
+        }
+    
+        .authority {
+            font-style: italic;
+        }
     }
 
-    .role, .major {
-        font-style: italic;
+    .educations-section {
+        .upper-row {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+        }
+
+        .university {
+            font-weight: 700;
+        }
+
+        .time, .degree {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $text-grey;
+        }
+    
+        .major {
+            font-style: italic;
+        }
     }
 
-    .company, .university, .project-name, .pub-title {
-        font-weight: 700;
-    }
-
-    .intro, .details {
-        ul {
+    .languages-section {
+        .languages-list {
             margin-bottom: $spacing-unit / 4;
-            padding-left: $spacing-unit;
-        }
-    }
-
-    .languages-list, .interests-list {
-        margin-bottom: $spacing-unit / 4;
-
-        li {
-            display: inline;
-            white-space: nowrap;
-
-            &:not(:last-child)::after {
-                content: "/";
-                margin: 0 .25em;
+    
+            li {
+                display: inline;
+                white-space: nowrap;
+    
+                &:not(:last-child)::after {
+                    content: "/";
+                    margin: 0 .25em;
+                }
             }
         }
     }
 
-    .pub-title, .project-name {
-        color: $text-color;
-        margin-bottom: 1px;
+    .interests-section {
+        .interests-list {
+            margin-bottom: $spacing-unit / 4;
+    
+            li {
+                display: inline;
+                white-space: nowrap;
+    
+                &:not(:last-child)::after {
+                    content: "/";
+                    margin: 0 .25em;
+                }
+            }
+        }
     }
 
-    .pub-authors {
-        font-style: italic;
-        margin-bottom: 1px;
+    .publications-section {
+        .title {
+            font-weight: 700;
+
+            color: $text-color;
+            margin-bottom: 1px;
+        }
+
+        .authors {
+            font-style: italic;
+            margin-bottom: 1px;
+        }
     }
 }
 
