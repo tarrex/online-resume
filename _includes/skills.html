@@ -10,5 +10,21 @@
         {{ skills.details | markdownify }}
     </div>
 
+    {% if skills.levels and skills.levels[0].name %}
+    <div class="levels">
+        <table class="charts-css bar stacked show-labels data-spacing-5" style="height: calc({{ skills.levels.size }} * 25px)">
+            <tbody>
+                {% for level in skills.levels %}
+                <tr>
+                    <th scope="row"> {{ level.name }} </th>
+                    <td style="--size: calc( {{ level.level }} / 100 ); --color: {{ site.theme_color }}90;"></td>
+                    <td style="--size: calc( ( 100 - {{ level.level }} ) / 100 ); --color: {{ site.theme_color }}40;"></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
 </section>
 {% endif %}

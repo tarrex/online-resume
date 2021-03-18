@@ -45,6 +45,13 @@
                 margin-top: $spacing-unit / 4;
             }
         }
+
+        .skills-section {
+            .bar {
+                max-width: 100%;
+                --labels-size: 30%;
+            }
+        }
     
         .educations-section {
             .upper-row {

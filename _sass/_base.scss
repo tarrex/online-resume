@@ -135,6 +135,13 @@ p {
         }
     }
 
+    .skills-section {
+        .bar {
+            max-width: 80%;
+            --labels-size: 20%;
+        }
+    }
+
     .certificates-section {
         .upper-row {
             position: relative;
