@@ -13,7 +13,15 @@
     <link id="theme-style" rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
     {% if site.google_analytics %}
-    {% include google-analytics.html %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
     {% endif %}
 
     {% if site.cloudflare_analytics %}
