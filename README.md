@@ -57,8 +57,11 @@ If you want to use it locally, you should clone this repository then just like d
 + `_config.yml`: Site's general settings.
 + `index.html`: Change the resume content's display order.
 + `_sass/_base.scss`: Change the resume display style.
-+ `robots.txt`: If you don't want your resume to be recorded in the search engine, modify this file.
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Others
+
++ Hugo Version: [hugo-theme-online-resume](https://github.com/tarrex/hugo-theme-online-resume)

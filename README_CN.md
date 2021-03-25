@@ -57,8 +57,11 @@ Fork仓库：
 + `_config.yml`: Jekyll网站基本设置。
 + `index.html`: 改变简历内容模块的展示顺序。
 + `_sass/_base.scss`: 改变简历的样式。
-+ `robots.txt`: 搜索引擎收录选项。
 
 ## 协议
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## 其他
+
++ Hugo版本: [hugo-theme-online-resume](https://github.com/tarrex/hugo-theme-online-resume)
