@@ -1,37 +1,37 @@
 {% assign certificates = data.certificates %}
 {% if certificates and certificates.display %}
-  <section class="section certificates-section">
+<section class="section certificates-section">
 
     <div class="section-title">
-      {{ certificates.title }}
+        {{ certificates.title }}
     </div>
 
     <div class="row">
-      {% for certificate in certificates.items %}
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-        <div class="item">
+        {% for certificate in certificates.items %}
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="item">
         
-          <div class="upper-row">
-            {% if certificate.link %}
-            <div class="name"><a href="{{ certificate.link }}">{{ certificate.name }}</a></div>
-            {% else %}
-            <div class="name">{{ certificate.name }}</div>
-            {% endif %}
-          </div>
+                <div class="upper-row">
+                    {% if certificate.link %}
+                    <div class="name"><a href="{{ certificate.link }}">{{ certificate.name }}</a></div>
+                    {% else %}
+                    <div class="name">{{ certificate.name }}</div>
+                    {% endif %}
+                </div>
 
-          <div class="upper-row">
-              <div class="authority">{{ certificate.authority }}</div>
-              <div class="time">{{ certificate.time }}</div>
-          </div>
+                <div class="upper-row">
+                    <div class="authority">{{ certificate.authority }}</div>
+                    <div class="time">{{ certificate.time }}</div>
+                </div>
 
-          {% if certificate.details %}
-          <div class="details">
-            {{ certificate.details | markdownify }}
-          </div>
-          {% endif %}
+                {% if certificate.details %}
+                <div class="details">
+                    {{ certificate.details | markdownify }}
+                </div>
+                {% endif %}
+            </div>
         </div>
-      </div>
-      {% endfor %}
+        {% endfor %}
     </div>
-  </section>
+</section>
 {% endif %}
