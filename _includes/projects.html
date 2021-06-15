@@ -1,36 +1,42 @@
 {% assign projects = data.projects %}
 {% if projects and projects.display %}
-<section class="section projects-section">
+<section class="projects">
 
     <div class="section-title">
         {{ projects.title }}
     </div>
 
-    {% if projects.intro %}
-    <div class="intro">
-        <p>{{ projects.intro | markdownify }}</p>
-    </div>
-    {% endif %}
-
-    {% for project in projects.items %}
-    <div class="item">
-        {% if project.name %}
-        <p class="name">
-            {% if project.link %}
-            <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
-            {% else %}
-            {{ project.name }}
-            {% endif %}
-        </p>
-
-        {% if project.details %}
-        <div class="details">
-            {{ project.details | markdownify }}
+    <div class="section-content">
+        {% if projects.intro %}
+        <div class="intro">
+            <div class="markdown">
+                <p>{{ projects.intro | markdownify }}</p>
+            </div>
         </div>
         {% endif %}
-        {% endif %}
+
+        {% for project in projects.items %}
+        <div class="item">
+            {% if project.name %}
+            <p class="project">
+                {% if project.link %}
+                <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+                {% else %}
+                {{ project.name }}
+                {% endif %}
+            </p>
+
+            {% if project.details %}
+            <div class="details">
+                <div class="markdown">
+                    {{ project.details | markdownify }}
+                </div>
+            </div>
+            {% endif %}
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 
 </section>
 {% endif %}

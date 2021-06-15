@@ -1,21 +1,23 @@
 {% assign languages = data.languages %}
 {% if languages and languages.display %}
-<section class="section languages-section">
+<section class="languages">
 
     <div class="section-title">
         {{ languages.title }}
     </div>
 
-    <ul class="list-unstyled languages-list">
-        {% for language in languages.items %}
-        <li>
-            {{ language.idiom }}
-            {% if language.level %}
-            <small>[{{ language.level }}]</small>
-            {% endif %}
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="section-content">
+        <ul class="list-unstyled">
+            {% for language in languages.items %}
+            <li>
+                {{ language.idiom }}
+                {% if language.level %}
+                <small>[{{ language.level }}]</small>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
 </section>
 {% endif %}

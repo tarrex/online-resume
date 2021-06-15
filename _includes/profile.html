@@ -1,13 +1,15 @@
 {% assign profile = data.profile %}
 {% if profile and profile.display %}
-<section class="section profile-section">
+<section class="profile">
 
     <div class="section-title">
         {{ profile.title }}
     </div>
 
-    <div class="details">
-        {{ profile.details | markdownify }}
+    <div class="section-content">
+        <div class="markdown">
+            {{ profile.details | markdownify }}
+        </div>
     </div>
 
 </section>

@@ -1,4 +1,9 @@
-/* ======= Base ======= */
+html {
+    font-size: $base-font-size;
+    scroll-behavior: smooth;
+    touch-action: manipulation;
+}
+
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -9,14 +14,10 @@ body {
 }
 
 a {
-    color: $theme-color;
-
+    &,
+    &:visited,
     &:hover {
-        text-decoration: none;
         color: darken($theme-color, 10%);
-    }
-
-    &:focus {
         text-decoration: none;
     }
 }
@@ -26,211 +27,152 @@ p {
     margin-bottom: $spacing-unit / 4;
 }
 
+small {
+    font-weight: $base-font-weight;
+}
+
 .wrapper {
+    position: relative;
     background: $wrapper-color;
     max-width: $content-width;
     margin: 0 auto;
-    position: relative;
-    @include box-shadow(0px 2px 4px rgba(0,0,0,0.1));
     padding: $spacing-unit * 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
-    .section {
+    section {
         margin-bottom: $spacing-unit / 4;
 
         .section-title {
             text-transform: uppercase;
             font-size: $large-font-size;
-            font-weight: 500;
+            font-weight: $base-font-weight * 1.25;
             color: $theme-color;
             position: relative;
             margin-top: 0;
-            margin-bottom: $spacing-unit / 2;
+            margin-bottom: $spacing-unit / 4;
             border-bottom: 1px dashed rgba($theme-color, 25%);
         }
 
-        .intro, .details {
-            ul {
-                margin-bottom: $spacing-unit / 4;
-                padding-left: $spacing-unit;
+        .section-content {
+            .markdown {
+                ul,
+                ol {
+                    margin-bottom: $spacing-unit / 4;
+                    padding-inline-start: $spacing-unit;
+                }
             }
         }
 
-        // .item {
-        //     padding-bottom: $spacing-unit / 4;
-        // }
+        .upper-row {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px;
+
+            .company,
+            .certificate,
+            .university {
+                font-weight: $base-font-weight * 1.75;
+            }
+
+            .role,
+            .authority,
+            .major {
+                font-style: italic;
+            }
+
+            .time,
+            .location,
+            .degree {
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: $text-third-color;
+            }
+        }
     }
 
-    .intro-section {
-        .avatar-container {
-            .avatar {
-                float: right;
-                max-width: 100px;
-                margin-bottom: $spacing-unit;
-                border: 0px solid $wrapper-color;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-            }
+    .basic {
+        .avatar img {
+            float: right;
+            max-width: 100px;
+            margin-bottom: $spacing-unit;
+            border: 0px solid $wrapper-color;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         }
 
-        .intro-container {
+        .header {
             .name {
                 font-size: $huge-font-size;
-                font-weight: 900;
+                font-weight: $base-font-weight * 2,25;
                 margin-top: 0;
                 margin-bottom: $spacing-unit / 4;
             }
-        
+
             .title {
-                color: $text-color-secondary;
+                color: $text-second-color;
                 font-size: $middle-font-size;
                 font-weight: $base-font-weight;
                 margin-top: 0;
                 margin-bottom: $spacing-unit / 4;
             }
-        
-            .contact-list {
+
+            .contact ul {
                 margin-bottom: $spacing-unit / 4;
-        
+
                 li {
                     display: inline;
                     white-space: nowrap;
-        
+
                     &:not(:last-child)::after {
-                        content: "|";
-                        margin: 0 .25em;
+                        content: '|';
+                        margin: 0 0.25em;
                     }
                 }
             }
         }
     }
 
-    .experiences-section {
-        .upper-row {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 2px;
-        }
-
-        .company {
-            font-weight: 700;
-        }
-
-        .time, .location {
-            position: absolute;
-            right: 0;
-            top: 0;
-            color: $text-grey;
-        }
-
-        .role {
-            font-style: italic;
-        }
-    }
-
-    .projects-section {
-        .name {
-            font-weight: 700;
-
+    .projects {
+        .project {
+            font-weight: $base-font-weight * 1.75;
             color: $text-color;
             margin-bottom: 1px;
         }
     }
 
-    .skills-section {
+    .skills {
         .bar {
             max-width: 80%;
             --labels-size: 20%;
         }
     }
 
-    .certificates-section {
-        .upper-row {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 2px;
-        }
-
-        .name {
-            font-weight: 700;
-        }
-
-        .time {
-            position: absolute;
-            right: 0;
-            top: 0;
-            color: $text-grey;
-        }
-    
-        .authority {
-            font-style: italic;
-        }
-    }
-
-    .educations-section {
-        .upper-row {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 2px;
-        }
-
-        .university {
-            font-weight: 700;
-        }
-
-        .time, .degree {
-            position: absolute;
-            right: 0;
-            top: 0;
-            color: $text-grey;
-        }
-    
-        .major {
-            font-style: italic;
-        }
-    }
-
-    .languages-section {
-        .languages-list {
-            margin-bottom: $spacing-unit / 4;
-    
-            li {
-                display: inline;
-                white-space: nowrap;
-    
-                &:not(:last-child)::after {
-                    content: "/";
-                    margin: 0 .25em;
-                }
-            }
-        }
-    }
-
-    .interests-section {
-        .interests-list {
-            margin-bottom: $spacing-unit / 4;
-    
-            li {
-                display: inline;
-                white-space: nowrap;
-    
-                &:not(:last-child)::after {
-                    content: "/";
-                    margin: 0 .25em;
-                }
-            }
-        }
-    }
-
-    .publications-section {
+    .publications {
         .title {
-            font-weight: 700;
-
+            font-weight: $base-font-weight * 1.75;
             color: $text-color;
             margin-bottom: 1px;
         }
 
         .authors {
             font-style: italic;
-            margin-bottom: 1px;
+        }
+    }
+
+    .languages,
+    .interests {
+        ul {
+            margin-bottom: $spacing-unit / 4;
+
+            li {
+                display: inline;
+                white-space: nowrap;
+
+                &:not(:last-child)::after {
+                    content: '/';
+                    margin: 0 0.25em;
+                }
+            }
         }
     }
 }
@@ -239,10 +181,10 @@ p {
     padding-top: $spacing-unit / 2;
 
     .copyright {
-        color: $text-color-secondary;
-    }
+        color: $text-second-color;
 
-    .fa-heart {
-        color: $heart;
+        .fa-heart {
+            color: $heart-color;
+        }
     }
 }

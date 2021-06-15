@@ -2,9 +2,10 @@
 {% if footer and footer.display %}
 <footer class="footer">
     <div class="text-center">
-        {% assign date_format = site.date_format | default: "%Y-%m-%d" %}
-        <small class="copyright">Updated: {{ site.time | date: date_format | default: "%Y-%m-%d" }} <span class="fa fa-heart"></span> By
-            <a href="https://github.com/tarrex/online-resume" target="_blank" rel="nofollow">Online-Resume</a></small>
+        <small class="copyright">Updated: {{ site.time | date: site.date_format | default: "%Y-%m-%d" }}
+            <span class="fa fa-heart"></span> By
+            <a href="https://github.com/tarrex/online-resume" target="_blank"">Online-Resume</a>
+        </small>
     </div>
 </footer>
 {% endif %}

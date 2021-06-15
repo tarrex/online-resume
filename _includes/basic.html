@@ -1,0 +1,42 @@
+{% assign basic = data.basic %}
+<section class="basic">
+
+    {% if basic.avatar.path and basic.avatar.display %}
+    <div class="avatar">
+        <img src="{{ site.baseurl }}/assets/images/{{ basic.avatar.path }}" alt="avatar">
+    </div>
+
+    <div class="header">
+        {% if basic.name %}
+        <h2 class="name">{{ basic.name }}</h2>
+        {% if basic.title %}
+        <h3 class="title">{{ basic.title }}</h3>
+        {% endif %}
+        {% endif %}
+
+        <div class="contact">
+
+            {% include contact.html %}
+
+        </div>
+    </div>
+
+    {% else %}
+
+    <div class="header text-center">
+        {% if basic.name %}
+        <h2 class="name">{{ basic.name }}</h2>
+        {% if basic.title %}
+        <h3 class="title">{{ basic.title }}</h3>
+        {% endif %}
+        {% endif %}
+
+        <div class="contact">
+
+            {% include contact.html %}
+
+        </div>
+    </div>
+    {% endif %}
+
+</section>

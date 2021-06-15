@@ -1,13 +1,17 @@
 {% assign evaluation = data.evaluation %}
 {% if evaluation and evaluation.display %}
-<section class="section evaluation-section">
+<section class="evaluation">
 
     <div class="section-title">
         {{ evaluation.title }}
     </div>
 
-    <div class="details">
-        {{ evaluation.details | markdownify }}
+    <div class="section-content">
+        <div class="details">
+            <div class="markdown">
+                {{ evaluation.details | markdownify }}
+            </div>
+        </div>
     </div>
 
 </section>

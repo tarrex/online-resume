@@ -1,5 +1,4 @@
-@media print
-   {
+@media print {
     @page {
         size: A4;
         margin: 1cm 0.5cm;
@@ -13,12 +12,12 @@
         padding: 0 !important;
     }
 
-    a:after{
-        content: "" !important;
+    a:after {
+        content: '' !important;
     }
 
     .wrapper {
-        .avatar {
+        .avatar img {
             max-width: 100px !important;
         }
     }
