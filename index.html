@@ -3,11 +3,8 @@ layout: default
 ---
 
 {% assign data = site.data.data %}
-
 {% if site.open %}
-
 <div class="wrapper">
-
     {% include basic.html%}
     {% include profile.html %}
     {% include experiences.html %}
@@ -20,13 +17,8 @@ layout: default
     {% include language.html %}
     {% include interests.html %}
     {% include evaluation.html %}
-
 </div>
-
 {% include footer.html %}
-
 {% else %}
-
 {% include close.html %}
-
 {% endif %}

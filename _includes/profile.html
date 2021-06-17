@@ -1,7 +1,6 @@
 {% assign profile = data.profile %}
 {% if profile and profile.display %}
 <section class="profile">
-
     <div class="section-title">
         {{ profile.title }}
     </div>
@@ -11,6 +10,5 @@
             {{ profile.details | markdownify }}
         </div>
     </div>
-
 </section>
 {% endif %}
