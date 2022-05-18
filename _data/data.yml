@@ -35,8 +35,6 @@ experiences:
         + First
         + Second
 
-        ...
-
     - role: Data Scientist
       time: 2019.11 - 2021.05
       company: Rapha
@@ -48,7 +46,22 @@ experiences:
         + Conducting ad-hoc deep dives for Leadership Team, examples include estimating lost revenue from out of stock products and analysing repeat purchasing patterns of newly acquired customers
         + Developed and maintained PowerBI reports for range of internal departments including Merchandising, Customer Service, Retail Operations
 
-        ...
+    - role: Commodity Analyst
+      time: 2016.07 - 2019.11
+      company: Armarjaro Asset Management & ECOM Agrotrade
+      location: London
+      details: |
+        Experience in this company:
+        + Long-term research project with aim of predicting crop (Corn, Soybeans, 
+        Cotton) production estimates from meteorological data and satellite imagery
+        + Developed necessary Python tooling for accessing, processing, storing 
+        and visualising meteorological data from a range of sources, including 
+        near real-time weather stations, ECMWF forecasts and satellite-derived 
+        precipitation estimates
+        + Developed in-house database of tradeflow statistics, including schema 
+        design and Python ETL process and visualisation layer
+        + Mentored Junior Data Scientist, providing assistance with 
+        their day-to-day duties and developing their technical skill set
 
 projects:
   display: true
