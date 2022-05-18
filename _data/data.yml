@@ -43,8 +43,7 @@ experiences:
       location: London
       details: |
         Experience in this company:
-        + Developed Python program to optimise rapha.cc product listing page 
-        sort order to maximise revenue and minimise page views for out of stock products
+        + Developed Python program to optimise rapha.cc product grids to maximise revenue and minimise page views for out of stock products
         + Developed Customer Lifetime Value and Churn models to inform CRM, Digital Marketing and Business Insights efforts. Deployed on AzureML with CI/CD
         + Conducting ad-hoc deep dives for Leadership Team, examples include estimating lost revenue from out of stock products and analysing repeat purchasing patterns of newly acquired customers
         + Developed and maintained PowerBI reports for range of internal departments including Merchandising, Customer Service, Retail Operations
@@ -73,7 +72,8 @@ skills:
   title: Skills
   details: |
     Here is my skills:
-    + First
+    + Python Data Science Toolbox 
+    + Docker
     + Second
 
     ...
@@ -90,27 +90,28 @@ education:
   display: true
   title: Education
   items:
-    - university: Example University
-      time: 2015 - 2018
-      major: Machine Learning
-      degree: Master
+    - university: Aberystywth University
+      time: 2015 - 2016
+      major: Remote Sensing and Geographical Information Systems
+      degree: MSc - Distinction
       details: |
         Experience in this university:
-        + First
-        + Second
+        + Built knowledge on a range of modelling techniques related to satellite 
+        and geospatial data, including: supervised and un-supervised image 
+        classification, regression techniques, PCA
+        + Developed skills across a range of tools including: Python scientific 
+        stack (NumPy, SciPy, pandas, GDAL etc.), R, ERDAS Imagine, ArcMAP, QGIS
+        + Thesis: Forest Biomass estimation from UAV captured Structure from
+         Motion (SfM) Surface Models
 
-        ...
-
-    - university: Example University
-      time: 2011 - 2015
-      major: Computer Science
-      degree: Bachelor
+    - university: Aberystywth University
+      time: 2012 - 2015
+      major: Geography
+      degree: BSc - Second Class Honours, Division 1
       details: |
         Experience in this university:
-        + First
-        + Second
-
-        ...
+        + Developed an interest in scientific computing and statistics through 
+        Remote Sensing, GIS and Core Research modules
 
 certificates:
   display: false
