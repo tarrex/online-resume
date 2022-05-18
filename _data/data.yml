@@ -1,28 +1,15 @@
 basic:
-  name: Foo Bar
-  title: Backend Developer
+  name: Llion Preston
+  title: Data Scientist
   avatar:
-    display: true
+    display: false
     path: profile.png
 
 contact:
-  email: me@example.com
-  phone: +86-111-2222-3333
-  wechat:
-  whatsapp:
-  telegram:
-  website: example.com
-  medium:
-  linkedin:
-  googlescholar:
-  researchgate:
-  github: github
-  gitlab:
-  bitbucket:
-  twitter: twitter
-  stackoverflow:
-  quora:
-  goodreads:
+  email: llion.preston@gmail.com
+  phone 🇩🇰: 31 57 18 87
+  linkedin: https://www.linkedin.com/in/llion-preston/
+  github: https://github.com/lgpreston75
 
 profile:
   display: true
