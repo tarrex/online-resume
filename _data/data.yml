@@ -7,7 +7,7 @@ basic:
 
 contact:
   email: llion.preston@gmail.com
-  phone 🇩🇰: 31 57 18 87
+  phone: 31 57 18 87
   linkedin: https://www.linkedin.com/in/llion-preston/
   github: https://github.com/lgpreston75
 
@@ -25,27 +25,29 @@ experiences:
   display: true
   title: Experiences
   items:
-    - role: Backend Developer
-      time: 2018.03 - 2019.03
-      company: Second Company
+    - role: Data Scientist
+      time: 2021.05 - 2022.09
+      company: NØIE
       tag:
-      location: Beijing
+      location: København
       details: |
-        Experience in this company:
+        Roles/Responsibilities/Projects:
         + First
         + Second
 
         ...
 
-    - role: Backend Developer
-      time: 2017.03 - 2018.03
-      company: First Company
-      tag: Remote, part-time
-      location: Beijing
+    - role: Data Scientist
+      time: 2019.11 - 2021.05
+      company: Rapha
+      location: London
       details: |
         Experience in this company:
-        + First
-        + Second
+        + Developed Python program to optimise rapha.cc product listing page 
+        sort order to maximise revenue and minimise page views for out of stock products
+        + Developed Customer Lifetime Value and Churn models to inform CRM, Digital Marketing and Business Insights efforts. Deployed on AzureML with CI/CD
+        + Conducting ad-hoc deep dives for Leadership Team, examples include estimating lost revenue from out of stock products and analysing repeat purchasing patterns of newly acquired customers
+        + Developed and maintained PowerBI reports for range of internal departments including Merchandising, Customer Service, Retail Operations
 
         ...
 
@@ -111,7 +113,7 @@ education:
         ...
 
 certificates:
-  display: true
+  display: false
   title: Certificates
   items:
     - name: Course Foo
@@ -127,7 +129,7 @@ certificates:
       details: |
 
 publications:
-  display: true
+  display: false
   title: Publications
   intro: |
     This is all the books I wrote.
@@ -143,7 +145,7 @@ publications:
       link:
 
 patents:
-  display: true
+  display: false
   title: Patents
   details: |
     This is all my patents.
@@ -153,10 +155,12 @@ languages:
   display: true
   title: Languages
   items:
-    - idiom: Chinese
-      level: Native
     - idiom: English
-      level: Professional
+      level: Native
+    - idiom: Danish
+      level: Beginner (currently studying Module 1)
+    - idiom: Welsh
+      level: Intermediate
 
 interests:
   display: true
@@ -168,7 +172,7 @@ interests:
       link:
 
 evaluation:
-  display: true
+  display: false
   title: Self-evaluation
   details: |
     Here is my self evaluation.
