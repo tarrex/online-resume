@@ -8,18 +8,18 @@ basic:
 contact:
   email: llion.preston@gmail.com
   phone: 31 57 18 87
-  linkedin: https://www.linkedin.com/in/llion-preston/
-  github: https://github.com/lgpreston75
+  linkedin: www.linkedin.com/in/llion-preston
+  github: github.com/lgpreston75
 
 profile:
   display: true
   title: Profile
   details: |
-    It's your career profile, you can wirte markdown format text.
-    + First
-    + Second
-
-    ...
+    Pragmatic Data Scientist able to design and implement robust full-stack ML solutions 
+    using modern tools and approaches (Docker, Infrastructure as Code, AWS). Equally happy
+    performing data insights and analytics function, defining and monitoring KPIs,
+    mainting analytics infrastructure, prioritising and delivering requests for data driven
+    decision making.
 
 experiences:
   display: true
@@ -32,8 +32,10 @@ experiences:
       location: København
       details: |
         Roles/Responsibilities/Projects:
-        + First
-        + Second
+        + Contributed to monolithic. Maintenance of internal packages
+        + Developed "Skin Profile"  to provide low-dimensional
+        
+
 
     - role: Data Scientist
       time: 2019.11 - 2021.05
