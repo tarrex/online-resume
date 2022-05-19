@@ -41,10 +41,15 @@ experiences:
       location: London
       details: |
         Experience in this company:
-        + Developed Python program to optimise rapha.cc product grids to maximise revenue and minimise page views for out of stock products
-        + Developed Customer Lifetime Value and Churn models to inform CRM, Digital Marketing and Business Insights efforts. Deployed on AzureML with CI/CD
-        + Conducting ad-hoc deep dives for Leadership Team, examples include estimating lost revenue from out of stock products and analysing repeat purchasing patterns of newly acquired customers
-        + Developed and maintained PowerBI reports for range of internal departments including Merchandising, Customer Service, Retail Operations
+        + Developed Python program to optimise rapha.cc product grids to 
+        maximise revenue and minimise page views for out of stock products
+        + Developed Customer Lifetime Value and Churn models to inform CRM, 
+        Digital Marketing and Business Insights efforts. REST API deployed with AzureML
+        + Conducting ad-hoc deep dives for Leadership Team, examples 
+        include estimating lost revenue from out of stock products and 
+        analysing repeat purchasing patterns of newly acquired customers
+        + Developed and maintained PowerBI reports for range of internal
+         departments including Merchandising, Customer Service, Retail Operations
 
     - role: Commodity Analyst
       time: 2016.07 - 2019.11
