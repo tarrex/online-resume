@@ -98,7 +98,7 @@ skills:
     |-------|--------|---------|---------|
     |   Pandas |   Dask |   FastAPI |   Github |   Mode |   BigQuery    |
     |   sklearn |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
-    |   statsmodels |   R|   SQLAlachemy/SQLModel |   CircleCI |   PowerBI |    |
+    |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
     |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit (CDK) |   Airflow |    |
     |   LightGBM | | |   Azure | | |
 
