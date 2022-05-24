@@ -94,11 +94,11 @@ skills:
   display: true
   title: Skills
   details: |
-    |   Priority apples   |   Second priority   |   Third priority   |   Another Area   |
+    |   Data Science   |      |   Third priority   |   Another Area   |
     |-------|--------|---------|---------|
-    | ambrosia | gala | red delicious | red delicious |
-    | pink lady | jazz | macintosh | red delicious |
-    | honeycrisp | granny smith | fuji | red delicious |
+    |   Pandas |   gala |   red delicious |   red delicious |
+    |   sklearn |   jazz |   macintosh |   red delicious |
+    |   tensorflow/keras |   granny smith |   fuji |   red delicious |
 
 
 
