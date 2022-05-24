@@ -94,11 +94,12 @@ skills:
   display: true
   title: Skills
   details: |
-    |   Data Science   |      |   Backend   |   General Programming   |   Analytics & BI   |
+    |   Data Science   |      |   Backend   |   Other   |   Analytics & BI   |
     |-------|--------|---------|---------|
-    |   Pandas |   LightGBM |   FastAPI |   red delicious |   red delicious |
-    |   sklearn |   lightFM |   flask |   red delicious |   red delicious |
-    |   tensorflow/keras |   ORMs - SQLAlchemy/SQLModel |   fuji |   red delicious |   red delicious |
+    |   Pandas |   LightGBM |   FastAPI |   github |   Mode |
+    |   sklearn |   lightFM |   flask |   bitbucket (& pipelines) |   Weld |
+    |   statsmodels |   statsmodels |   SQLAlachemy/SQLModel |   CircleCI |   PowerBI |
+    |   Tensorflow/Keras |   spacy |   pytest |   red delicious |   Airflow |
 
 
 
