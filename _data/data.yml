@@ -94,12 +94,12 @@ skills:
   display: true
   title: Skills
   details: |
-    Here is my skills:
-    + Python Data Science Toolbox 
-    + Docker
-    + Second
+    | Priority apples | Second priority | Third priority |
+    |-------|--------|---------|
+    | ambrosia | gala | red delicious |
+    | pink lady | jazz | macintosh |
+    | honeycrisp | granny smith | fuji |
 
-    ...
 
 
 
