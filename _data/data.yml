@@ -96,10 +96,11 @@ skills:
   details: |
     |   Data Science   |      |   Backend   |   Other   |   Analytics & BI   |
     |-------|--------|---------|---------|
-    |   Pandas |   LightGBM |   FastAPI |   github |   Mode |
-    |   sklearn |   lightFM |   flask |   bitbucket (& pipelines) |   Weld |
-    |   statsmodels |   statsmodels |   SQLAlachemy/SQLModel |   CircleCI |   PowerBI |
-    |   Tensorflow/Keras |   spacy |   pytest |   red delicious |   Airflow |
+    |   Pandas |   LightGBM |   FastAPI |   Github |   Mode |
+    |   sklearn |   lightFM |   flask |   BitBucket (& Pipelines) |   Weld |
+    |   statsmodels | |   SQLAlachemy/SQLModel |   CircleCI |   PowerBI |
+    |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit (CDK) |   Airflow |
+    |   LightGBM | | |   Azure | |
 
 
 
