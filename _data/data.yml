@@ -36,7 +36,7 @@ experiences:
         + Developed "Skin Profile"  to provide low-dimensional
         + Desining and assisting in implentation of BigQuery Datawarehouse
         + Setting up Airflow DAGs and hosted Airflow service on AWS (MWAA)
-        
+
 
 
     - role: Data Scientist
@@ -101,13 +101,7 @@ skills:
 
     ...
 
-  levels:
-    - name: Skill A
-      level: 90
-    - name: Skill B
-      level: 80
-    - name: Skill C
-      level: 70
+
 
 education:
   display: true
