@@ -94,7 +94,7 @@ skills:
   display: true
   title: Skills
   details: |
-    |Priority apples| Second priority | Third priority | Another Area|
+    |   Priority apples   |   Second priority   |   Third priority   |   Another Area   |
     |-------|--------|---------|---------|
     | ambrosia | gala | red delicious | red delicious |
     | pink lady | jazz | macintosh | red delicious |
