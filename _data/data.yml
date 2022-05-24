@@ -17,7 +17,7 @@ profile:
   details: |
     Pragmatic Data Scientist able to design and implement robust full-stack ML solutions 
     using modern tools and approaches (Docker, Infrastructure as Code, AWS). Equally happy
-    performing data insights and analytics function, defining and monitoring KPIs,
+    performing data insights and analytics function; defining and monitoring KPIs,
     mainting analytics infrastructure, prioritising and delivering requests for data driven
     decision making.
 
@@ -29,11 +29,13 @@ experiences:
       time: 2021.05 - 2022.09
       company: NØIE
       tag:
-      location: København
+      location: Copenhagen
       details: |
         Roles/Responsibilities/Projects:
         + Contributed to monolithic. Maintenance of internal packages
         + Developed "Skin Profile"  to provide low-dimensional
+        + Desining and assisting in implentation of BigQuery Datawarehouse
+        + Setting up Airflow DAGs and hosted Airflow service on AWS (MWAA)
         
 
 
@@ -46,7 +48,8 @@ experiences:
         + Developed Python program to optimise rapha.cc product grids to 
         maximise revenue and minimise page views for out of stock products
         + Developed Customer Lifetime Value and Churn models to inform CRM, 
-        Digital Marketing and Business Insights efforts. REST API deployed with AzureML
+        Digital Marketing and Business Insights efforts. Inference REST API 
+        deployed with AzureML
         + Conducting ad-hoc deep dives for Leadership Team, examples 
         include estimating lost revenue from out of stock products and 
         analysing repeat purchasing patterns of newly acquired customers
