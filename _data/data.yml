@@ -94,11 +94,11 @@ skills:
   display: true
   title: Skills
   details: |
-    |   Data Science   |      |   Third priority   |   Another Area   |
+    |   Data Science   |      |   Backend   |   General Programming   |   Analytics & BI   |
     |-------|--------|---------|---------|
-    |   Pandas |   gala |   red delicious |   red delicious |
-    |   sklearn |   jazz |   macintosh |   red delicious |
-    |   tensorflow/keras |   granny smith |   fuji |   red delicious |
+    |   Pandas |   LightGBM |   FastAPI |   red delicious |   red delicious |
+    |   sklearn |   lightFM |   flask |   red delicious |   red delicious |
+    |   tensorflow/keras |   ORMs - SQLAlchemy/SQLModel |   fuji |   red delicious |   red delicious |
 
 
 
