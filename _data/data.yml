@@ -186,9 +186,13 @@ interests:
   display: true
   title: Interests
   items:
-    - item: Reading
+    - item: Running
+      link:
+    - item: Cycling
       link:
     - item: Cooking
+      link:
+    - item: Listing to Music
       link:
 
 evaluation:
