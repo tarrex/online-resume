@@ -105,8 +105,8 @@ skills:
   details: |
     |   Data Science   |      |   Backend   |   Other   |   Analytics & BI   |    |
     |-------|--------|---------|---------|
-    |   Pandas |   Dask |   FastAPI |   Github |   Mode |   BigQuery    |
-    |   SQL |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
+    |   Pandas |   Dask |   FastAPI |   Github/BitBucket |   Mode |   BigQuery    |
+    |   SQL |   matplotlib|   flask |   Docker |   Weld |    |
     |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
     |   Tensorflow/Keras | LightGBM |   pytest |   AWS CDK |   Airflow |    |
     |   sklearn | |   Chalice |   Azure | | |
