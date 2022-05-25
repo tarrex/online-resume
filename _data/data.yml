@@ -31,7 +31,6 @@ experiences:
       tag:
       location: Copenhagen
       details: |
-        Roles/Responsibilities/Projects:
         + Contributed to monolithic. Maintenance of internal packages
         + Developed "Skin Profile"  to provide low-dimensional
         + Desining and assisting in implentation of BigQuery Datawarehouse
