@@ -31,9 +31,22 @@ experiences:
       tag:
       location: Copenhagen
       details: |
-        + Contributed to monolithic. Maintenance of internal packages
-        + Developed "Skin Profile"  to provide low-dimensional
-        + Desining and assisting in implentation of BigQuery Datawarehouse
+        + DS
+        + Contribute to restructing of product assignment system. Played an active 
+        role in scoping workshops and development of Python APIs. Lead efforts 
+        to leverage AWS CDK for infrastructure provision and deployment.
+        + Contribute to product assignment system roadmap; developing proof of concept
+        models using LightFM, Keras
+        + Developed Bayesian A/B Testing dashboard. Assisted Growth Specialist in 
+        interpreting results and subsequent decision making
+        + Assisted in scoping and implementation of company's first Data Warehouse
+        + On going Data Warehouse development; ETL, creating intermediate tables/views,
+         reverse ETL to marketing platforms
+        + Worked with Product Manager and other internal stakeholders on requests 
+        for data and insights
+
+        + Analytics
+        + Maintenance and adding functionality to internal Python packages
         + Setting up Airflow DAGs and hosted Airflow service on AWS (MWAA)
 
 
@@ -99,7 +112,7 @@ skills:
     |   sklearn |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
     |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
     |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit (CDK) |   Airflow |    |
-    |   LightGBM | | |   Azure | | |
+    |   LightGBM | |   Chalice (Python Lambda Framework) |   Azure | | |
 
 
 
