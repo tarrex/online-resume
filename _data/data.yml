@@ -31,12 +31,11 @@ experiences:
       tag:
       location: Copenhagen
       details: |
-        + DS
         + Contribute to restructing of product assignment system. Played an active 
-        role in scoping workshops and development of Python APIs. Lead efforts 
-        to leverage AWS CDK for infrastructure provision and deployment.
+        role in scoping workshops and development of Python APIs and databases 
+        .Lead efforts to leverage AWS CDK for infrastructure provision and deployment.
         + Contribute to product assignment system roadmap; developing proof of concept
-        models using LightFM, Keras
+        models using LightFM, Keras/Tensorflow
         + Developed Bayesian A/B Testing dashboard. Assisted Growth Specialist in 
         interpreting results and subsequent decision making
         + Assisted in scoping and implementation of company's first Data Warehouse
@@ -44,10 +43,8 @@ experiences:
          reverse ETL to marketing platforms
         + Worked with Product Manager and other internal stakeholders on requests 
         for data and insights
-
-        + Analytics
-        + Maintenance and adding functionality to internal Python packages
-        + Setting up Airflow DAGs and hosted Airflow service on AWS (MWAA)
+        + Maintened and added functionality to internal Python packages
+        + Created Airflow DAGs and set up hosted Airflow service on AWS (MWAA)
 
 
 
@@ -109,10 +106,10 @@ skills:
     |   Data Science   |      |   Backend   |   Other   |   Analytics & BI   |    |
     |-------|--------|---------|---------|
     |   Pandas |   Dask |   FastAPI |   Github |   Mode |   BigQuery    |
-    |   sklearn |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
+    |   SQL |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
     |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
-    |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit |   Airflow |    |
-    |   LightGBM | |   Chalice |   Azure | | |
+    |   Tensorflow/Keras | LightGBM |   pytest |   AWS CDK |   Airflow |    |
+    |   sklearn | |   Chalice |   Azure | | |
 
 
 
