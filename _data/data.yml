@@ -121,7 +121,6 @@ education:
       major: Remote Sensing and Geographical Information Systems
       degree: MSc - Distinction
       details: |
-        Experience in this university:
         + Built knowledge on a range of modelling techniques related to satellite 
         and geospatial data, including: supervised and un-supervised image 
         classification, regression techniques, PCA
@@ -135,7 +134,6 @@ education:
       major: Geography
       degree: BSc - Second Class Honours, Division 1
       details: |
-        Experience in this university:
         + Developed an interest in scientific computing and statistics through 
         Remote Sensing, GIS and Core Research modules
 
