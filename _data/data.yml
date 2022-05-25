@@ -111,8 +111,8 @@ skills:
     |   Pandas |   Dask |   FastAPI |   Github |   Mode |   BigQuery    |
     |   sklearn |   matplotlib|   flask |   BitBucket (& Pipelines) |   Weld |    |
     |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
-    |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit (CDK) |   Airflow |    |
-    |   LightGBM | |   Chalice (Python Lambda Framework) |   Azure | | |
+    |   Tensorflow/Keras | |   pytest |   AWS Cloud Development Kit |   Airflow |    |
+    |   LightGBM | |   Chalice |   Azure | | |
 
 
 
