@@ -33,18 +33,18 @@ experiences:
       details: |
         + Contribute to restructing of product assignment system. Played an active 
         role in scoping workshops and development of Python APIs and databases 
-        .Lead efforts to leverage AWS CDK for infrastructure provision and deployment.
+        . Lead efforts to leverage AWS CDK for infrastructure provision and deployment.
         + Contribute to product assignment system roadmap; developing proof of concept
-        models using LightFM, Keras/Tensorflow
+        models using LightFM, Keras/Tensorflow.
         + Developed Bayesian A/B Testing dashboard. Assisted Growth Specialist in 
-        interpreting results and subsequent decision making
-        + Assisted in scoping and implementation of company's first Data Warehouse
+        interpreting results and subsequent decision making.
+        + Assisted in scoping and implementation of company's first Data Warehouse.
         + On going Data Warehouse development; ETL, creating intermediate tables/views,
-         reverse ETL to marketing platforms
+         reverse ETL to marketing platforms.
         + Worked with Product Manager and other internal stakeholders on requests 
-        for data and insights
-        + Maintened and added functionality to internal Python packages
-        + Created Airflow DAGs and set up hosted Airflow service on AWS (MWAA)
+        for data and insights.
+        + Maintained and added functionality to internal Python packages.
+        + Created Airflow DAGs and set up hosted Airflow service on AWS (MWAA).
 
 
 
@@ -53,34 +53,32 @@ experiences:
       company: Rapha
       location: London
       details: |
-        Experience in this company:
         + Developed Python program to optimise rapha.cc product grids to 
-        maximise revenue and minimise page views for out of stock products
+        maximise revenue and minimise page views for out of stock products.
         + Developed Customer Lifetime Value and Churn models to inform CRM, 
         Digital Marketing and Business Insights efforts. Inference REST API 
-        deployed with AzureML
+        deployed with AzureML.
         + Conducting ad-hoc deep dives for Leadership Team, examples 
         include estimating lost revenue from out of stock products and 
-        analysing repeat purchasing patterns of newly acquired customers
+        analysing repeat purchasing patterns of newly acquired customers.
         + Developed and maintained PowerBI reports for range of internal
-         departments including Merchandising, Customer Service, Retail Operations
+         departments including Merchandising, Customer Service, Retail Operations.
 
     - role: Commodity Analyst
       time: 2016.07 - 2019.11
       company: Armarjaro Asset Management & ECOM Agrotrade
       location: London
       details: |
-        Experience in this company:
-        + Long-term research project with aim of predicting crop (Corn, Soybeans, 
-        Cotton) production estimates from meteorological data and satellite imagery
+        + Lead long-term research project with aim of predicting crop (Corn, Soybeans, 
+        Cotton) production estimates from meteorological data and satellite imagery.
         + Developed necessary Python tooling for accessing, processing, storing 
         and visualising meteorological data from a range of sources, including 
         near real-time weather stations, ECMWF forecasts and satellite-derived 
-        precipitation estimates
+        precipitation estimates.
         + Developed in-house database of tradeflow statistics, including schema 
-        design and Python ETL process and visualisation layer
+        design and Python ETL process and visualisation layer.
         + Mentored Junior Data Scientist, providing assistance with 
-        their day-to-day duties and developing their technical skill set
+        their day-to-day duties and developing their technical skills.
 
 projects:
   display: false
@@ -103,12 +101,12 @@ skills:
   display: true
   title: Skills
   details: |
-    |   Data Science   |      |   Backend   |   Other   |   Analytics & BI   |    |
+    |   Data Science   |      |   Backend   |   Programming   |   Analytics & BI   |    |
     |-------|--------|---------|---------|
     |   Pandas |   Dask |   FastAPI |   Github/BitBucket |   Mode |   BigQuery    |
     |   SQL |   matplotlib|   flask |   Docker |   Weld |    |
-    |   statsmodels |   R|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
-    |   Tensorflow/Keras | LightGBM |   pytest |   AWS CDK |   Airflow |    |
+    |   statsmodels |   LightGBM|   SQLAlchemy/SQLModel |   CircleCI |   PowerBI |    |
+    |   Tensorflow/Keras |   R |   pytest |   AWS CDK |   Airflow |    |
     |   sklearn | |   Chalice |   Azure | | |
 
 
