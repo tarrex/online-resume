@@ -74,7 +74,7 @@ experiences:
         their day-to-day duties and developing their technical skill set
 
 projects:
-  display: true
+  display: false
   title: Projects
   intro: |
     This is all the projects I'm involved in.
