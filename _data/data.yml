@@ -1,16 +1,16 @@
 basic:
-  name: Foo Bar
-  title: Backend Developer
+  name: Sergey Golovin
+  title: Senior Automation QA Engineer
   avatar:
     display: true
     path: profile.png
 
 contact:
-  email: me@example.com
-  phone: +86-111-2222-3333
+  email: sk13man@gmail.com
+  phone: +380639508000
   wechat:
   whatsapp:
-  telegram:
+  telegram: @sk13man
   website: example.com
   medium:
   linkedin:
@@ -26,10 +26,10 @@ contact:
 
 profile:
   display: true
-  title: Profile
+  title: AQA
   details: |
     It's your career profile, you can wirte markdown format text.
-    + First
+    + TEST one
     + Second
 
     ...
