@@ -116,7 +116,7 @@ education:
   display: true
   title: Education
   items:
-    - university: Aberystywth University
+    - university: Aberystwyth University
       time: 2015 - 2016
       major: Remote Sensing and Geographical Information Systems
       degree: MSc - Distinction
@@ -129,7 +129,7 @@ education:
         + Thesis: Forest Biomass estimation from UAV captured Structure from
          Motion (SfM) Surface Models
 
-    - university: Aberystywth University
+    - university: Aberystwyth University
       time: 2012 - 2015
       major: Geography
       degree: BSc - Second Class Honours, Division 1
