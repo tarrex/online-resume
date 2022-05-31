@@ -32,8 +32,8 @@ experiences:
       location: Copenhagen
       details: |
         + Contribute to restructuring of product assignment system. Played an active 
-        role in scoping workshops and development of Python APIs and databases 
-        . Lead efforts to leverage AWS CDK for infrastructure provision and deployment.
+        role in scoping workshops and development of Python APIs and databases.
+        Lead efforts to leverage AWS CDK for infrastructure provision and deployment.
         + Contribute to product assignment system roadmap; developing proof of concept
         models using LightFM, Keras/Tensorflow.
         + Developed Bayesian A/B Testing dashboard. Assisted Growth Specialist in 
