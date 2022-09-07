@@ -6,19 +6,20 @@ basic:
     path: profile.png
 
 contact:
+  location:
   email: me@example.com
   phone: +86-111-2222-3333
+  website: example.com
   wechat:
   whatsapp:
   telegram:
-  website: example.com
-  medium:
-  linkedin:
-  googlescholar:
-  researchgate:
   github: github
   gitlab:
   bitbucket:
+  googlescholar:
+  researchgate:
+  linkedin:
+  medium:
   twitter: twitter
   stackoverflow:
   quora:

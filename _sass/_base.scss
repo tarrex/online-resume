@@ -17,7 +17,7 @@ a {
     &,
     &:visited,
     &:hover {
-        color: darken($theme-color, 10%);
+        color: $text-color;
         text-decoration: none;
     }
 }
