@@ -1,26 +1,26 @@
 basic:
-  name: Foo Bar
-  title: Backend Developer
+  name: Aleksandr Cherkashin
+  title: DevOps engineer
   avatar:
-    display: true
+    display: false
     path: profile.png
 
 contact:
   location:
-  email: me@example.com
-  phone: +86-111-2222-3333
-  website: example.com
+  email: as@cherkashin.org
+  phone: +7 (925) 112-3868
+  website: 
   wechat:
-  whatsapp:
-  telegram:
-  github: github
+  whatsapp: +79251123868
+  telegram: cherdag
+  github: cherdag
   gitlab:
   bitbucket:
   googlescholar:
   researchgate:
-  linkedin:
+  linkedin: aleks-cherkashin
   medium:
-  twitter: twitter
+  twitter:
   stackoverflow:
   quora:
   goodreads:
@@ -29,119 +29,176 @@ profile:
   display: true
   title: Profile
   details: |
-    It's your career profile, you can wirte markdown format text.
-    + First
-    + Second
+    I am an experienced network engineer and system administrator with 10+ years of IT background. I am currently completing an advanced long-term training course for a DevOps engineer. I am going to develop my career in the DevOps direction.
 
-    ...
+    I have extensive experience in administering both Linux and Windows servers. I am also well versed in networks and network equipment (VPN, routing, OSPF, TCP / IP), I have worked and have experience in implementing version control systems and CI / CD (Gitea, GitLab, Jenkins), containerization and orchestration systems (Docker, Docker- compose, Kubernetes, ArgoCD), as well as monitoring and alerting systems (Zabbix, Nagios, Cacti, Grafana, Prometheus).
+
+    My advanced IT experience is enriched by my economics education and high communication skills, which helps me to understand the business processes and needs and create and implement optimized solutions for the business, the team, and customers. I managed to cope with stressful situations. Usually, I don't tend to give up before difficulties. I try to find learnings from failures to improve the processes and my expertise. I am a fan of cohesive teamwork. People could rely on me.
+
+    I am a curious explorer and fast learner, trying to develop my hard and soft skills. By the way, I like motorcycling, traveling, and scale modeling.
+
 
 experiences:
   display: true
-  title: Experiences
+  title: Work Experience
   items:
-    - role: Backend Developer
-      time: 2018.03 - 2019.03
-      company: Second Company
+    - role: Senior Network Engineer / Deputy Head of Infrastructure Department
+      time: 2013.04 - current
+      company: Metallservis
       tag:
-      location: Beijing
+      location: Moscow
       details: |
-        Experience in this company:
-        + First
-        + Second
+            **Technologies used:**
+    
+            - Linux, OpenVPN, Zabbix, Nagios, HP IMC, LibreNMS, PostgreSQL, Nginx, Exim, Ansible, Docker, Asterisk, Windows Server, HPE/Aruba, Cambium
+            
+            **Projects:**
+            
+            - Standardization of the software used on internal routing servers and automation of their deployment (OpenVPN, OSPF)
+            - Organization of remote access for employees (Linux, MS Remote Desktop)
+            - Deployment of an integrated monitoring system for network equipment (Zabbix + LibreNMS)
+            - Infrastructure planning and development
+            
+            **Key results:**
+            
+            - Completely redesigned OS distribution and system software for use as branch office internal routing servers (migration to Ubuntu. Key software: OpenVPN, Quagga (OSPF)). OS installation automation was developed to speed up the deployment of new servers using Cloud-init and Ansible, which simplified the work of field engineers.
+            - Implemented a unified monitoring system for network equipment (Zabbix + Telegram), which reduced the 
+            - As a result of organizing interaction with various divisions of the company, a system for registering corporate SIM cards was developed and implemented, which made it possible to establish registration for the equipment used and avoid blockings when Federal Law 533 comes into force (more than 400 SIM cards for various purposes throughout the country)
+            - As a Senior Network Engineer the following results have been archieved:
+                - Based on Python scripts, automation of managing remote access users was written, which reduced the time for executing requests for access to 2-3 minutes per request (regardless of the number of users)
+                - Successfully implemented the HP IMC network equipment management system, which made it possible to automate backup, monitoring, and network management (more than 250 units of active network equipment)
+                - Designed and successfully implemented seamless WiFi networks with a single control center in the office and warehouses of the company (more than 50,000 sq.m.) based on Cambium + cnMaestro on-premises equipment
+                - Developed network equipment standards and regulations (HPE/Aruba Networks)
+                - Developed standards for equipment used for video surveillance and access control systems
 
-        ...
 
-    - role: Backend Developer
-      time: 2017.03 - 2018.03
-      company: First Company
-      tag: Remote, part-time
-      location: Beijing
+    - role: Senior System Administrator
+      time: 2009.01 - 2012.08
+      company: StarLines
+      tag: 
+      location: Moscow
       details: |
-        Experience in this company:
-        + First
-        + Second
+        **Technologies used:**
+        
+        - Linux, FreeBSD, Asterisk, Cisco IOS, Cacti, Zabbix
+        
+        **Projects:**
+        
+        - Migrating the infrastructure of the company's clients to the Unix platform (FreeBSD)
+        - Implementation of IP telephony based on Asterisk
+        - Implementation of an internal service for working with user requests
 
-        ...
+        **Key results:**
+        
+        - A system of thin clients has been introduced to replace full-fledged PCs (Diskless stations + FreeBSD TFTP server + MS Windows Server Terminal Services). Including the functioning of EDS and peripheral equipment.
+        - Cacti monitoring system for networking equipment was implemented for the "Russia" Special Flight Squad.
+
 
 projects:
   display: true
   title: Projects
   intro: |
-    This is all the projects I'm involved in.
+    These are my personal projects
 
   items:
-    - name: Foo
-      link: https://www.google.com
+    - name: Yandex.Practicum DevOps learning project (online-shop)
+      link: 
       details: |
-        Project Foo's detail, you can write markdown format text.
-
-    - name: Bar
-      link:
-      details: |
-        Project Bar's detail, you can write markdown format text.
-
+        **Technologies used:**
+        
+        - Linux, GitLab CI/CD, Jenkins, Terraform, Ansible, Nginx, Vault, PostgreSQL, MongoDB, Docker, Docker-compose, Kubernetes, Helm, ArgoCD, Yandex Cloud, Grafana, Prometheus, Loki
+        
+        **Project description:**
+        
+        - developing a deployment strategy and ensuring scalability and fault tolerance for an online store.
+        
+        **Tasks:**
+        
+        - Organization of CI / CD processes in the development and deployment of the application (GitLab CI)
+        - Providing fault tolerance when updating and deploying the application (Kubernetes, ArgoCD)
+        - Ensuring scalability depending on current load (vertical and horizontal scaling using Kubernetes: horizontal/vertical pod autoscaler)
+        - Automation of deployment and application deployment processes (Gitlab CI + Nexus + ArgoCD)
+        - Organization and configuration of the application and infrastructure monitoring (Loki, Prometheus, Grafana)
+        
+        **Key results:**
+        
+        - The original version of the online store application was redesigned to use microservice architecture
+        - Developed a strategy for automating application deployment using containerization and deployment in a Kubernetes cloud cluster
+        - Developed and implemented an application update strategy (blue-green deployment), which ensured continuity of work when updating the version of application components
+  
 skills:
   display: true
   title: Skills
   details: |
-    Here is my skills:
-    + First
-    + Second
+    Hard Skills
 
-    ...
+    - Linux (Ubuntu, CentOS)
+    - LAN (TCP/IP, routing, VPN)
+    - Docker/docker-compose
+    - Kubernetes
+    - Helm
+    - ArgoCD
+    - Nexus
+    - PostgreSQL + Flyway
+    - MongoDB
+    - Python
+    - Gitlab CI/CD
+    - Jenkins
+    - Ansible
+    - Terraform
+    - Nginx
+    - Vault
+    - Yandex.Cloud
+    - DigitalOcean
+    - Grafana/Prometheus
+
+    ## Soft Skills
+
+    - Sociability
+    - Teamwork
+    - Focus on results
+    - Analytical thinking
+    - Learnability
+    - Critical thinking
 
   levels:
-    - name: Skill A
-      level: 90
-    - name: Skill B
-      level: 80
-    - name: Skill C
-      level: 70
+    - name: Linux Administration
+      level: 85
+    - name: Docker
+      level: 55
+    - name: Kubernetes
+      level: 50
+    - name: Terraform
+      level: 40
 
 education:
   display: true
   title: Education
   items:
-    - university: Example University
-      time: 2015 - 2018
-      major: Machine Learning
+    - university: Moscow Engineering Physics Institute (MEPhI)
+      time: 2001 - 2005
+      major: Economics and analytics
       degree: Master
-      details: |
-        Experience in this university:
-        + First
-        + Second
-
-        ...
-
-    - university: Example University
-      time: 2011 - 2015
-      major: Computer Science
-      degree: Bachelor
-      details: |
-        Experience in this university:
-        + First
-        + Second
-
-        ...
-
+      details:
+      
 certificates:
   display: true
   title: Certificates
   items:
-    - name: Course Foo
-      authority: Coursera
-      time: 2020
-      link:
+    - name: DevOps professional
+      authority: Yandex.Practicum on-line school
+      time: 2022
+      link: 
       details: |
-        It's my Course Foo certificate by coursera.
-    - name: Course Bar
-      authority: Coursera
-      time: 2020
-      link: https://www.google.com
+        Course for experienced System Administrators who want to dive deep into the DevOps culture, practics and tools
+    - name: 100 Days of code (Python programming bootcamp)
+      authority: Udemy
+      time: 2021
+      link: 
       details: |
 
 publications:
-  display: true
+  display: false
   title: Publications
   intro: |
     This is all the books I wrote.
@@ -157,7 +214,7 @@ publications:
       link:
 
 patents:
-  display: true
+  display: false
   title: Patents
   details: |
     This is all my patents.
@@ -167,13 +224,13 @@ languages:
   display: true
   title: Languages
   items:
-    - idiom: Chinese
-      level: Native
     - idiom: English
       level: Professional
+    - idiom: Russian
+      level: Native
 
 interests:
-  display: true
+  display: false
   title: Interests
   items:
     - item: Reading
@@ -182,7 +239,7 @@ interests:
       link:
 
 evaluation:
-  display: true
+  display: false
   title: Self-evaluation
   details: |
     Here is my self evaluation.
