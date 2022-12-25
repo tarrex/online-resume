@@ -1,15 +1,15 @@
 basic:
-  name: Dr. Garab József
-  title: Egyetemi Docens
+  name: Garab József
+  title: Egyetemi Oktató
   avatar:
     display: true
     path: profile.png
 
 contact:
   location:
-  email: me@example.com
-  phone: +86-111-2222-3333
-  website: example.com
+  email: garabj@hotmail.com
+  phone:
+  website:
   wechat:
   whatsapp:
   telegram:
@@ -18,20 +18,19 @@ contact:
   bitbucket:
   googlescholar:
   researchgate:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/jozsefgarab/
   medium:
-  twitter: twitter
+  twitter:
   stackoverflow:
   quora:
   goodreads:
 
 profile:
   display: true
-  title: Profile
+  title: Profil
   details: |
-    It's your career profile, you can wirte markdown format text.
-    + First
-    + Second
+    Közel tíz év autóipari tapasztalat után úgy döntöttem, hogy az iparban szerzett tapasztalatomat át szeretném adni a fiatalabb korosztálynak, ezért csatlakoztam a Soproni Egyetem Informatikai és Matematikai Intézetéhez oktatóként. Elsősorban a vállalatirányítási rendszerekhez és a minőségbiztosításhoz kapcsolódó tárgyakat oktatom ipari partnerek bevonásával gazdaságinformatikus, közgazdász és mérnökhallgatóknak magyar és angol nyelven. 
+    Az akadémiai és az ipari tapasztalataim elsősorban a következő területekre terjednek ki: minőségbiztosítás, termelés, logisztika. műszaki mechanika, anyagtudomány, projektmenedzsment. A munkaköreimből adódóan van vezetői tapasztalatom kis létszámú csoport vezetésében.
 
     ...
 
@@ -165,12 +164,12 @@ patents:
 
 languages:
   display: true
-  title: Languages
+  title: Nyelvismeret
   items:
-    - idiom: Chinese
-      level: Native
-    - idiom: English
-      level: Professional
+    - idiom: Angol
+      level: Felsőfok (C1)
+    - idiom: Német
+      level: Középfok (B2)
 
 interests:
   display: true
