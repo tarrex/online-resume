@@ -1,6 +1,6 @@
 basic:
   name: Dr. Garab József
-  title: Backend Developer
+  title: Egyetemi Docens
   avatar:
     display: true
     path: profile.png
@@ -13,7 +13,7 @@ contact:
   wechat:
   whatsapp:
   telegram:
-  github: github
+  github: https://github.com/jgarab
   gitlab:
   bitbucket:
   googlescholar:
