@@ -36,25 +36,26 @@ profile:
 
 experiences:
   display: true
-  title: Experiences
+  title: Szakmai Tapasztalat
   items:
-    - role: Backend Developer
-      time: 2018.03 - 2019.03
-      company: Second Company
+    - role: Egyetemi docens
+      time: 2020.09 - jelenleg
+      company: Soproni Egyetem, Informatikai és Matematikai Intézet
       tag:
-      location: Beijing
+      location: Sopron
       details: |
         Experience in this company:
-        + First
-        + Second
+        + Oktatás (több tantárgy, gazdaságinformatikusoknak, mérnökhallgatóknak, közgazdászhallgatóknak)
+        + Kutatás (interdiszciplináris kutatás: faipar és operációkutatás)
+        + Egyéb (ipari kapcsolattartás a Sopron környéki kis és nagyvállalatokkal)
 
         ...
 
-    - role: Backend Developer
-      time: 2017.03 - 2018.03
-      company: First Company
+    - role: Minőségmenedzsment csoportvezető
+      time: 2020.10 - 2022-09-
+      company: Soproni Egyetem, Rektori Hivatal
       tag: Remote, part-time
-      location: Beijing
+      location: Sopron
       details: |
         Experience in this company:
         + First
