@@ -1,6 +1,6 @@
 basic:
-  name: Garab József
-  title: Egyetemi Oktató
+  name: Dr. Garab József
+  title: Egyetemi oktató
   avatar:
     display: true
     path: profile.png
@@ -44,7 +44,7 @@ experiences:
       tag:
       location: Sopron
       details: |
-        Experience in this company:
+        Főbb feladatok:
         + Oktatás (több tantárgy, gazdaságinformatikusoknak, mérnökhallgatóknak, közgazdászhallgatóknak)
         + Kutatás (interdiszciplináris kutatás: faipar és operációkutatás)
         + Egyéb (ipari kapcsolattartás a Sopron környéki kis és nagyvállalatokkal)
@@ -57,9 +57,10 @@ experiences:
       tag: Remote, part-time
       location: Sopron
       details: |
-        Experience in this company:
-        + First
-        + Second
+        Főbb feladatok:
+        + Teljesítményértékelő Rendszer kidolgozásának koordinálása
+        + Teljesítményértékelő Rendszerhez tartozó webalkalmazás támogatása
+        + Oktatás minőségbiztosítása (minőségügyi szabályzat módosítása, kimutatások készítése)
 
         ...
 
@@ -100,44 +101,41 @@ skills:
 
 education:
   display: true
-  title: Education
+  title: Végzettségek
   items:
-    - university: Example University
-      time: 2015 - 2018
-      major: Machine Learning
+    - university: Soproni Egyetem
+      time: 2019 - 2020
+      major: Mérnöktanár
       degree: Master
       details: |
-        Experience in this university:
-        + First
-        + Second
+        Megszerzett főbb kompetenciák:
+        + Pedagógia
+        + Szakmódszertan
+        + Pszichológia
 
-        ...
-
-    - university: Example University
-      time: 2011 - 2015
-      major: Computer Science
-      degree: Bachelor
+    - university: Soproni Egyetem
+      time: 2008 - 2012
+      major: Anyagtudományok és Technológiák
+      degree: Ph.D.
       details: |
-        Experience in this university:
-        + First
-        + Second
-
-        ...
+        Megszerzett főbb kompetenciák:
+        + Kutatásmódszertan
+        + Kísérleti mechanika
 
 certificates:
   display: true
-  title: Certificates
+  title: Certifikátok, Tanúsítványok
   items:
-    - name: Course Foo
-      authority: Coursera
-      time: 2020
+    - name: Certified Tester Foundation Level (CTFL)
+      authority: ISTQB
+      time: 2022
       link:
       details: |
-        It's my Course Foo certificate by coursera.
-    - name: Course Bar
-      authority: Coursera
-      time: 2020
-      link: https://www.google.com
+        
+    - name: ISO TS 16949 Internal Auditor
+      authority: Vincotte
+      time: 2014
+      link: 
       details: |
 
 publications:
@@ -157,7 +155,7 @@ publications:
       link:
 
 patents:
-  display: true
+  display: false
   title: Patents
   details: |
     This is all my patents.
