@@ -65,7 +65,7 @@ experiences:
         ...
 
 projects:
-  display: true
+  display: false
   title: Projects
   intro: |
     This is all the projects I'm involved in.
@@ -82,7 +82,7 @@ projects:
         Project Bar's detail, you can write markdown format text.
 
 skills:
-  display: true
+  display: false
   title: Skills
   details: |
     Here is my skills:
@@ -124,7 +124,7 @@ education:
 
 certificates:
   display: true
-  title: Certifikátok, Tanúsítványok
+  title: Tanúsítványok
   items:
     - name: Certified Tester Foundation Level (CTFL)
       authority: ISTQB
@@ -139,7 +139,7 @@ certificates:
       details: |
 
 publications:
-  display: true
+  display: false
   title: Publications
   intro: |
     This is all the books I wrote.
@@ -172,15 +172,14 @@ languages:
 
 interests:
   display: true
-  title: Interests
+  title: Hobbik
   items:
-    - item: Reading
-      link:
-    - item: Cooking
-      link:
+    - item: Kertészkedés a családi gyömölcsösben.
+    - item: Futás. Amatőr szinten futok az egyetemi futükörben.
+      link:http://www.duhajok.hu/singlepage.html#futokalandorok-bemutatkozas
 
 evaluation:
-  display: true
+  display: false
   title: Self-evaluation
   details: |
     Here is my self evaluation.
