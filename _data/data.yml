@@ -52,17 +52,27 @@ experiences:
         ...
 
     - role: Minőségmenedzsment csoportvezető
-      time: 2020.10 - 2022-09-
+      time: 2020.10 - 2022.9
       company: Soproni Egyetem, Rektori Hivatal
-      tag: Remote, part-time
+      tag:
       location: Sopron
       details: |
         Főbb feladatok:
         + Teljesítményértékelő Rendszer kidolgozásának koordinálása
-        + Teljesítményértékelő Rendszerhez tartozó webalkalmazás támogatása
+        + Teljesítményértékelő Rendszerhez tartozó webalkalmazás támogatása (pl.: alapszíntű szoftvertesztelés)
         + Oktatás minőségbiztosítása (minőségügyi szabályzat módosítása, kimutatások készítése)
-
-        ...
+        
+    - role: Szenior Minőségbiztosítási mérnök
+      time: 2015.09 - 2020.08
+      company: Autoliv Kft.
+      tag: 
+      location: Sopronkövesd
+      details: |
+        Főbb feladatok:
+        + Tesztmérnöki/logisztika/projektmenedzseri/csoportvezetői feladatokat tartalmazó munkakör
+        + Crash tesztek (sled teszt) lebonyolítása
+        + Technikusok és a logisztikus munkájának a koordinálása
+        + Problémamegoldás
 
 projects:
   display: false
