@@ -62,7 +62,7 @@ experiences:
         + Teljesítményértékelő Rendszerhez tartozó webalkalmazás támogatása (pl.: alapszíntű szoftvertesztelés)
         + Oktatás minőségbiztosítása (minőségügyi szabályzat módosítása, kimutatások készítése)
         
-    - role: Szenior Minőségbiztosítási mérnök
+    - role: Szenior minőségbiztosítási mérnök
       time: 2015.09 - 2020.08
       company: Autoliv Kft.
       tag: 
@@ -73,7 +73,29 @@ experiences:
         + Crash tesztek (sled teszt) lebonyolítása
         + Technikusok és a logisztikus munkájának a koordinálása
         + Problémamegoldás
-
+    
+    - role: Vevői minőségbiztosítási mérnök
+      time: 2013.09 - 2020.08
+      company: Autoliv Kft.
+      tag: 
+      location: Sopronkövesd
+      details: |
+        Főbb feladatok:
+        + Reklamációkezelés
+        + Válogatások koordinálása
+        + Vevői auditok koordinálása
+        
+     - role: Vevői minőségbiztosítási mérnök
+      time: 2011.05 - 2013.08
+      company: Autoliv Kft.
+      tag: 
+      location: Sopronkövesd
+      details: |
+        Főbb feladatok:
+        + Problémamegoldás 8D szerint
+        + Termelés minőségbiztosítása
+        + Belső auditokon való részvétel
+        
 projects:
   display: false
   title: Projects
