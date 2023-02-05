@@ -17,19 +17,19 @@
 
 {% if site.analytics.google %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ site.google_analytics }}');
+    gtag('config', '{{ site.analytics.google }}');
 </script>
 {% endif %}
 
 {% if site.analytics.cloudflare %}
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "{{ site.cloudflare_analytics }}"}'></script>
+    data-cf-beacon='{"token": "{{ site.analytics.cloudflare }}"}'></script>
 <!-- End Cloudflare Web Analytics -->
 {% endif %}
