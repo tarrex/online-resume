@@ -2,7 +2,7 @@
 <section class="basic">
   {%- if basic.avatar.show and basic.avatar.path %}
   <div class="avatar">
-    <img src="{{ basic.avatar.path }}" alt="avatar">
+    <img src="{{ basic.avatar.path | relative_url }}" alt="avatar">
   </div>
   {%- endif %}
 
