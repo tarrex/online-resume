@@ -32,6 +32,8 @@
 {%- endif %}
 
 {%- if site.analytics.umami.script and site.analytics.umami.website_id %}
+<!-- Umami Web Analytics -->
 <script async defer src="{{ site.analytics.umami.script }}" 
   data-website-id="{{ site.analytics.umami.website_id }}"></script>
+<!-- End Umami Web Analytics -->
 {%- endif %}
