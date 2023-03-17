@@ -16,9 +16,9 @@ analytics:
   google:                   # google analytics
   cloudflare:               # cloudflare analytics
   umami:
-    script:                 # umami analytics script src
-    website_id:             # umami analytics website id
-    domains:                # umami analytics domains
+    script: https://u.tarrex.com/u.js                # umami analytics script src (Replace it with your own config)
+    website_id: af636e2d-31ae-46f1-9071-82b1745143a9 # umami analytics website id (Replace it with your own config)
+    domains: tarrex.github.io,tarrex.com             # umami analytics domains (Replace it with your own config)
 
 # Style
 text_direction: ltr         # text direction, 'ltr' or 'rtl'
