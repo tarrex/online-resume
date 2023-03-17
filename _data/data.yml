@@ -139,7 +139,7 @@ project:
         + Second
 
     - name: OSS project
-      link: '#'
+      link:
       tags: committer
       date:
       description: |
@@ -218,7 +218,7 @@ education:
         + Second
 
     - institution: Example University
-      link: '#'
+      link:
       date: 2011 - 2015
       major: Computer Science
       degree: Bachelor
@@ -241,12 +241,18 @@ certificate:
     The certificate section of your resume should be tailored to the specific job you are applying for, and should only include certifications that are relevant to the position. By highlighting your certifications, you can demonstrate your commitment to professional development and your expertise in a particular area.
 
   items:
-    - name: Example Certificate
+    - name: Example Certificate One
       issuer: by Example
       date: 2020
       link: '#'
       description: |
-        It's my Example Certificate by Example.
+        It's my Example Certificate One by Example.
+    - name: Example Certificate Two
+      issuer: by Example
+      date: 2020
+      link:
+      description: |
+        It's my Example Certificate Two by Example.
 
 publication:
   show: true
@@ -269,7 +275,7 @@ publication:
     - title: The Art of Example Publication
       authors: Foo Bar
       conference: Foobar, 2019
-      link: '#'
+      link:
 
 award:
   show: true
@@ -283,12 +289,18 @@ award:
     By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
 
   items:
-    - name: Example Awared
+    - name: Example Awared One
       awarder: by Example
       date: 2022
       link: '#'
       description: |
-        It's my Example Awared by Example.
+        It's my Example Awared One by Example.
+    - name: Example Awared Two
+      awarder: by Example
+      date: 2022
+      link:
+      description: |
+        It's my Example Awared Two by Example.
 
 patent:
   show: true
