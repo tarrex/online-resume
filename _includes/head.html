@@ -31,9 +31,11 @@
 <!-- End Cloudflare Web Analytics -->
 {%- endif %}
 
-{%- if site.analytics.umami.script and site.analytics.umami.website_id %}
+{% assign umami = site.analytics.umami %}
+{%- if umami.script and umami.website_id %}
 <!-- Umami Web Analytics -->
-<script async defer src="{{ site.analytics.umami.script }}" 
-  data-website-id="{{ site.analytics.umami.website_id }}"></script>
+<script async defer src="{{ umami.script }}" 
+  data-website-id="{{ umami.website_id }}"
+  {% if umami.domains %} data-domains="{{ umami.domains }}" {% endif %}></script>
 <!-- End Umami Web Analytics -->
 {%- endif %}
