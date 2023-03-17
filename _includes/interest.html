@@ -1,0 +1,31 @@
+{%- assign interest = data.interest %}
+{%- if interest and interest.show %}
+<section class="interest" style="order: {{ interest.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-hand-spock"></i>
+    <h2>{{ interest.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if interest.description.size > 0 %}
+    <div class="description markdown">
+      {{ interest.description | markdownify }}
+    </div>
+    {%- endif %}
+
+    {%- if interest.items %}
+    <div class="items">
+      {%- for item in interest.items %}
+      <div class="item">
+        {%- if item.link %}
+        <a href="{{ item.link }}" target="_blank">{{ item.item }}</a>
+        {%- else %}
+        <span>{{ item.item }}</span>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

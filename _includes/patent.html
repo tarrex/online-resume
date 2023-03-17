@@ -1,0 +1,17 @@
+{%- assign patent = data.patent %}
+{%- if patent and patent.show %}
+<section class="patent" style="order: {{ patent.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-microscope"></i>
+    <h2>{{ patent.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if patent.description.size > 0 %}
+    <div class="description markdown">
+      {{ patent.description | markdownify }}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

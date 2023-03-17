@@ -1,34 +1,58 @@
-{% assign education = data.education %}
-{% if education and education.display %}
-<section class="educations">
-    <div class="section-title">
-        {{ education.title }}
+{%- assign education = data.education %}
+{%- if education and education.show %}
+<section class="education" style="order: {{ education.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-user-graduate"></i>
+    <h2>{{ education.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if education.description.size > 0 %}
+    <div class="description markdown">
+      {{ education.description | markdownify }}
     </div>
+    {%- endif %}
 
-    <div class="section-content">
-        {% for graduation in education.items %}
-        <div class="item">
+    {%- if education.items %}
+    <div class="items">
+      {%- for item in education.items %}
+      <div class="item">
 
-            <div class="upper-row">
-                <div class="university">{{ graduation.university }}</div>
-                <div class="time">{{ graduation.time }}</div>
-            </div>
-
-            <div class="upper-row">
-                <div class="major">{{ graduation.major }}</div>
-                <div class="degree"><i class="fa-solid fa-graduation-cap"></i> {{ graduation.degree }}</div>
-            </div>
-
-            {% if graduation.details %}
-            <div class="details">
-                <div class="markdown">
-                    {{ graduation.details | markdownify }}
-                </div>
-            </div>
-            {% endif %}
-
+        {%- if item.institution %}
+        <div class="row">
+          <div class="institution">
+            {%- if item.link %}
+            <a href="{{ item.link }}">{{ item.institution }}</a>
+            {%- else %}
+            <span>{{ item.institution }}</span>
+            {%- endif %}
+          </div>
+          <div class="date">
+            <span>{{ item.date }}</span>
+          </div>
         </div>
-        {% endfor %}
+
+        <div class="row">
+          <div class="major">
+            <span>{{ item.major }}</span>
+          </div>
+          <div class="degree">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>{{ item.degree }}</span>
+          </div>
+        </div>
+
+        {%- if item.description.size > 0 %}
+        <div class="description markdown">
+          {{ item.description | markdownify }}
+        </div>
+        {%- endif %}
+        {%- endif %}
+
+      </div>
+      {%- endfor %}
     </div>
+    {%- endif %}
+  </div>
 </section>
-{% endif %}
+{%- endif %}

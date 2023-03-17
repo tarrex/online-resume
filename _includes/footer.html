@@ -1,11 +1,6 @@
-{% assign footer = data.footer %}
-{% if footer and footer.display %}
 <footer class="footer">
-    <div class="text-center">
-        <small class="copyright">Updated: {{ site.time | date: site.date_format | default: "%Y-%m-%d" }}
-            <span class="fa-solid fa-heart"></span> By
-            <a href="https://github.com/tarrex/online-resume" target="_blank"">Online-Resume</a>
-        </small>
-    </div>
+  <span>Updated:&nbsp;</span>
+  <span>{{ site.time | date: site.date_format | default: "%Y-%m-%d" }}</span>
+  <i class="fa-solid fa-heart fa-beat-fade"></i>
+  <a href="https://github.com/tarrex/online-resume" target="_blank">Online-Resume</a>
 </footer>
-{% endif %}

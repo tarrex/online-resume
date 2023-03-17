@@ -1,0 +1,54 @@
+{%- assign project = data.project %}
+{%- if project and project.show %}
+<section class="project" style="order: {{ project.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-folder-open"></i>
+    <h2>{{ project.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if project.description.size > 0 %}
+    <div class="description markdown">
+      {{ project.description | markdownify }}
+    </div>
+    {%- endif %}
+
+    {%- if project.items %}
+    <div class="items">
+      {%- for item in project.items %}
+      <div class="item">
+
+        {%- if item.name %}
+        <div class="row">
+          <div class="project-name">
+            {%- if item.link %}
+            <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+            {%- else %}
+            <span>{{ item.name }}</span>
+            {%- endif %}
+            {%- if item.tags %}
+            <small>[{{ item.tags }}]</small>
+            {%- endif %}
+          </div>
+
+          {%- if item.date %}
+          <div class="date">
+            <span>{{ item.date }}</span>
+          </div>
+          {%- endif %}
+        </div>
+
+        {%- if item.description.size > 0 %}
+        <div class="description markdown">
+          {{ item.description | markdownify }}
+        </div>
+        {%- endif %}
+        {%- endif %}
+
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

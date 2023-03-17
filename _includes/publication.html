@@ -1,0 +1,49 @@
+{%- assign publication = data.publication %}
+{%- if publication and publication.show %}
+<section class="publication" style="order: {{ publication.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-newspaper"></i>
+    <h2>{{ publication.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if publication.description.size > 0 %}
+    <div class="description markdown">
+      {{ publication.description | markdownify }}
+    </div>
+    {%- endif %}
+
+    {%- if publication.items %}
+    <div class="items">
+      {%- for item in publication.items %}
+      <div class="item">
+
+        {%- if item.title %}
+        <div class="publication-title">
+          {%- if item.link %}
+          <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+          {%- else %}
+          <span>{{ item.title }}</span>
+          {%- endif %}
+        </div>
+
+        {%- if item.authors %}
+        <div class="authors">
+          <span>{{ item.authors }}</span>
+        </div>
+        {%- endif %}
+
+        {%- if item.conference %}
+        <div class="conference">
+          <span>{{ item.conference }}</span>
+        </div>
+        {%- endif %}
+        {%- endif %}
+
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

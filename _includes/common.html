@@ -1,0 +1,24 @@
+{%- if site.open %}
+<div class="wrapper">
+  {%- include basic.html%}
+  {%- include profile.html %}
+  {%- include experience.html %}
+  {%- include project.html %}
+  {%- include skill.html %}
+  {%- include education.html %}
+  {%- include certificate.html %}
+  {%- include publication.html %}
+  {%- include award.html %}
+  {%- include patent.html %}
+  {%- include organization.html %}
+  {%- include language.html %}
+  {%- include interest.html %}
+  {%- include evaluation.html %}
+  {%- include reference.html %}
+</div>
+{%- if site.site_footer %}
+{%- include footer.html %}
+{%- endif %}
+{%- else %}
+{%- include close.html %}
+{%- endif %}

@@ -1,0 +1,44 @@
+.icon::before {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.leetcode::before {
+  content: url("/assets/svg/leetcode.svg");
+}
+
+.codeforces::before {
+  content: url("/assets/svg/codeforces.svg");
+}
+
+.codewars::before {
+  content: url("/assets/svg/codewars.svg");
+}
+
+.tryhackme::before {
+  content: url("/assets/svg/tryhackme.svg");
+}
+
+.googlescholar::before {
+  content: url("/assets/svg/googlescholar.svg");
+}
+
+.indeed::before {
+  content: url("/assets/svg/indeed.svg");
+}
+
+.fiverr::before {
+  content: url("/assets/svg/fiverr.svg");
+}
+
+.figshare::before {
+  content: url("/assets/svg/figshare.svg");
+}
+
+.freelancer::before {
+  content: url("/assets/svg/freelancer.svg");
+}

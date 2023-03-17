@@ -3,33 +3,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{% if site.open %}{{ site.title }}{% endif %}">
 
-{% if site.open %}
+{%- if site.open %}
 <title>{{ site.title }}</title>
-{% else %}
+{%- else %}
 <title>Online Resume</title>
-{% endif %}
+{%- endif %}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-<link id="theme-style" rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+<link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
-{% if site.analytics.google %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
+{%- if site.analytics.google %}
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', '{{ site.analytics.google }}');
+  gtag('config', '{{ site.analytics.google }}');
 </script>
-{% endif %}
+{%- endif %}
 
-{% if site.analytics.cloudflare %}
+{%- if site.analytics.cloudflare %}
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "{{ site.analytics.cloudflare }}"}'></script>
+  data-cf-beacon='{"token": "{{ site.analytics.cloudflare }}"}'></script>
 <!-- End Cloudflare Web Analytics -->
-{% endif %}
+{%- endif %}
+
+{%- if site.analytics.umami.src and site.analytics.umami.id %}
+<script async defer src="{{ site.analytics.umami.src }}" data-website-id="{{ site.analytics.umami.id }}"></script>
+{%- endif %}

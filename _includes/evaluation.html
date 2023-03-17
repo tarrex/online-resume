@@ -1,16 +1,17 @@
-{% assign evaluation = data.evaluation %}
-{% if evaluation and evaluation.display %}
-<section class="evaluation">
-    <div class="section-title">
-        {{ evaluation.title }}
-    </div>
+{%- assign evaluation = data.evaluation %}
+{%- if evaluation and evaluation.show %}
+<section class="evaluation" style="order: {{ evaluation.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-hand-sparkles"></i>
+    <h2>{{ evaluation.title }}</h2>
+  </div>
 
-    <div class="section-content">
-        <div class="details">
-            <div class="markdown">
-                {{ evaluation.details | markdownify }}
-            </div>
-        </div>
+  <div class="section-content">
+    {%- if evaluation.description.size > 0 %}
+    <div class="description markdown">
+      {{ evaluation.description | markdownify }}
     </div>
+    {%- endif %}
+  </div>
 </section>
-{% endif %}
+{%- endif %}

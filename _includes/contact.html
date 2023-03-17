@@ -1,110 +1,388 @@
-{% assign contact = data.contact %}
-<ul class="list-unstyled">
-    {% if contact.location %}
-    <li class="location"><i class="fa-solid fa-location-dot"></i>
-        <span>{{ contact.location }}</span>
-    </li>
-    {% endif %}
+{%- assign contact = data.contact %}
+{%- assign avatar = data.basic.avatar.show %}
+  <div class="contact" {% if avatar != true %}style="justify-content: center;"{% endif %}>
+  {%- if contact.location %}
+  <div class="contact-item" title="location">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>{{ contact.location }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.email %}
-    <li class="email"><i class="fa-solid fa-envelope"></i>
-        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.email %}
+  <div class="contact-item" title="email">
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.phone %}
-    <li class="phone"><i class="fa-solid fa-phone"></i>
-        <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.phone %}
+  <div class="contact-item" title="phone">
+    <i class="fa-solid fa-phone"></i>
+    <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.website %}
-    <li class="website"><i class="fa-solid fa-globe"></i>
-        <a href="https://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.website %}
+  <div class="contact-item" title="website">
+    <i class="fa-solid fa-globe"></i>
+    <a href="https://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.wechat %}
-    <li class="wechat"><i class="fa-brands fa-weixin"></i>
-        <span>{{ contact.wechat }}</span>
-    </li>
-    {% endif %}
+  {%- if contact.gender %}
+  <div class="contact-item" title="gender">
+    <i class="fa-solid fa-venus-mars"></i>
+    <span title="gender">{{ contact.gender }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.whatsapp %}
-    <li class="whatsapp"><i class="fa-brands fa-whatsapp"></i>
-        <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.birthday %}
+  <div class="contact-item" title="birthday">
+    <i class="fa-solid fa-cake-candles"></i>
+    <span>{{ contact.birthday }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.telegram %}
-    <li class="telegram"><i class="fa-brands fa-telegram"></i>
-        <a href="https://t.me/{{ contact.telegram }}" target="_blank">{{ contact.telegram }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.nationality %}
+  <div class="contact-item" title="nationality">
+    <i class="fa-solid fa-flag"></i>
+    <span>{{ contact.nationality }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.github %}
-    <li class="github"><i class="fa-brands fa-github"></i>
-        <a href="https://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.visa %}
+  <div class="contact-item" title="passport visa">
+    <i class="fa-solid fa-passport"></i>
+    <span>{{ contact.visa }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.gitlab %}
-    <li class="gitlab"><i class="fa-brands fa-gitlab"></i>
-        <a href="https://gitlab.com/{{ contact.gitlab }}" target="_blank">{{ contact.gitlab }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.drivinglicense %}
+  <div class="contact-item" title="driving license">
+    <i class="fa-solid fa-car"></i>
+    <span>{{ contact.drivinglicense }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.bitbucket %}
-    <li class="bitbucket"><i class="fa-brands fa-bitbucket"></i>
-        <a href="https://bitbucket.com/{{ contact.bitbucket }}" target="_blank">{{ contact.bitbucket }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.wechat %}
+  <div class="contact-item" title="wechat">
+    <i class="fa-brands fa-weixin"></i>
+    <span>{{ contact.wechat }}</span>
+  </div>
+  {%- endif %}
 
-    {% if contact.googlescholar %}
-    <li class="google-scholar"><i class="ai ai-google-scholar"></i>
-        <a href="https://scholar.google.com/citations?user={{ contact.googlescholar }}" target="_blank">{{ contact.googlescholar }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.whatsapp %}
+  <div class="contact-item" title="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.researchgate %}
-    <li class="researchgate"><i class="fa-brands fa-researchgate"></i>
-        <a href="https://www.researchgate.net/profile/{{ contact.researchgate }}" target="_blank">{{ contact.researchgate }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.telegram %}
+  <div class="contact-item" title="telegram">
+    <i class="fa-brands fa-telegram"></i>
+    <a href="https://t.me/{{ contact.telegram }}" target="_blank">{{ contact.telegram }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.linkedin %}
-    <li class="linkedin"><i class="fa-brands fa-linkedin"></i>
-        <a href="https://linkedin.com/in/{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.messenger %}
+  <div class="contact-item" title="facebook messenger">
+    <i class="fa-brands fa-facebook-messenger"></i>
+    <a href="https://m.me/{{ contact.messenger }}" target="_blank">{{ contact.messenger }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.medium %}
-    <li class="medium"><i class="fa-brands fa-medium"></i>
-        <a href="https://medium.com/@{{ contact.medium }}" target="_blank">{{ contact.medium }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.line %}
+  <div class="contact-item" title="line">
+    <i class="fa-brands fa-line"></i>
+    <a href="https://line.me/R/ti/p/@{{ contact.line }}" target="_blank">{{ contact.line }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.twitter %}
-    <li class="twitter"><i class="fa-brands fa-twitter"></i>
-        <a href="https://twitter.com/{{ contact.twitter }}" target="_blank">{{ contact.twitter }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.viber %}
+  <div class="contact-item" title="viber">
+    <i class="fa-brands fa-viber"></i>
+    <a href="https://vb.me/R/{{ contact.viber }}" target="_blank">{{ contact.viber }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.stackoverflow %}
-    <li class="stackoverflow"><i class="fa-brands fa-stack-overflow"></i>
-        <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}" target="_blank">{{ contact.stackoverflow }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.threema %}
+  <div class="contact-item" title="threema">
+    <i class="icon threema"></i>
+    <a href="https://threema.id/R/{{ contact.threema }}" target="_blank">{{ contact.threema }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.quora %}
-    <li class="quora"><i class="fa-brands fa-quora"></i>
-        <a href="https://www.quora.com/profile/{{ contact.quora }}" target="_blank">{{ contact.quora }}</a>
-    </li>
-    {% endif %}
+  {%- if contact.github %}
+  <div class="contact-item" title="github">
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
+  </div>
+  {%- endif %}
 
-    {% if contact.goodreads %}
-    <li class="goodreads"><i class="fa-brands fa-goodreads"></i>
-        <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
-    </li>
-    {% endif %}
-</ul>
+  {%- if contact.gitlab %}
+  <div class="contact-item" title="gitlab">
+    <i class="fa-brands fa-gitlab"></i>
+    <a href="https://gitlab.com/{{ contact.gitlab }}" target="_blank">{{ contact.gitlab }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.bitbucket %}
+  <div class="contact-item" title="bitbucket">
+    <i class="fa-brands fa-bitbucket"></i>
+    <a href="https://bitbucket.com/{{ contact.bitbucket }}" target="_blank">{{ contact.bitbucket }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.stackoverflow %}
+  <div class="contact-item" title="stackoverflow">
+    <i class="fa-brands fa-stack-overflow"></i>
+    <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}" target="_blank">{{ contact.stackoverflow }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.leetcode %}
+  <div class="contact-item" title="leetcode">
+    <i class="icon leetcode"></i>
+    <a href="https://leetcode.com/{{ contact.leetcode }}" target="_blank">{{ contact.leetcode }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.codeforces %}
+  <div class="contact-item" title="codeforces">
+    <i class="icon codeforces"></i>
+    <a href="https://codeforces.com/profile/{{ contact.codeforces }}" target="_blank">{{ contact.codeforces }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.codewars %}
+  <div class="contact-item" title="codewars">
+    <i class="icon codewars"></i>
+    <a href="https://www.codewars.com/users/{{ contact.codewars }}" target="_blank">{{ contact.codewars }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.codepen %}
+  <div class="contact-item" title="codepen">
+    <i class="fa-brands fa-codepen"></i>
+    <a href="https://codepen.io/{{ contact.codepen }}" target="_blank">{{ contact.codepen }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.tryhackme %}
+  <div class="contact-item" title="tryhackme">
+    <i class="icon tryhackme"></i>
+    <a href="https://tryhackme.com/p/{{ contact.tryhackme }}" target="_blank">{{ contact.tryhackme }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.googlescholar %}
+  <div class="contact-item" title="google scholar">
+    <i class="icon googlescholar"></i>
+    <a href="https://scholar.google.com/citations?user={{ contact.googlescholar }}" target="_blank">{{ contact.googlescholar }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.researchgate %}
+  <div class="contact-item" title="researchgate">
+    <i class="fa-brands fa-researchgate"></i>
+    <a href="https://www.researchgate.net/profile/{{ contact.researchgate }}" target="_blank">{{ contact.researchgate }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.kaggle %}
+  <div class="contact-item" title="kaggle">
+    <i class="fa-brands fa-kaggle"></i>
+    <a href="https://www.kaggle.com/{{ contact.kaggle }}" target="_blank">{{ contact.kaggle }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.orcid %}
+  <div class="contact-item" title="orcid">
+    <i class="fa-brands fa-orcid"></i>
+    <a href="https://orcid.org/{{ contact.orcid }}" target="_blank">{{ contact.orcid }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.figshare %}
+  <div class="contact-item" title="figshare">
+    <i class="icon figshare"></i>
+    <a href="https://figshare.com/authors/{{ contact.figshare }}" target="_blank">{{ contact.figshare }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.devto %}
+  <div class="contact-item" title="devto">
+    <i class="fa-brands fa-dev"></i>
+    <a href="https://dev.to/@{{ contact.devto }}" target="_blank">{{ contact.devto }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.medium %}
+  <div class="contact-item" title="medium">
+    <i class="fa-brands fa-medium"></i>
+    <a href="https://medium.com/@{{ contact.medium }}" target="_blank">{{ contact.medium }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.wordpress %}
+  <div class="contact-item" title="wordpress">
+    <i class="fa-brands fa-wordpress"></i>
+    <a href="https://{{ contact.wordpress }}.wordpress.com" target="_blank">{{ contact.wordpress }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.blogger %}
+  <div class="contact-item" title="blogger">
+    <i class="fa-brands fa-blogger"></i>
+    <a href="https://{{ contact.blogger }}.blogspot.com" target="_blank">{{ contact.blogger }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.wikipedia %}
+  <div class="contact-item" title="wikipedia">
+    <i class="fa-brands fa-wikipedia-w"></i>
+    <a href="https://www.wikipedia.org/wiki/User:{{ contact.wikipedia }}" target="_blank">{{ contact.wikipedia }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.figma %}
+  <div class="contact-item" title="figma">
+    <i class="fa-brands fa-figma"></i>
+    <a href="https://www.figma.com/@{{ contact.figma }}" target="_blank">{{ contact.figma }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.behance %}
+  <div class="contact-item" title="behance">
+    <i class="fa-brands fa-behance"></i>
+    <a href="https://www.behance.net/{{ contact.behance }}" target="_blank">{{ contact.behance }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.dribble %}
+  <div class="contact-item" title="dribble">
+    <i class="fa-brands fa-dribble"></i>
+    <a href="https://dribbble.com/{{ contact.dribble }}" target="_blank">{{ contact.dribble }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.artstation %}
+  <div class="contact-item" title="artstation">
+    <i class="fa-brands fa-artstation"></i>
+    <a href="https://www.artstation.com/{{ contact.artstation }}" target="_blank">{{ contact.artstation }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.linkedin %}
+  <div class="contact-item" title="linkedin">
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://linkedin.com/in/{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.indeed %}
+  <div class="contact-item" title="indeed">
+    <i class="icon indeed"></i>
+    <a href="https://my.indeed.com/p/{{ contact.indeed }}" target="_blank">{{ contact.indeed }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.xing %}
+  <div class="contact-item" title="xing">
+    <i class="fa-brands fa-xing"></i>
+    <a href="https://www.xing.com/profile/{{ contact.xing }}" target="_blank">{{ contact.xing }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.fiverr %}
+  <div class="contact-item" title="fiverr">
+    <i class="icon fiverr"></i>
+    <a href="https://www.fiverr.com/{{ contact.fiverr }}" target="_blank">{{ contact.fiverr }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.freelancer %}
+  <div class="contact-item" title="freelancer">
+    <i class="icon freelancer"></i>
+    <a href="https://www.freelancer.com/u/{{ contact.freelancer }}" target="_blank">{{ contact.freelancer }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.twitter %}
+  <div class="contact-item" title="twitter">
+    <i class="fa-brands fa-twitter"></i>
+    <a href="https://twitter.com/{{ contact.twitter }}" target="_blank">{{ contact.twitter }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.mastodon %}
+  <div class="contact-item" title="mastodon">
+    <i class="fa-brands fa-mastodon"></i>
+    <span>{{ contact.mastodon }}</span>
+  </div>
+  {%- endif %}
+
+  {%- if contact.instagram %}
+  <div class="contact-item" title="instagram">
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://instagram.com/{{ contact.instagram }}" target="_blank">{{ contact.instagram }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.unsplash %}
+  <div class="contact-item" title="unsplash">
+    <i class="fa-brands fa-unsplash"></i>
+    <a href="https://unsplash.com/@{{ contact.unsplash }}" target="_blank">{{ contact.unsplash }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.500px %}
+  <div class="contact-item" title="500px">
+    <i class="fa-brands fa-500px"></i>
+    <a href="https://500px.com/p/{{ contact.500px }}" target="_blank">{{ contact.500px }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.youtube %}
+  <div class="contact-item" title="youtube">
+    <i class="fa-brands fa-youtube"></i>
+    <a href="https://www.youtube.com/@{{ contact.youtube }}" target="_blank">{{ contact.youtube }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.tiktok %}
+  <div class="contact-item" title="tiktok">
+    <i class="fa-brands fa-tiktok"></i>
+    <a href="https://www.tiktok.com/@{{ contact.tiktok }}" target="_blank">{{ contact.tiktok }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.quora %}
+  <div class="contact-item" title="quora">
+    <i class="fa-brands fa-quora"></i>
+    <a href="https://www.quora.com/profile/{{ contact.quora }}" target="_blank">{{ contact.quora }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.zhihu %}
+  <div class="contact-item" title="zhihu">
+    <i class="fa-brands fa-zhihu"></i>
+    <a href="https://www.zhihu.com/people/{{ contact.zhihu }}" target="_blank">{{ contact.zhihu }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.goodreads %}
+  <div class="contact-item" title="goodreads">
+    <i class="fa-brands fa-goodreads"></i>
+    <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.strava %}
+  <div class="contact-item" title="strava">
+    <i class="fa-brands fa-strava"></i>
+    <a href="https://www.strava.com/athletes/{{ contact.strava }}" target="_blank">{{ contact.strava }}</a>
+  </div>
+  {%- endif %}
+</div>

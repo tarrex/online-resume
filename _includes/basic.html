@@ -1,40 +1,18 @@
-{% assign basic = data.basic %}
+{%- assign basic = data.basic %}
 <section class="basic">
-    {% if basic.avatar.path and basic.avatar.display %}
-    <div class="avatar">
-        <img src="{{ site.baseurl }}/assets/images/{{ basic.avatar.path }}" alt="avatar">
-    </div>
+  {%- if basic.avatar.show and basic.avatar.path %}
+  <div class="avatar">
+    <img src="{{ basic.avatar.path }}" alt="avatar">
+  </div>
+  {%- endif %}
 
-    <div class="header">
-        {% if basic.name %}
-        <h2 class="name">{{ basic.name }}</h2>
-        {% if basic.title %}
-        <h3 class="title">{{ basic.title }}</h3>
-        {% endif %}
-        {% endif %}
-
-        <div class="contact">
-
-            {% include contact.html %}
-
-        </div>
-    </div>
-
-    {% else %}
-
-    <div class="header text-center">
-        {% if basic.name %}
-        <h2 class="name">{{ basic.name }}</h2>
-        {% if basic.title %}
-        <h3 class="title">{{ basic.title }}</h3>
-        {% endif %}
-        {% endif %}
-
-        <div class="contact">
-
-            {% include contact.html %}
-
-        </div>
-    </div>
-    {% endif %}
+  <div class="header" {% if basic.avatar.show != true %}style="align-items: center;"{% endif %}>
+    {%- if basic.name %}
+    <h2 class="name">{{ basic.name }}</h2>
+    {%- if basic.title %}
+    <h3 class="title">{{ basic.title }}</h3>
+    {%- endif %}
+    {%- endif %}
+    {%- include contact.html %}
+  </div>
 </section>

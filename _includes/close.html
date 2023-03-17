@@ -1,18 +1,8 @@
-<style type="text/css" media="screen">
-    .container {
-        margin: 10% auto;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 4em;
-    }
-</style>
-
-<div class="container">
-    <h1>(´▽`ʃ♡ƪ)</h1>
-    <br>
-    <p><strong>{{ data.close }}</strong></p>
-    <br>
-    <a href="javascript:history.go(-1)">Back</a>
+<div class="close">
+  {%- if data.close.size > 0 %}
+  <div class="description">
+    {{ data.close }}
+  </div>
+  {%- endif %}
+  <a href="javascript:history.go(-1)">Back</a>
 </div>

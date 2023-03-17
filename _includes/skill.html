@@ -1,0 +1,55 @@
+{%- assign skill = data.skill %}
+{%- if skill and skill.show %}
+<section class="skill" style="order: {{ skill.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-toolbox"></i>
+    <h2>{{ skill.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if skill.description.size > 0 %}
+    <div class="description markdown">
+      {{ skill.description | markdownify }}
+    </div>
+    {%- endif %}
+
+    {%- if skill.items %}
+    <div class="items">
+      {%- for item in skill.items %}
+      <div class="item">
+        <div class="skill-name">
+          <span>{{ item.name }}</span>
+        </div>
+        <div class="skill-level">
+          {%- for i in (1..5) %}
+          {%- if i <= item.level %}
+          <i class="fa-solid fa-{{ site.skill_level_icon | default: "star" }}"></i>
+          {%- else %}
+          <i class="fa-regular fa-{{ site.skill_level_icon | default: "star" }}"></i>
+          {%- endif %}
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+
+    {%- if skill.groups %}
+    <div class="groups">
+      {%- for group in skill.groups %}
+      <div class="group">
+        <div class="group-name">
+          <span>{{ group.name }}</span>
+        </div>
+        <div class="group-item">
+          {%- for item in group.item %}
+          <span>{{ item }}</span>
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

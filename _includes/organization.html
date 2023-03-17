@@ -1,0 +1,17 @@
+{%- assign organization = data.organization %}
+{%- if organization and organization.show %}
+<section class="organization" style="order: {{ organization.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-house-user"></i>
+    <h2>{{ organization.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if organization.description.size > 0 %}
+    <div class="description markdown">
+      {{ organization.description | markdownify }}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

@@ -1,0 +1,54 @@
+{%- assign certificate = data.certificate %}
+{%- if certificate and certificate.show %}
+<section class="certificate" style="order: {{ certificate.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-certificate"></i>
+    <h2>{{ certificate.title }}</h2>
+  </div>
+
+  <div class="section-content">
+    {%- if certificate.description.size > 0 %}
+    <div class="description markdown">
+      {{ certificate.description | markdownify }}
+    </div>
+    {%- endif %}
+
+    {%- if certificate.items %}
+    <div class="items">
+      {%- for item in certificate.items %}
+      <div class="item">
+
+        {%- if item.name %}
+        <div class="row">
+          <div class="certificate-name">
+            {%- if item.link %}
+            <a href="{{ item.link }}">{{ item.name }}</a>
+            {%- else %}
+            <span>{{ item.name }}</span>
+            {%- endif %}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="issuer">
+            <span>{{ item.issuer }}</span>
+          </div>
+          <div class="date">
+            <span>{{ item.date }}</span>
+          </div>
+        </div>
+
+        {%- if item.description.size > 0 %}
+        <div class="description markdown">
+          {{ item.description | markdownify }}
+        </div>
+        {%- endif %}
+        {%- endif %}
+
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}

@@ -1,14 +1,17 @@
-{% assign profile = data.profile %}
-{% if profile and profile.display %}
-<section class="profile">
-    <div class="section-title">
-        {{ profile.title }}
-    </div>
+{%- assign profile = data.profile %}
+{%- if profile and profile.show %}
+<section class="profile" style="order: {{ profile.order | default: 1 }}">
+  <div class="section-title">
+    <i class="section-icon fa-solid fa-user"></i>
+    <h2>{{ profile.title }}</h2>
+  </div>
 
-    <div class="section-content">
-        <div class="markdown">
-            {{ profile.details | markdownify }}
-        </div>
+  <div class="section-content">
+    {%- if profile.description.size > 0 %}
+    <div class="description markdown">
+      {{ profile.description | markdownify }}
     </div>
+    {%- endif %}
+  </div>
 </section>
-{% endif %}
+{%- endif %}

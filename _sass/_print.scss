@@ -1,30 +1,30 @@
 @media print {
-    @page {
-        size: A4;
-        margin: 1cm 0.5cm;
-    }
+  @page {
+    size: A4;
+    margin: 1cm 0.5cm;
+  }
 
-    @page :first {
-        margin-top: 0.5cm;
-    }
+  @page :first {
+    margin-top: 0.5cm;
+  }
 
-    body {
-        padding: 0 !important;
-    }
+  body {
+    padding: 0 !important;
+  }
 
-    a:after {
-        content: '' !important;
-    }
+  a:after {
+    content: "" !important;
+  }
 
-    .wrapper {
-        box-shadow: none;
+  .wrapper {
+    box-shadow: none;
 
-        .avatar img {
-            max-width: 100px !important;
-        }
+    .avatar img {
+      max-height: 100px !important;
     }
+  }
 
-    footer {
-        display: none;
-    }
+  footer {
+    display: none;
+  }
 }
