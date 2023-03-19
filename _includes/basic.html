@@ -1,4 +1,5 @@
 {%- assign basic = data.basic %}
+{%- if basic %}
 <section class="basic">
   {%- if basic.avatar.show and basic.avatar.path %}
   <div class="avatar">
@@ -16,3 +17,4 @@
     {%- include contact.html %}
   </div>
 </section>
+{%- endif %}

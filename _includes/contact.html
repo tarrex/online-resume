@@ -1,6 +1,6 @@
 {%- assign contact = data.contact %}
-{%- assign avatar = data.basic.avatar.show %}
-  <div class="contact" {% if avatar != true %}style="justify-content: center;"{% endif %}>
+{%- if contact %}
+<div class="contact" {% if data.basic.avatar.show != true %}style="justify-content: center;"{% endif %}>
   {%- if contact.location %}
   <div class="contact-item" title="location">
     <i class="fa-solid fa-location-dot"></i>
@@ -386,3 +386,4 @@
   </div>
   {%- endif %}
 </div>
+{%- endif %}
