@@ -129,6 +129,26 @@ small {
             .degree {
               color: $text-third-color;
             }
+
+            .company,
+            .project-name {
+              display: inline-flex;
+              align-items: baseline;
+
+              small::before {
+                content: "\00a0";
+              }
+            }
+          }
+
+          .publication-title,
+          .reference-name {
+            font-weight: $base-font-weight * 1.75;
+          }
+
+          .authors,
+          .reference-title {
+            font-style: italic;
           }
         }
       }
@@ -210,63 +230,9 @@ small {
     }
   }
 
-  .experience {
-    .section-content {
-      .items {
-        .item {
-          .row {
-            .company {
-              display: inline-flex;
-              align-items: baseline;
-
-              small::before {
-                content: "\00a0";
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .project {
-    .section-content {
-      .items {
-        .item {
-          .row {
-            .project-name {
-              display: flex;
-              align-items: baseline;
-
-              small::before {
-                content: "\00a0";
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .publication {
-    .section-content {
-      .items {
-        .item {
-          .publication-title {
-            font-weight: $base-font-weight * 1.75;
-            color: $text-color;
-          }
-
-          .authors {
-            font-style: italic;
-          }
-        }
-      }
-    }
-  }
-
   .certificate,
-  .award {
+  .award,
+  .reference {
     .section-content {
       .items {
         display: flex;
@@ -326,7 +292,6 @@ small {
         }
 
         .group-item {
-          color: $text-color;
           display: flex;
           flex-wrap: wrap;
           justify-content: end;
