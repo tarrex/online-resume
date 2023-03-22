@@ -26,7 +26,7 @@
     .basic {
       flex-direction: column;
 
-      .avatar img {
+      .avatar {
         display: block;
         margin: $spacing-unit auto;
         border-radius: 100%;
@@ -39,10 +39,8 @@
           flex-direction: column;
           width: 100%;
 
-          .contact-item {
-            &:not(:last-child)::after {
-              content: "";
-            }
+          .contact-item:not(:last-child)::after {
+            content: none;
           }
 
         }
@@ -89,10 +87,8 @@
         .items {
           flex-direction: column;
 
-          .item {
-            &:not(:last-child)::after {
-              content: "";
-            }
+          .item:not(:last-child)::after {
+            content: none;
           }
         }
       }
