@@ -21,8 +21,7 @@
     break-before: avoid !important;
   }
 
-  a, blockquote, pre,
-  .item, .skill .items, .skill .groups {
+  a, blockquote, pre {
     break-inside: avoid !important;
   }
 
