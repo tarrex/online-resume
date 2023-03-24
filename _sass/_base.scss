@@ -1,5 +1,4 @@
 html {
-  font-size: $base-font-size;
   scroll-behavior: smooth;
   touch-action: manipulation;
 }
@@ -45,6 +44,10 @@ ol, ul {
   }
 }
 
+b, strong {
+  font-weight: $base-font-weight * 1.50;
+}
+
 small {
   font-weight: $base-font-weight;
 }
@@ -73,7 +76,7 @@ small {
       margin-bottom: $spacing-unit / 2;
       padding: $spacing-unit / 10 0;
       border-bottom-color: rgba($theme-color, 0.25);
-      border-bottom-width: 1px ;
+      border-bottom-width: 1px;
 
       i::after {
         content: "\00a0";
@@ -98,59 +101,57 @@ small {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            .company,
-            .project-name,
-            .institution,
-            .certificate-name,
-            .award-name {
-              font-weight: $base-font-weight * 1.50;
-            }
-
-            .location,
-            .degree {
-              display: inline-flex;
-              align-items: baseline;
-
-              i::after {
-                content: "\00a0";
-              }
-            }
-
-            .role,
-            .major,
-            .issuer,
-            .awarder {
-              font-style: italic;
-            }
-
-            .date,
-            .location,
-            .degree {
-              color: $text-third-color;
-            }
-
-            .company,
-            .project-name {
-              display: inline-flex;
-              align-items: baseline;
-
-              small::before {
-                content: "\00a0";
-              }
-            }
           }
 
-          .publication-title,
-          .reference-name {
-            font-weight: $base-font-weight * 1.50;
-          }
-
-          .authors,
-          .reference-title {
-            font-style: italic;
+          .description {
+            margin-bottom: 0;
           }
         }
+      }
+
+      .location,
+      .degree {
+        display: inline-flex;
+        align-items: baseline;
+
+        i::after {
+          content: "\00a0";
+        }
+      }
+
+      .company,
+      .project-name {
+        display: inline-flex;
+        align-items: baseline;
+
+        small::before {
+          content: "\00a0";
+        }
+      }
+
+      .company,
+      .project-name,
+      .institution,
+      .certificate-name,
+      .publication-title,
+      .award-name,
+      .reference-name {
+        font-weight: $base-font-weight * 1.50;
+      }
+
+      .role,
+      .major,
+      .issuer,
+      .authors,
+      .awarder,
+      .reference-title {
+        font-style: italic;
+      }
+
+      .date,
+      .location,
+      .degree {
+        color: $text-third-color;
       }
     }
   }
