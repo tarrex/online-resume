@@ -109,6 +109,10 @@ small {
         }
       }
 
+      .groups {
+        margin-bottom: $spacing-unit / 2;
+      }
+
       .location,
       .degree {
         display: inline-flex;
