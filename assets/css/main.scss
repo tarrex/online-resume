@@ -35,7 +35,6 @@ $contact-delimiter: "{{ site.contact_delimiter | default: "·" }}";
 @import
   "sanitize",
   "base",
-  "icon",
   "responsive",
   "print"
 ;

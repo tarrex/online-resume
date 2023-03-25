@@ -80,6 +80,7 @@ small {
 
       i::after {
         content: "\00a0";
+        font-family: initial;
       }
 
       h2 {
@@ -120,6 +121,7 @@ small {
 
         i::after {
           content: "\00a0";
+          font-family: initial;
         }
       }
 
@@ -130,6 +132,7 @@ small {
 
         small::before {
           content: "\00a0";
+          font-family: initial;
         }
       }
 
@@ -206,6 +209,7 @@ small {
 
           i::after {
             content: "\00a0";
+            font-family: initial;
           }
         }
       }
@@ -242,6 +246,7 @@ small {
 
           .skill-name::after {
             content: "\00a0\00a0";
+            font-family: initial;
           }
 
           .skill-level {
@@ -250,6 +255,7 @@ small {
 
             i:not(:last-child)::after {
               content: "\00a0";
+              font-family: initial;
             }
           }
         }
@@ -307,6 +313,7 @@ small {
 
           small::before {
             content: "\00a0";
+            font-family: initial;
           }
         }
       }
