@@ -1,7 +1,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{% if site.open %}{{ site.title }}{% endif %}">
+<meta name="description" content="{% if site.open %}{% if site.description %}{{ site.description }}{% else %}{{ site.title }}{% endif %}{% else %}Online Resume{% endif %}">
+
+{%- if site.open_graph.enable %}
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="{% if site.open %}{{ site.title }}{% else %}Online Resume{% endif %}">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="{{ site.url }}{{ site.open_graph.image | relative_url }}">
+<meta property="og:description" content="{% if site.open %}{% if site.description %}{{ site.description }}{% else %}{{ site.title }}{% endif %}{% else %}Online Resume{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{%- endif %}
 
 {%- if site.open %}
 <title>{{ site.title }}</title>
@@ -35,7 +44,7 @@
 {% assign umami = site.analytics.umami %}
 {%- if umami.script and umami.website_id %}
 <!-- Umami Web Analytics -->
-<script async defer src="{{ umami.script }}" 
+<script async defer src="{{ umami.script }}"
   data-website-id="{{ umami.website_id }}"
   {% if umami.domains %} data-domains="{{ umami.domains }}" {% endif %}></script>
 <!-- End Umami Web Analytics -->
