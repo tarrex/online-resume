@@ -1,6 +1,5 @@
 # Welcome to Jekyll!
 title: Online Resume
-description:
 url:
 baseurl:
 
@@ -20,6 +19,7 @@ analytics:
     script: https://u.tarrex.com/u.js                # umami analytics script src (Replace it with your own config)
     website_id: af636e2d-31ae-46f1-9071-82b1745143a9 # umami analytics website id (Replace it with your own config)
     domains: tarrex.github.io,tarrex.com             # umami analytics domains (Replace it with your own config)
+description:
 open_graph:
   enable: true                        # enable open graph meta tags
   image: /assets/images/profile.png   # open graph image path
