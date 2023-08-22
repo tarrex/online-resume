@@ -31,7 +31,7 @@ experience:
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
       description: |
-        Responsável pela validação de novas tecnologias/arquiteturas. Criando e/ou melhorando soluções segundo os requisitos apresentados pelos stakeholders, garantindo a entrega de soluções tecnológicas eficientes e alinhadas às necessidades da organização.
+        + Responsável pela validação de novas tecnologias/arquiteturas. Criando e/ou melhorando soluções segundo os requisitos apresentados pelos stakeholders, garantindo a entrega de soluções tecnológicas eficientes e alinhadas às necessidades da organização.
 
     - company: Bees Bank
       link: '#'
@@ -40,14 +40,12 @@ experience:
       role: Especialista em Engenharia de Software
       location: São Paulo
       description: |
-        PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
-        + First
-        + Second
+        + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
 
     - company: PagSeguro
       link: '#'
       tags: Full-time
-      date: 2021.03 - 2022.02
+      date: 2019.01 - 2021.02
       role: Engenheiro de Software Sênior
       location: São Paulo
       description: |
@@ -57,13 +55,41 @@ experience:
     - company: CVC Turismo
       link: '#'
       tags: Full-time
-      date: 2021.03 - 2022.02
-      role: Engenheiro de Software Sênior
+      date: 2015.03 - 2018.12
+      role: Desenvolvedor Backend
       location: São Paulo
       description: |
-        + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
-        + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        + Vitrine CVC: solução serverless para a seleção de melhores preços para destinos configurados, gerando as informações exibidas na home da CVC. Construído usando AWS: S3, Lambdas, SQS, DynamoDB.
+        + Notificação de Tarifas: solução para monitoramento de preços de tarifas. Construído usando Spring Boot, MongoDB, Consul, Vault, RESTfull, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
+        + Processador de Pedidos: solução de efetivação de pedido para clientes B2B e B2C. Possui 7 aplicações: orquestrador, motor de passos, precificação, disponibilidade, booking, pagamento e confirmação. Foi construído usando Oracle BPEL, OSB 12c, Spring Boot, MongoDB, PL/SQL.
+        + Minha Agenda: solução para auxiliar as vendas para o mercado B2B, possui as funcionalidades de agenda e campanhas. Construído usando JEE 7, Weblogic 12, JMS, PL/SQL e MongoDB.
+        + Gateway Intercâmbio: gateway para a pesquisa e venda de intercâmbio para a CVC Turismo. Criado usando Oracle Service Bus 12c, PL/SQL.
+        + Backoffice Intercâmbio: backoffice para cadastro de cursos eacomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
+        + Ongoing: Correção e manutenção do legado das soluções Java e OSBreportadas pelos vendedores ou parceiros CVC.
 
+    - company: Magna Sistemas
+      link: '#'
+      tags: Full-time
+      date: 2014.10 - 2015.03
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+      Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
+        + Gestão de Transferência de Internos: solução para a gestão da movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
+
+    - company: Volans Informática
+      link: '#'
+      tags: Full-time
+      date: 2010.09 - 2015.09
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+      Analista de sistemas desenvolvendo soluções em clientes diversos.
+        + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
+        + PEAD-PMPT: solução de Acervo e Prontuário Digital para Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
+        + Assessment C&A: engenharia reversa do sistema de vendas C&A Modas.
+        + Middleware de Transações Scopus: solução de integração de pagamentos móveis de empresa externa. Construído usando JEE Websphere 8, Oracle 11g, IBM MessageBroker.
+        + Previdência Banco Santander: solução para os produtos de previdência do banco Santander. Implementação de novas funcionalidades e correções de incidentes. Tecnologias utilizadas: JEE 6, IBM Websphere, Oracle 11g e JSF.
 
 project:
   show: false
