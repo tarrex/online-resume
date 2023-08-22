@@ -24,27 +24,46 @@ experience:
   description: |
 
   items:
-    - company: Second Company
+    - company: XP Investimentos
       link: '#'
       tags: Full-time
-      date: 2018.03 - 2019.03
-      role: Backend Developer
-      location: Beijing
+      date: 2023.03 - 2022.12
+      role: Especialista em Arquitetura de Soluções
+      location: São Paulo
       description: |
-        Your key responsibilities and achievements in the company.
+        Responsável pela validação de novas tecnologias/arquiteturas. Criando e/ou melhorando soluções segundo os requisitos apresentados pelos stakeholders, garantindo a entrega de soluções tecnológicas eficientes e alinhadas às necessidades da organização.
+
+    - company: Bees Bank
+      link: '#'
+      tags: Full-time
+      date: 2021.03 - 2022.02
+      role: Especialista em Engenharia de Software
+      location: São Paulo
+      description: |
+        PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
         + First
         + Second
 
-    - company: First Company
-      link:
-      tags: Part-time, remote
-      date: 2017.03 - 2018.03
-      role: Backend Developer
-      location: Beijing
+    - company: PagSeguro
+      link: '#'
+      tags: Full-time
+      date: 2021.03 - 2022.02
+      role: Engenheiro de Software Sênior
+      location: São Paulo
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+
+    - company: CVC Turismo
+      link: '#'
+      tags: Full-time
+      date: 2021.03 - 2022.02
+      role: Engenheiro de Software Sênior
+      location: São Paulo
+      description: |
+        + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+
 
 project:
   show: false
