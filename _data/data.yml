@@ -31,7 +31,11 @@ experience:
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
       description: |
-        + Responsável pela validação de novas tecnologias/arquiteturas. Criando e/ou melhorando soluções segundo os requisitos apresentados pelos stakeholders, garantindo a entrega de soluções tecnológicas eficientes e alinhadas às necessidades da organização.
+        Responsável na definição, implementação e acompanhamento de soluções que tragam mais performance e escabilidade para o crescimento da empresa. 
+        + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de resposabilidades.
+        + Dar suporte aos times durante as definições de soluções.
+        + Criar aplicações de prova de conceito com novas tecnologias/arquiteturas.
+        Tecnologias: C#, Microsoft Azure, DDD, Metodologia Agéis.
 
     - company: Bees Bank
       link: '#'
@@ -40,6 +44,7 @@ experience:
       role: Especialista em Engenharia de Software
       location: São Paulo
       description: |
+        Especialista de software dentro do time de finance na Bees Bank, participando do processo de implementação do PIX (Sistema de )
         + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
 
     - company: PagSeguro
