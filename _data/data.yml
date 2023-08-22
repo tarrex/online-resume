@@ -7,58 +7,11 @@ basic:
 
 contact:
   # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  location: São Paulo, Brasil
+  website: cespereira.github.io
+  some-site: teste.com.br
 
-  gender:                  # gender or pronoun
-  birthday:                # birthday
-  nationality:             # nationality
-  visa:                    # passport visa
-  drivinglicense:          # driving licence
 
-  # contact
-  wechat:                  # username
-  whatsapp:                # 8611122223333     | https://wa.me/8611122223333
-  telegram:                # username          | https://t.me/username
-  messenger:               # username          | https://m.me/username
-  line:                    # lineid            | https://line.me/R/ti/p/@lineid
-  viber:                   # username          | https://vb.me/username
-  threema:                 # userid            | https://threema.id/userid
-
-  # programmer
-  github:                  # username          | https://github.com/username
-  gitlab:                  # username          | https://gitlab.com/username
-  bitbucket:               # username          | https://bitbucket.com/username
-  stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
-  leetcode:                # username          | https://leetcode.com/username
-  codeforces:              # username          | https://codeforces.com/profile/username
-  codewars:                # username          | https://www.codewars.com/users/username
-  codepen:                 # username          | https://codepen.io/username
-  tryhackme:               # username          | https://tryhackme.com/p/username
-
-  # academic
-  googlescholar:           # username          | https://scholar.google.com/citations?user=username
-  researchgate:            # username          | https://www.researchgate.net/profile/username
-  kaggle:                  # username          | https://www.kaggle.com/username
-  orcid:                   # id                | https://orcid.org/id
-  figshare:                # name/id           | https://figshare.com/authors/name/id
-
-  # writer
-  devto:                   # username          | https://dev.to/username
-  medium:                  # username          | https://medium.com/@username
-  wordpress:               # username          | https://username.wordpress.com
-  blogger:                 # username          | https://username.blogspot.com
-  wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
-
-  # designer
-  figma:                   # username          | https://www.figma.com/@username
-  behance:                 # username          | https://www.behance.net/username
-  dribble:                 # username          | https://dribbble.com/username
-  artstation:              # username          | https://www.artstation.com/username
-
-  # other cv
   linkedin:                # username          | https://linkedin.com/in/username
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
