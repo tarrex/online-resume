@@ -67,6 +67,29 @@ experience:
         + Backoffice Intercâmbio: backoffice para cadastro de cursos eacomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
         + Ongoing: Correção e manutenção do legado das soluções Java e OSBreportadas pelos vendedores ou parceiros CVC.
 
+    - company: Magna Sistemas
+      link: '#'
+      tags: Full-time
+      date: 2014.10 - 2015.03
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+        Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
+        + Gestão de Transferência de Internos: solução para a gestão da movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
+
+    - company: Volans Informática
+      link: '#'
+      tags: Full-time
+      date: 2010.09 - 2015.09
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+        Analista de sistemas desenvolvendo soluções em clientes diversos.
+        + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
+        + PEAD-PMPT: solução de Acervo e Prontuário Digital para Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
+        + Assessment C&A: engenharia reversa do sistema de vendas C&A Modas.
+        + Middleware de Transações Scopus: solução de integração de pagamentos móveis de empresa externa. Construído usando JEE Websphere 8, Oracle 11g, IBM MessageBroker.
+        + Previdência Banco Santander: solução para os produtos de previdência do banco Santander. Implementação de novas funcionalidades e correções de incidentes. Tecnologias utilizadas: JEE 6, IBM Websphere, Oracle 11g e JSF.
 
 project:
   show: false
@@ -99,7 +122,7 @@ project:
         + Second
 
 skill:
-  show: false
+  show: true
   order: 4
   title: Skills
   description: |
