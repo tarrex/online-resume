@@ -122,7 +122,7 @@ project:
         + Second
 
 skill:
-  show: true
+  show: false
   order: 4
   title: Skills
   description: |
@@ -297,7 +297,7 @@ organization:
 language:
   show: true
   order: 11
-  title: Languages
+  title: Idiomas
   description: |
   items:
     - idiom: Português
