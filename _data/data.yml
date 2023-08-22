@@ -1,9 +1,9 @@
 basic:
   name: Cesar Pereira
-  title: Engenheiro de Software           # job title
+  title: Engenheiro de Software           
   avatar:
-    show: true                       # show or hide avatar
-    path: /assets/images/profile.png # avatar file path
+    show: true                       
+    path: /assets/images/profile.png 
 
 contact:
   location: São Paulo, Brasil
