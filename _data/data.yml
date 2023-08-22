@@ -31,8 +31,8 @@ experience:
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
       description: |
-        Responsável na definição, implementação e acompanhamento de soluções que tragam mais performance e escabilidade para o crescimento da empresa. 
-        + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de resposabilidades.
+        Responsável na definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento da empresa. 
+        + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de responsabilidades.
         + Dar suporte aos times durante as definições de soluções.
         + Criar aplicações de prova de conceito com novas tecnologias/arquiteturas.
         Tecnologias: C#, Microsoft Azure, DDD, Metodologia Agéis.
@@ -44,7 +44,6 @@ experience:
       role: Especialista em Engenharia de Software
       location: São Paulo
       description: |
-        Especialista de software dentro do time de finance na Bees Bank, participando do processo de implementação do PIX (Sistema de )
         + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
 
     - company: PagSeguro
@@ -64,13 +63,14 @@ experience:
       role: Desenvolvedor Backend
       location: São Paulo
       description: |
+        Desenvolvedor Backend utilizando tecnologias baseadas em JVM e Ferramentas de integração.
         + Vitrine CVC: solução serverless para a seleção de melhores preços para destinos configurados, gerando as informações exibidas na home da CVC. Construído usando AWS: S3, Lambdas, SQS, DynamoDB.
-        + Notificação de Tarifas: solução para monitoramento de preços de tarifas. Construído usando Spring Boot, MongoDB, Consul, Vault, RESTfull, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
+        + Notificação de Tarifas: solução para monitoramento de preços de tarifas. Construído usando Spring Boot, MongoDB, Consul, Vault, RESTful, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
         + Processador de Pedidos: solução de efetivação de pedido para clientes B2B e B2C. Possui 7 aplicações: orquestrador, motor de passos, precificação, disponibilidade, booking, pagamento e confirmação. Foi construído usando Oracle BPEL, OSB 12c, Spring Boot, MongoDB, PL/SQL.
         + Minha Agenda: solução para auxiliar as vendas para o mercado B2B, possui as funcionalidades de agenda e campanhas. Construído usando JEE 7, Weblogic 12, JMS, PL/SQL e MongoDB.
         + Gateway Intercâmbio: gateway para a pesquisa e venda de intercâmbio para a CVC Turismo. Criado usando Oracle Service Bus 12c, PL/SQL.
-        + Backoffice Intercâmbio: backoffice para cadastro de cursos eacomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
-        + Ongoing: Correção e manutenção do legado das soluções Java e OSBreportadas pelos vendedores ou parceiros CVC.
+        + Backoffice Intercâmbio: backoffice para cadastro de cursos e acomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
+        + Ongoing: Correção e manutenção do legado das soluções Java e OSB reportadas pelos vendedores ou parceiros CVC.
 
     - company: Magna Sistemas
       link: '#'
@@ -80,19 +80,19 @@ experience:
       location: São Paulo
       description: | 
         Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
-        + Gestão de Transferência de Internos: solução para a gestão da movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
+        + Gestão de Transferência de Internos: solução para a gestão de movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
 
     - company: Volans Informática
       link: '#'
-      tags: Full-time
+      tags: Java, C#, Postgres, Websphere
       date: 2010.09 - 2015.09
       role: Analista de Sistemas
       location: São Paulo
       description: | 
         Analista de sistemas desenvolvendo soluções em clientes diversos.
         + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
-        + PEAD-PMPT: solução de Acervo e Prontuário Digital para Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
-        + Assessment C&A: engenharia reversa do sistema de vendas C&A Modas.
+        + PEAD-PMPT: solução de Acervo e Prontuário Digital para o Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
+        + Assessment C&A: engenharia reversa do sistema de vendas (PDV e Backoffice) da C&A Modas.
         + Middleware de Transações Scopus: solução de integração de pagamentos móveis de empresa externa. Construído usando JEE Websphere 8, Oracle 11g, IBM MessageBroker.
         + Previdência Banco Santander: solução para os produtos de previdência do banco Santander. Implementação de novas funcionalidades e correções de incidentes. Tecnologias utilizadas: JEE 6, IBM Websphere, Oracle 11g e JSF.
 
@@ -101,11 +101,7 @@ project:
   order: 3
   title: Projects
   description: |
-    The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
-
-    In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
-
-    The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
+    not using
 
   items:
     - name: Personal project
@@ -114,15 +110,6 @@ project:
       date: 2015 - 2017
       description: |
         Personal project description...
-        + First
-        + Second
-
-    - name: OSS project
-      link:
-      tags: committer
-      date:
-      description: |
-        OSS project description...
         + First
         + Second
 
