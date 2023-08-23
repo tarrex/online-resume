@@ -41,6 +41,12 @@
 .icon-leetcode:before {
   content: "\e906";
 }
+.icon-pt-br-lang:before {
+  content: "../svgs/brazil.svg";
+}
+.icon-eng-lang:before {
+  content: "../svgs/uk.svg";
+}
 .icon-indeed:before {
   content: "\e907";
 }

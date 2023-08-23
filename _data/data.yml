@@ -1,17 +1,14 @@
 basic:
   name: Cesar Pereira
-  title: Engenheiro de Software           
+  title: Engenheiro de Software
   avatar:
-    show: true                       
-    path: /assets/images/profile.png 
+    show: true
+    path: /assets/images/profile.png
 
 contact:
   location: São Paulo, Brasil
   github: cespereira
   linkedin: cespereira
-  language:
-    default: pt
-    second: en
 
 profile:
   show: true
@@ -84,7 +81,7 @@ experience:
       date: 2014.10 - 2015.03
       role: Analista de Sistemas
       location: São Paulo
-      description: | 
+      description: |
         Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
         + Gestão de Transferência de Internos: solução para a gestão de movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
 
@@ -94,7 +91,7 @@ experience:
       date: 2010.09 - 2015.09
       role: Analista de Sistemas
       location: São Paulo
-      description: | 
+      description: |
         Analista de sistemas desenvolvendo soluções em clientes diversos.
         + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
         + PEAD-PMPT: solução de Acervo e Prontuário Digital para o Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
