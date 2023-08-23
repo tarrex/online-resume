@@ -1,70 +1,85 @@
 @font-face {
-  font-family: "Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/icons.woff2") format("woff2"),
-       url("../webfonts/icons.ttf")   format("truetype");
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/icons.woff2") format("woff2"),
+    url("../webfonts/icons.ttf") format("truetype");
 }
 
 .icon {
-  font-family: "Icons" !important;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  display: inline-block;
-  line-height: 1;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+    font-family: "Icons" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    display: inline-block;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .icon-protonmail:before {
-  content: "\e900";
+    content: "\e900";
 }
+
 .icon-signal:before {
-  content: "\e901";
+    content: "\e901";
 }
+
 .icon-topcoder:before {
-  content: "\e902";
+    content: "\e902";
 }
+
 .icon-wire:before {
-  content: "\e903";
+    content: "\e903";
 }
+
 .icon-tryhackme:before {
-  content: "\e904";
+    content: "\e904";
 }
+
 .icon-threema:before {
-  content: "\e905";
+    content: "\e905";
 }
+
 .icon-leetcode:before {
-  content: "\e906";
+    content: "\e906";
 }
+
 .icon-pt-br-lang:before {
-  content: "../svgs/brazil.svg";
+    content: url("../svgs/brazil.svg");
 }
+
 .icon-eng-lang:before {
-  content: "../svgs/uk.svg";
+    content: url("../svgs/uk.svg");
 }
+
 .icon-indeed:before {
-  content: "\e907";
+    content: "\e907";
 }
+
 .icon-googlescholar:before {
-  content: "\e908";
+    content: "\e908";
 }
+
 .icon-freelancer:before {
-  content: "\e909";
+    content: "\e909";
 }
+
 .icon-fiverr:before {
-  content: "\e90a";
+    content: "\e90a";
 }
+
 .icon-figshare:before {
-  content: "\e90b";
+    content: "\e90b";
 }
+
 .icon-codewars:before {
-  content: "\e90c";
+    content: "\e90c";
 }
+
 .icon-codeforces:before {
-  content: "\e90d";
+    content: "\e90d";
 }
