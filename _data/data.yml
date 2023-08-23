@@ -9,6 +9,9 @@ contact:
   location: São Paulo, Brasil
   github: cespereira
   linkedin: cespereira
+  language:
+    default: pt
+    second: en
 
 profile:
   show: true
