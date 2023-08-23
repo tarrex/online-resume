@@ -31,7 +31,7 @@ experience:
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
       description: |
-        Responsável na definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento da empresa. 
+        Definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento sustentável da empresa. 
         + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de responsabilidades.
         + Dar suporte aos times durante as definições de soluções.
         + Criar aplicações de prova de conceito com novas tecnologias/arquiteturas.
@@ -39,26 +39,29 @@ experience:
 
     - company: Bees Bank
       link: '#'
-      tags: Full-time
+      tags: Kotlin, Spring Boot, Postgres, MongoDB, RabbitMQ, Jenkins, Rancher
       date: 2021.03 - 2022.02
       role: Especialista em Engenharia de Software
       location: São Paulo
       description: |
+        Definição, implementação e acompanhamento das soluções de banking dentro da Bees. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
         + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
+        + TED: correções e melhorias na solução de Transferência Eletrônica Disponível, utilizando: Java 11, Spring Boot 2, Postgres 11, RabbitMQ.
 
     - company: PagSeguro
       link: '#'
-      tags: Full-time
+      tags: Java, Kotlin, Spring Boot, Postgres, Apache Kafka, AWS, Jenkins, Apache Mesos, Kubernetes
       date: 2019.01 - 2021.02
       role: Engenheiro de Software Sênior
       location: São Paulo
       description: |
+        Definição, implementação e acompanhamento das soluções de agendamento e liquidação de pagamentos. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
         + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
         + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
 
     - company: CVC Turismo
       link: '#'
-      tags: Full-time
+      tags: Java, OSB, BPEL, PLSQL, Weblogic, Spring Boot, Oracle DB
       date: 2015.03 - 2018.12
       role: Desenvolvedor Backend
       location: São Paulo
@@ -74,7 +77,7 @@ experience:
 
     - company: Magna Sistemas
       link: '#'
-      tags: Full-time
+      tags: JEE 7, Jboss, Postgres, Richfaces
       date: 2014.10 - 2015.03
       role: Analista de Sistemas
       location: São Paulo
