@@ -49,7 +49,7 @@
 }
 
 .icon-pt-br-lang:before {
-    content: url("../svgs/brazil.svg");
+    content: url("brazil.svg");
 }
 
 .icon-eng-lang:before {
