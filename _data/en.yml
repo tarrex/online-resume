@@ -1,0 +1,296 @@
+basic:
+  name: Cesar Pereira EN
+  title: Engenheiro de Software           
+  avatar:
+    show: true                       
+    path: /assets/images/profile.png 
+
+contact:
+  location: São Paulo, Brasil
+  github: cespereira
+  linkedin: cespereira
+
+profile:
+  show: true
+  order: 1
+  title: Resumo
+  description: |
+    Bacharel em Ciências da Computação pelo Centro Universitário da FEI. 13 anos de experiência em desenvolvimento de soluções nas plataformas Java (JEE, Spring Boot, Spring MVC e Spring Cloud), SOA (Oracle Service Bus 11g e 12c), AWS (Lambda, API Gateway e DynamoDB), NodeJS, Banco de dados Relacionais (Oracle, SQL Server e MySQL, Progress e DB2) e Banco de Dados Não Relacionais (MongoDB e DynamoDB).
+
+experience:
+  show: true
+  order: 2
+  title: Experiência Profissional
+  description: |
+
+  items:
+    - company: XP Investimentos
+      link: '#'
+      tags: Full-time
+      date: 2023.03 - 2022.12
+      role: Especialista em Arquitetura de Soluções
+      location: São Paulo
+      description: |
+        Definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento sustentável da empresa. 
+        + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de responsabilidades.
+        + Dar suporte aos times durante as definições de soluções.
+        + Criar aplicações de prova de conceito com novas tecnologias/arquiteturas.
+        Tecnologias: C#, Microsoft Azure, DDD, Metodologia Agéis.
+
+    - company: Bees Bank
+      link: '#'
+      tags: Kotlin, Spring Boot, Postgres, MongoDB, RabbitMQ, Jenkins, Rancher
+      date: 2021.03 - 2022.02
+      role: Especialista em Engenharia de Software
+      location: São Paulo
+      description: |
+        Definição, implementação e acompanhamento das soluções de banking dentro da Bees. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
+        + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
+        + TED: correções e melhorias na solução de Transferência Eletrônica Disponível, utilizando: Java 11, Spring Boot 2, Postgres 11, RabbitMQ.
+
+    - company: PagSeguro
+      link: '#'
+      tags: Java, Kotlin, Spring Boot, Postgres, Apache Kafka, AWS, Jenkins, Apache Mesos, Kubernetes
+      date: 2019.01 - 2021.02
+      role: Engenheiro de Software Sênior
+      location: São Paulo
+      description: |
+        Definição, implementação e acompanhamento das soluções de agendamento e liquidação de pagamentos. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
+        + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+
+    - company: CVC Turismo
+      link: '#'
+      tags: Java, OSB, BPEL, PLSQL, Weblogic, Spring Boot, Oracle DB
+      date: 2015.03 - 2018.12
+      role: Desenvolvedor Backend
+      location: São Paulo
+      description: |
+        Desenvolvedor Backend utilizando tecnologias baseadas em JVM e Ferramentas de integração.
+        + Vitrine CVC: solução serverless para a seleção de melhores preços para destinos configurados, gerando as informações exibidas na home da CVC. Construído usando AWS: S3, Lambdas, SQS, DynamoDB.
+        + Notificação de Tarifas: solução para monitoramento de preços de tarifas. Construído usando Spring Boot, MongoDB, Consul, Vault, RESTful, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
+        + Processador de Pedidos: solução de efetivação de pedido para clientes B2B e B2C. Possui 7 aplicações: orquestrador, motor de passos, precificação, disponibilidade, booking, pagamento e confirmação. Foi construído usando Oracle BPEL, OSB 12c, Spring Boot, MongoDB, PL/SQL.
+        + Minha Agenda: solução para auxiliar as vendas para o mercado B2B, possui as funcionalidades de agenda e campanhas. Construído usando JEE 7, Weblogic 12, JMS, PL/SQL e MongoDB.
+        + Gateway Intercâmbio: gateway para a pesquisa e venda de intercâmbio para a CVC Turismo. Criado usando Oracle Service Bus 12c, PL/SQL.
+        + Backoffice Intercâmbio: backoffice para cadastro de cursos e acomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
+        + Ongoing: Correção e manutenção do legado das soluções Java e OSB reportadas pelos vendedores ou parceiros CVC.
+
+    - company: Magna Sistemas
+      link: '#'
+      tags: JEE 7, Jboss, Postgres, Richfaces
+      date: 2014.10 - 2015.03
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+        Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
+        + Gestão de Transferência de Internos: solução para a gestão de movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
+
+    - company: Volans Informática
+      link: '#'
+      tags: Java, C#, Postgres, Websphere
+      date: 2010.09 - 2015.09
+      role: Analista de Sistemas
+      location: São Paulo
+      description: | 
+        Analista de sistemas desenvolvendo soluções em clientes diversos.
+        + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
+        + PEAD-PMPT: solução de Acervo e Prontuário Digital para o Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
+        + Assessment C&A: engenharia reversa do sistema de vendas (PDV e Backoffice) da C&A Modas.
+        + Middleware de Transações Scopus: solução de integração de pagamentos móveis de empresa externa. Construído usando JEE Websphere 8, Oracle 11g, IBM MessageBroker.
+        + Previdência Banco Santander: solução para os produtos de previdência do banco Santander. Implementação de novas funcionalidades e correções de incidentes. Tecnologias utilizadas: JEE 6, IBM Websphere, Oracle 11g e JSF.
+
+project:
+  show: false
+  order: 3
+  title: Projects
+  description: |
+    not using
+
+  items:
+    - name: Personal project
+      link: '#'
+      tags:
+      date: 2015 - 2017
+      description: |
+        Personal project description...
+        + First
+        + Second
+
+skill:
+  show: false
+  order: 4
+  title: Skills
+  description: |
+    not using
+
+  items:
+    - name: Skill A
+      level: 5
+    - name: Skill B
+      level: 4
+    - name: Skill C
+      level: 3
+    - name: Skill D
+      level: 4
+    - name: Skill E
+      level: 3
+    - name: Skill F
+      level: 1
+    - name: Skill G
+      level: 4
+    - name: Skill H
+      level: 4
+    - name: Skill I
+      level: 3
+
+  groups:
+    - name: Group A Skills
+      item:
+        - Skill A
+        - Skill B
+        - Skill C
+        - Skill D
+    - name: Group B Skills
+      item:
+        - Skill E
+        - Skill F
+        - Skill G
+    - name: Group C Skills
+      item:
+        - Skill H
+        - Skill I
+
+education:
+  show: true
+  order: 5
+  title: Formação Acadêmica
+  description: |
+  items:
+    - institution: Centro Universitário da FEI
+      link: '#'
+      date: 2006 - 2010
+      major: Ciências da Computação
+      degree: Bacharel
+      description: |
+
+certificate:
+  show: false
+  order: 6
+  title: Certificates
+  description: |
+    not using
+
+  items:
+    - name: Example Certificate One
+      issuer: by Example
+      date: 2020
+      link: '#'
+      description: |
+        It's my Example Certificate One by Example.
+    - name: Example Certificate Two
+      issuer: by Example
+      date: 2020
+      link:
+      description: |
+        It's my Example Certificate Two by Example.
+
+publication:
+  show: false
+  order: 7
+  title: Publications
+  description: |
+    not using
+  items:
+    - title: Example Publication in Action
+      authors: Foo Bar
+      conference: Foobar, 2019
+      link: '#'
+    - title: The Art of Example Publication
+      authors: Foo Bar
+      conference: Foobar, 2019
+      link:
+
+award:
+  show: false
+  order: 8
+  title: Awards
+  description: |
+    not using
+  items:
+    - name: Example Awared One
+      awarder: by Example
+      date: 2022
+      link: '#'
+      description: |
+        It's my Example Awared One by Example.
+    - name: Example Awared Two
+      awarder: by Example
+      date: 2022
+      link:
+      description: |
+        It's my Example Awared Two by Example.
+
+patent:
+  show: false
+  order: 9
+  title: Patents
+  description: |
+    not using
+
+organization:
+  show: false
+  order: 10
+  title: Organizations
+  description: |
+    not using
+
+language:
+  show: true
+  order: 11
+  title: Idiomas
+  description: |
+  items:
+    - idiom: Português
+      level: Nativo
+    - idiom: Inglês
+      level: Avançado
+
+interest:
+  show: false
+  order: 12
+  title: Interests
+  description: |
+    not using
+
+  items:
+    - item: Reading
+      link: '#'
+    - item: Cooking
+      link:
+
+evaluation:
+  show: false
+  order: 13
+  title: Self-evaluation
+  description: |
+    not using
+
+reference:
+  show: false
+  order: 14
+  title: References
+  description: |
+    not using
+
+  items:
+    - name: Foo One
+      link: '#'
+      title: Backend Developer
+      institution: Second Company
+      address: 1234 Example St, XXX, XY 11111
+      email: foo.one@example.com
+      phone: 111-222-333
+      description: |
+        Foo One was my colleague in Second Company.
+
+close: <strong>Sorry, my resume has been hidden.</strong>
