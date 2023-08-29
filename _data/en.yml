@@ -13,67 +13,68 @@ contact:
 profile:
   show: true
   order: 1
-  title: PROFILE
+  title: Profile
   description: |
     Bachelor's degree in Computer Science from the Centro Universitario da FEI. 13 years’ experience in developing solutions in Java platform (JEE, Spring Boot, Spring MVC and Spring Cloud), SOA (Oracle Service Bus 11g and 12c), AWS (Lambda, API Gateway and DynamoDB), relational databases (Oracle, SQL Server, MySQL, Progress and DB2) and non-relational databases (MongoDB and DynamoDB).
 
 experience:
   show: true
   order: 2
-  title: EXPERIENCES
+  title: Experiences
   description: |
 
   items:
     - company: XP Investimentos
       link: '#'
-      tags: Solutions Architect, DDD
+      tags: C#, Microsoft Azure, DDD, Agile Methodology
       date: 2023.03 - 2022.12
       role: Solutions Architect Specialist
       location: São Paulo
       description: |
-        Definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento sustentável da empresa. 
-        + Desenho de domínios da empresa, a fim de trazer uma melhor divisão de responsabilidades.
-        + Dar suporte aos times durante as definições de soluções.
-        + Criar aplicações de prova de conceito com novas tecnologias/arquiteturas.
-        Tecnologias: C#, Microsoft Azure, DDD, Metodologia Agéis.
+        Design, implement and support solutions that can perform and be scale for the healthy company...
+        + Design the company’s domains for a better division of responsibilities.
+        + Support teams in technical solutions.
+        + Build proofs of concept and design solutions to enable technologies.
 
     - company: Bees Bank
       link: '#'
       tags: Kotlin, Spring Boot, Postgres, MongoDB, RabbitMQ, Jenkins, Rancher
       date: 2021.03 - 2022.02
-      role: Especialista em Engenharia de Software
+      role: Specialist Software Engineer
       location: São Paulo
       description: |
-        Definição, implementação e acompanhamento das soluções de banking dentro da Bees. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
-        + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
-        + TED: correções e melhorias na solução de Transferência Eletrônica Disponível, utilizando: Java 11, Spring Boot 2, Postgres 11, RabbitMQ.
+        Design, implement and support transfer solutions for Bess Banking. Participation in the selection and follow-up of new employees in order to help with professional development. 
+        + PIX: Implemented PIX (brazilian instant payment system), using: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
+        + TED: bug fix and improvements on TED (brazilian electronic transfer) using: Java 11, Spring Boot 2, Postgres 11, RabbitMQ.
 
     - company: PagSeguro
       link: '#'
       tags: Java, Kotlin, Spring Boot, Postgres, Apache Kafka, AWS, Jenkins, Apache Mesos, Kubernetes
       date: 2019.01 - 2021.02
-      role: Engenheiro de Software Sênior
+      role: Senior Software Engineer
       location: São Paulo
       description: |
-        Definição, implementação e acompanhamento das soluções de agendamento e liquidação de pagamentos. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
-        + Agenda de Recebíveis: solução responsável pela criação da agenda de recebíveis de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
-        + Cashout: solução responsável pela liquidação de pagamentos, foi desenvolvida usando uma arquitetura de microserviços. A solução utiliza Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        Design, implement and support payments scheduler and liquidation. 
+        + Receivables Scheduler: responsible for schedule payment receivables using a microservice architecture using Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
+        + Cashout: solution responsible for liquidate payments from receivable scheduler, using a event driver architecture, Java 11, Kotlin, Spring Boot 2, Postgres 11, Apache Kafka, AWS EMR, AWS Lambdas, Mesos, Marathon e Jenkins.
 
     - company: CVC Turismo
       link: '#'
       tags: Java, OSB, BPEL, PLSQL, Weblogic, Spring Boot, Oracle DB
       date: 2015.03 - 2018.12
-      role: Desenvolvedor Backend
+      role: Backend Developer
       location: São Paulo
       description: |
-        Desenvolvedor Backend utilizando tecnologias baseadas em JVM e Ferramentas de integração.
-        + Vitrine CVC: solução serverless para a seleção de melhores preços para destinos configurados, gerando as informações exibidas na home da CVC. Construído usando AWS: S3, Lambdas, SQS, DynamoDB.
-        + Notificação de Tarifas: solução para monitoramento de preços de tarifas. Construído usando Spring Boot, MongoDB, Consul, Vault, RESTful, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
-        + Processador de Pedidos: solução de efetivação de pedido para clientes B2B e B2C. Possui 7 aplicações: orquestrador, motor de passos, precificação, disponibilidade, booking, pagamento e confirmação. Foi construído usando Oracle BPEL, OSB 12c, Spring Boot, MongoDB, PL/SQL.
-        + Minha Agenda: solução para auxiliar as vendas para o mercado B2B, possui as funcionalidades de agenda e campanhas. Construído usando JEE 7, Weblogic 12, JMS, PL/SQL e MongoDB.
-        + Gateway Intercâmbio: gateway para a pesquisa e venda de intercâmbio para a CVC Turismo. Criado usando Oracle Service Bus 12c, PL/SQL.
-        + Backoffice Intercâmbio: backoffice para cadastro de cursos e acomodações oferecidas pela CVC Turismo. Criado usando JEE 7,Primefaces, Weblogic 12 e PL/SQL.
-        + Ongoing: Correção e manutenção do legado das soluções Java e OSB reportadas pelos vendedores ou parceiros CVC.
+        Backend developer using JVM technologies and Integration Tools.
+        + CVC Best Prices Homepage: serverless solutions for create a selection of best prices/destination to be exhibited in CVC homepage. Built on AWS Cloud, using S3, Lambdas, SQS, DynamoDB.
+        + Fare Notification: solutions for monitoring and notifying best prices fares. Using Spring Boot, MongoDB, Consul, Vault, RESTful, Docker, Kubernetes, JUnit 5, RabbitMQ, Oracle DB.
+        + Order Processor: event driven solution for processing orders, divided into 7 microservices (orchestrator, behaviour, pricing, avail, booking, payment and confirmation). Using Oracle BPEL, OSB 12c, Spring Boot, MongoDB, PL/SQL.
+        + Minha Agenda: solution to help sales to the B2B, having agenda and campaigns functionalities. Built using JEE 7, Weblogic 12, JMS, PL/SQL and MongoDB.
+        + Exchange Gateway: gateway for search and sales of exchanges package using Oracle Service Bus 12c, PL/SQL.
+        + Exchange Backoffice: manage the registration of courses and accomodations offered in Exchange Gateway. Built using JEE 7,Primefaces, Weblogic 12 and PL/SQL.
+#        TODO
+        + Ongoing:
+        Correção e manutenção do legado das soluções Java e OSB reportadas pelos vendedores ou parceiros CVC.
 
     - company: Magna Sistemas
       link: '#'

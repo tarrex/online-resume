@@ -26,7 +26,7 @@ experience:
   items:
     - company: XP Investimentos
       link: '#'
-      tags: Solutions Architect, DDD
+      tags: C#, Microsoft Azure, DDD, Metodologia Agéis
       date: 2023.03 - 2022.12
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
@@ -44,7 +44,7 @@ experience:
       role: Especialista em Engenharia de Software
       location: São Paulo
       description: |
-        Definição, implementação e acompanhamento das soluções de banking dentro da Bees. Participação da seleção de novos colaborares, acompanhamento de colabores a fim de ajudar na evolução profissional. 
+        Definição, implementação e acompanhamento das soluções de banking dentro da Bees. Participação da seleção, e acompanhamento, de novos colaboradores a fim de ajudar na evolução profissional. 
         + PIX: Implementação do PIX (sistema de pagamento instantâneo brasileiro), utilizando: Java 11, Kotlin, Spring Boot 2, Postgres 11, MongoDB, RabbitMQ.
         + TED: correções e melhorias na solução de Transferência Eletrônica Disponível, utilizando: Java 11, Spring Boot 2, Postgres 11, RabbitMQ.
 
