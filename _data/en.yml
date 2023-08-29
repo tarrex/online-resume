@@ -1,6 +1,6 @@
 basic:
-  name: Cesar Pereira EN
-  title: Engenheiro de Software           
+  name: Cesar Pereira
+  title: Software Engineer
   avatar:
     show: true                       
     path: /assets/images/profile.png 
@@ -13,22 +13,22 @@ contact:
 profile:
   show: true
   order: 1
-  title: Resumo
+  title: PROFILE
   description: |
-    Bacharel em Ciências da Computação pelo Centro Universitário da FEI. 13 anos de experiência em desenvolvimento de soluções nas plataformas Java (JEE, Spring Boot, Spring MVC e Spring Cloud), SOA (Oracle Service Bus 11g e 12c), AWS (Lambda, API Gateway e DynamoDB), NodeJS, Banco de dados Relacionais (Oracle, SQL Server e MySQL, Progress e DB2) e Banco de Dados Não Relacionais (MongoDB e DynamoDB).
+    Bachelor's degree in Computer Science from the Centro Universitario da FEI. 13 years’ experience in developing solutions in Java platform (JEE, Spring Boot, Spring MVC and Spring Cloud), SOA (Oracle Service Bus 11g and 12c), AWS (Lambda, API Gateway and DynamoDB), relational databases (Oracle, SQL Server, MySQL, Progress and DB2) and non-relational databases (MongoDB and DynamoDB).
 
 experience:
   show: true
   order: 2
-  title: Experiência Profissional
+  title: EXPERIENCES
   description: |
 
   items:
     - company: XP Investimentos
       link: '#'
-      tags: Full-time
+      tags: Solutions Architect, DDD
       date: 2023.03 - 2022.12
-      role: Especialista em Arquitetura de Soluções
+      role: Solutions Architect Specialist
       location: São Paulo
       description: |
         Definição, implementação e acompanhamento de soluções que tragam mais performance e escalabilidade para o crescimento sustentável da empresa. 
@@ -163,7 +163,7 @@ skill:
 education:
   show: true
   order: 5
-  title: Formação Acadêmica
+  title: EDUCATION
   description: |
   items:
     - institution: Centro Universitário da FEI
@@ -247,13 +247,13 @@ organization:
 language:
   show: true
   order: 11
-  title: Idiomas
+  title: LANGUAGES
   description: |
   items:
     - idiom: Português
-      level: Nativo
+      level: Native
     - idiom: Inglês
-      level: Avançado
+      level: Professional
 
 interest:
   show: false

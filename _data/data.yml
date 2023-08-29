@@ -26,7 +26,7 @@ experience:
   items:
     - company: XP Investimentos
       link: '#'
-      tags: Full-time
+      tags: Solutions Architect, DDD
       date: 2023.03 - 2022.12
       role: Especialista em Arquitetura de Soluções
       location: São Paulo
@@ -174,12 +174,10 @@ education:
       description: |
 
 certificate:
-  show: false
+  show: true
   order: 6
-  title: Certificates
+  title: Certificações
   description: |
-    not using
-
   items:
     - name: Example Certificate One
       issuer: by Example
