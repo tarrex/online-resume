@@ -2,8 +2,8 @@ basic:
   name: Cesar Pereira
   title: Software Engineer
   avatar:
-    show: true                       
-    path: /assets/images/profile.png 
+    show: true
+    path: /assets/images/profile.png
 
 contact:
   location: São Paulo, Brasil
@@ -81,7 +81,7 @@ experience:
       date: 2014.10 - 2015.03
       role: Analista de Sistemas
       location: São Paulo
-      description: | 
+      description: |
         Analista Desenvolvedor alocado na Secretaria de Administração Penitenciária do Estado de São Paulo.
         + Gestão de Transferência de Internos: solução para a gestão de movimentação de internos entre presídios. Construído usando JEE 7, JBoss 7, Postgree 9 e Richfaces.
 
@@ -91,7 +91,7 @@ experience:
       date: 2010.09 - 2015.09
       role: Analista de Sistemas
       location: São Paulo
-      description: | 
+      description: |
         Analista de sistemas desenvolvendo soluções em clientes diversos.
         + TIS: solução de gestão de automóveis da montadora Toyota. Foi feita a atualização de versão do servidor Websphere, do 6 para o 8.5. Construído usando JEE 7, Websphere 8.5, Postgree 9.
         + PEAD-PMPT: solução de Acervo e Prontuário Digital para o Hospital Heliópolis, criado usando .NET, C#, Windows 2008 Server, SQL Server.
@@ -174,25 +174,26 @@ education:
       description: |
 
 certificate:
-  show: false
+  show: true
   order: 6
   title: Certificates
   description: |
-    not using
-
   items:
-    - name: Example Certificate One
-      issuer: by Example
-      date: 2020
-      link: '#'
+    - name: Formação Kotlin
+      issuer: Alura
+      date: 2021
+      link: 'https://cursos.alura.com.br/degree/certificate/019e895b-9198-4c56-a422-c619d3faaa22'
       description: |
-        It's my Example Certificate One by Example.
-    - name: Example Certificate Two
-      issuer: by Example
-      date: 2020
-      link:
+    - name: Google Cloud Platform Big Data and Machine Learning Fundamentals
+      issuer: Coursera Course Certificates
+      date: 2017
+      link: 'https://www.coursera.org/account/accomplishments/certificate/SMWWUFX7KL2D'
       description: |
-        It's my Example Certificate Two by Example.
+    - name: 'M101J: MongoDB for Java Developers'
+      issuer: MongoDB, Inc.
+      date: 2016
+      link: 'http://education.mongodb.com/downloads/certificates/1a73e2591e1844478c9477a6fa184c3e/Certificate.pdf'
+      description: |
 
 publication:
   show: false

@@ -179,18 +179,21 @@ certificate:
   title: Certificações
   description: |
   items:
-    - name: Example Certificate One
-      issuer: by Example
-      date: 2020
-      link: '#'
+    - name: Formação Kotlin
+      issuer: Alura
+      date: 2021
+      link: 'https://cursos.alura.com.br/degree/certificate/019e895b-9198-4c56-a422-c619d3faaa22'
       description: |
-        It's my Example Certificate One by Example.
-    - name: Example Certificate Two
-      issuer: by Example
-      date: 2020
-      link:
+    - name: Google Cloud Platform Big Data and Machine Learning Fundamentals
+      issuer: Coursera Course Certificates
+      date: 2017
+      link: 'https://www.coursera.org/account/accomplishments/certificate/SMWWUFX7KL2D'
       description: |
-        It's my Example Certificate Two by Example.
+    - name: 'M101J: MongoDB for Java Developers'
+      issuer: MongoDB, Inc.
+      date: 2016
+      link: 'http://education.mongodb.com/downloads/certificates/1a73e2591e1844478c9477a6fa184c3e/Certificate.pdf'
+      description: |
 
 publication:
   show: false
