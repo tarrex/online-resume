@@ -10,7 +10,7 @@ contact:
   location: Taipei, Taiwan # location
   email: cody1234510k@gmail.com    # email address
   phone: +886-906868855 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: medium.com/@chen-yu     # site URL without schema, like example.com, will automatically prepand "https://"
+  website:                 # site URL without schema, like example.com, will automatically prepand "https://"
   
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -28,7 +28,7 @@ contact:
   threema:                 # userid            | https://threema.id/userid
 
   # programmer
-  github: https://github.com/chenyu-chang                 # username          | https://github.com/username
+  github: chenyu-chang     # username          | https://github.com/username
   gitlab:                  # username          | https://gitlab.com/username
   bitbucket:               # username          | https://bitbucket.com/username
   stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
@@ -47,7 +47,7 @@ contact:
 
   # writer
   devto:                   # username          | https://dev.to/username
-  medium: https://medium.com/@chen-yu                 # username          | https://medium.com/@username
+  medium: chen-yu          # username          | https://medium.com/@username
   wordpress:               # username          | https://username.wordpress.com
   blogger:                 # username          | https://username.blogspot.com
   wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
@@ -59,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin: linkedin.com/in/chen-yu-chang-b3565b238               # username          | https://linkedin.com/in/username
+  linkedin: chen-yu-chang-b3565b238          # username          | https://linkedin.com/in/username
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
@@ -114,8 +114,6 @@ experience:
       location: Taiwan, New Taipei City
       description: |
         Preparing the contents of my master's thesis for publication as a research paper and have also reproduced papers related to lung CT image registration, cardiovascular plaque detection, and heart disease grading to assist professors in making comparisons before publishing the papers.
-        + 
-        + 
 
 project:
   show: true
