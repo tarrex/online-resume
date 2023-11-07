@@ -114,8 +114,8 @@ experience:
       location: Taiwan, New Taipei City
       description: |
         Preparing the contents of my master's thesis for publication as a research paper and have also reproduced papers related to lung CT image registration, cardiovascular plaque detection, and heart disease grading to assist professors in making comparisons before publishing the papers.
-        # + First
-        # + Second
+        + 
+        + 
 
 project:
   show: true
