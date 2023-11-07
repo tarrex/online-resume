@@ -136,12 +136,11 @@ project:
 
     - name: KNN Imputation and Decision Tree Classifier
       link: https://github.com/chenyu-chang/KNN-Imputation-and-Decision-Tree
-      tags: committer
+      tags: C++
       date:
       description: |
-        OSS project description...
-        + First
-        + Second
+        C++ implementation for managing missing clinical data using KNN Imputation and building a Decision Tree Classifier. The code allows for estimation of missing values from a dataset and construction of a classifier to categorize subjects as positive or negative cases, based on their clinical features.
+
 
 skill:
   show: true
@@ -157,71 +156,77 @@ skill:
     There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
 
   items:
-    - name: Skill A
+    - name: Python
       level: 5
-    - name: Skill B
-      level: 4
-    - name: Skill C
+    - name: MATLAB
+      level: 5
+    - name: C++
       level: 3
-    - name: Skill D
-      level: 4
-    - name: Skill E
+    - name: C
       level: 3
-    - name: Skill F
+    - name: Cmake
       level: 1
-    - name: Skill G
-      level: 4
-    - name: Skill H
-      level: 4
-    - name: Skill I
+    - name: Docker
+      level: 2
+    - name: Git
       level: 3
+    # - name: Skill H
+    #   level: 4
+    # - name: Skill I
+    #   level: 3
 
   groups:
-    - name: Group A Skills
+    - name: Python
       item:
-        - Skill A
-        - Skill B
-        - Skill C
-        - Skill D
-    - name: Group B Skills
+        - PyTorch
+        - NumPy
+        - Matplotlib
+        - Pandas
+        - OpenCV
+        - TensorFlow
+        - scikit-learn
+    - name: MATLAB
       item:
-        - Skill E
-        - Skill F
-        - Skill G
-    - name: Group C Skills
-      item:
-        - Skill H
-        - Skill I
+        - Image Processing
+        - Data Preprocessing Pipeline
+    # - name: Group C Skills
+    #   item:
+    #     - Skill H
+    #     - Skill I
 
 education:
   show: true
   order: 5
   title: Education
-  description: |
-    The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
+  # description: |
+  #   The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
 
-    In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
+  #   In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
   items:
-    - institution: Example University
-      link: '#'
-      date: 2015 - 2018
-      major: Machine Learning
+    - institution: National Taiwan University
+      link: 
+      date: 2021.09 - 2023.08
+      major: Biomedical Engineering
       degree: Master
       description: |
-        Additional information for this institution.
-        + First
-        + Second
+        + Thesis: "Predicting Prognosis of Coronary Artery Disease from Coronary Intervention Treatment Using Preoperative CZT-SPECT Myocardial Perfusion Imaging: Constructing Composite Prediction Models Based on 3D Swin Transformer and Investigating the Impact of Model Parameters on Predictive Performance"
+        + Lab: Medical Informatic Research and Genetic Elucidation
+        + Advisor: Chung-Ming Chen, Ph.D.
+        + Keywords: 3D Swin Transformer, Bidirectional-Cross-Attention, Multi-Modality
 
-    - institution: Example University
+    - institution: National Chung Hsing University
       link:
-      date: 2011 - 2015
-      major: Computer Science
+      date: 2017.09 - 2021.06
+      major: Bio-industrial Mechatronics Engineering
       degree: Bachelor
       description: |
-        Additional information for this institution.
-        + First
-        + Second
+        # Additional information for this institution.
+        + Lab: Image & Signal Processing
+        + Senior Project: "Object Tracking for Self-Driving Cars Using the CamShift Algorithm"
+        + Advisor: Kuo-Yi Huang, Ph.D.
+        + Received an award of excellence.
+        + Keywords: Object Tracking, Raspberry Pi, Arduino, Webcam, DC Motor, Ultrasonic Sensor
 
 certificate:
   show: true
