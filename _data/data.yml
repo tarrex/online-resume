@@ -10,8 +10,10 @@ contact:
   location: Taipei, Taiwan # location
   email: cody1234510k@gmail.com    # email address
   phone: +886906868855 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website:      # site URL without schema, like example.com, will automatically prepand "https://"
-
+  website: medium.com/@chen-yu     # site URL without schema, like example.com, will automatically prepand "https://"
+  linkdin: linkedin.com/in/chen-yu-chang-b3565b238
+  github: https://github.com/chenyu-chang
+  
   gender:                  # gender or pronoun
   birthday:                # birthday
   nationality:             # nationality
