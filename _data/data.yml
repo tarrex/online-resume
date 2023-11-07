@@ -9,10 +9,8 @@ contact:
   # meta
   location: Taipei, Taiwan # location
   email: cody1234510k@gmail.com    # email address
-  phone: +886906868855 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  phone: +886-906868855 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website: medium.com/@chen-yu     # site URL without schema, like example.com, will automatically prepand "https://"
-  linkdin: linkedin.com/in/chen-yu-chang-b3565b238
-  github: https://github.com/chenyu-chang
   
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -30,7 +28,7 @@ contact:
   threema:                 # userid            | https://threema.id/userid
 
   # programmer
-  github:                  # username          | https://github.com/username
+  github: https://github.com/chenyu-chang                 # username          | https://github.com/username
   gitlab:                  # username          | https://gitlab.com/username
   bitbucket:               # username          | https://bitbucket.com/username
   stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
@@ -49,7 +47,7 @@ contact:
 
   # writer
   devto:                   # username          | https://dev.to/username
-  medium:                  # username          | https://medium.com/@username
+  medium: https://medium.com/@chen-yu                 # username          | https://medium.com/@username
   wordpress:               # username          | https://username.wordpress.com
   blogger:                 # username          | https://username.blogspot.com
   wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
@@ -61,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
+  linkedin: linkedin.com/in/chen-yu-chang-b3565b238               # username          | https://linkedin.com/in/username
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
@@ -81,7 +79,7 @@ contact:
   strava:                  # useid             | https://www.strava.com/athletes/userid
 
 profile:
-  show: true
+  show: false
   order: 1
   title: Profile
   description: |
@@ -93,31 +91,31 @@ experience:
   show: true
   order: 2
   title: Experiences
-  description: |
-    The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
+  # description: |
+  #   The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
 
   items:
-    - company: Second Company
-      link: '#'
-      tags: Full-time
-      date: 2018.03 - 2019.03
-      role: Backend Developer
-      location: Beijing
-      description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+    # - company: Second Company
+    #   link: '#'
+    #   tags: Full-time
+    #   date: 2018.03 - 2019.03
+    #   role: Backend Developer
+    #   location: Beijing
+    #   description: |
+    #     Your key responsibilities and achievements in the company.
+    #     + First
+    #     + Second
 
-    - company: First Company
-      link:
-      tags: Part-time, remote
-      date: 2017.03 - 2018.03
-      role: Backend Developer
-      location: Beijing
+    - company: Far Eastern Memorial Hospital
+      link: https://www.femh.org.tw/mainpage/index
+      tags: Full-time
+      date: 2023.09 - Expected 2024.02
+      role: Research Assistant
+      location: Taiwan, New Taipei City
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        Preparing the contents of my master's thesis for publication as a research paper and have also reproduced papers related to lung CT image registration, cardiovascular plaque detection, and heart disease grading to assist professors in making comparisons before publishing the papers.
+        # + First
+        # + Second
 
 project:
   show: true
