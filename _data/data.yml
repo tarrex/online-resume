@@ -119,25 +119,23 @@ project:
   show: true
   order: 3
   title: Projects
-  description: |
-    The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
+  # description: |
+  #   The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
 
-    In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
+  #   In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
 
-    The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
+  #   The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
 
   items:
-    - name: Personal project
-      link: '#'
-      tags:
-      date: 2015 - 2017
+    - name: Real-time Object Tracking and Classification
+      link: https://github.com/chenyu-chang/object_traking_opencv/tree/master
+      tags: Python/Opencv, Object Tracking
+      date: 
       description: |
-        Personal project description...
-        + First
-        + Second
+        This Python project implements real-time object tracking and classification with OpenCV. It utilizes a pre-trained DenseNet-121 Convolutional Neural Network for image classification and the CSRT algorithm for tracking objects in video frames. This combination enables dynamic recognition and continuous object tracking.
 
-    - name: OSS project
-      link:
+    - name: KNN Imputation and Decision Tree Classifier
+      link: https://github.com/chenyu-chang/KNN-Imputation-and-Decision-Tree
       tags: committer
       date:
       description: |
