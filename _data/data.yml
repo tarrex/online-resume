@@ -40,7 +40,7 @@ contact:
 
   # academic
   googlescholar:           # username          | https://scholar.google.com/citations?user=username
-  researchgate:            # username          | https://www.researchgate.net/profile/username
+  researchgate: Mohd-Afeef-Badri            # username          | https://www.researchgate.net/profile/username
   kaggle:                  # username          | https://www.kaggle.com/username
   orcid:                   # id                | https://orcid.org/id
   figshare:                # name/id           | https://figshare.com/authors/name/id
@@ -59,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
+  linkedin: mabadri                # username          | https://linkedin.com/in/username
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
@@ -108,7 +108,7 @@ experience:
       tags: CDD contract
       date: 2019.01 - 2021.01
       role: Post-doctoral researcher
-      location: Beijing, France
+      location: Paris-Saclay, France
       description: |
         Developed mathamatics/code for HPC FEM solvers for solving nonlinear structural mechanics problems involved in the nuclear technology. And a parallel mesher.
         + Petascale nuerical code PSD (C++, FreeFEM, PETSc, MFRONT) for fracture, seismic, soil-structure.
@@ -176,7 +176,7 @@ education:
   description:
   items:
     - institution: University of Nantes, France
-      link: '#'
+      link: 'https://www.univ-nantes.fr/'
       date: 2015 - 2018
       major: Numerical modeling radiative transfer
       degree: Doctor of Philosophy
@@ -184,7 +184,7 @@ education:
         Subject: Efficient finite element strategies for solving the radiative transfer equation
 
     - institution: University of Nantes, France
-      link:
+      link: 'https://www.univ-nantes.fr/'
       date: 2014 - 2015
       major: Thermal/Fluid and Energy
       degree: Master of Science (M2)
@@ -192,7 +192,7 @@ education:
         Batch Topper (Rank 1)
 
     - institution: University of Petroleum and Energy Studies, India
-      link:
+      link: 'https://www.upes.ac.in/school-of-advanced-engineering'
       date: 2013 - 2014
       major: Computational Fluid Dynamics
       degree: Master of Technology (M1)
@@ -200,7 +200,7 @@ education:
         Batch Topper (Rank 1)
 
     - institution: Aeronautical Society Of India, India
-      link:
+      link: 'https://www.aerosocietyindia.co.in/'
       date: 2008 - 2012
       major: Aeronautical Engineering
       degree: Bachelor of Technology
@@ -251,7 +251,7 @@ skill:
       level: 5
     - name: Meshing
       level: 4
-    - name: Precodnitiong
+    - name: Preconditioning
       level: 4
     - name: HPC - CPU
       level: 4
@@ -320,51 +320,34 @@ publication:
   order: 7
   title: Publications
   description: |
-    The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
-
-    Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
-
-    If you have a long list of publications, you may want to consider including only the most relevant or significant publications on your resume. Alternatively, you could create a separate publication list and provide it as a separate document, either in your application materials or upon request.
-
-    Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
+    [Click here](https://mohd-afeef-badri.github.io/publications/) 
 
   items:
-    - title: Example Publication in Action
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link: '#'
-    - title: The Art of Example Publication
-      authors: Foo Bar
-      conference: Foobar, 2019
+    - title:
+      authors:
+      conference:
       link:
+
 
 award:
   show: true
   order: 8
   title: Awards
   description: |
-    The award section in a resume is a dedicated section where you can showcase any awards you have received. This section is particularly relevant for individuals who have received awards for their work in their field, such as employees who have received performance awards or industry-specific awards. In this section, you should list the name of the award, the organization or institution that awarded it, the date it was awarded, and any other relevant details.
-
-    When including your awards on your resume, be sure to focus on the most significant or relevant awards that showcase your skills and expertise. If you have received a long list of awards, you may want to consider including only the most recent or prestigious awards on your resume.
-
-    By highlighting your awards, you can demonstrate your achievements and accomplishments in your field, and can help differentiate yourself from other candidates. However, if you have not received any awards, it is not necessary to include this section in your resume.
+    -  Double diploma scholarship (7,000 €) awarded from Pays De La Loire, France. [click here](https://www.european-funding-guide.eu/scholarship/6996-welcome-scholarships-master-students)
+    -  Batch topper during studies: Masters 1 (1/20), Masters 2 (1/13), and Bachelors (3/80).
+    -  GATE (Graduate Aptitude Test in Engineering) qualifier in 2013 (16% qualification rate). [click here](https://en.wikipedia.org/wiki/Graduate_Aptitude_Test_in_Engineering)
+    -  First person from Kashmir region (India) to qualify Aeronautical Society of India Exams. [click here](https://kashmirlife.net/towards-aeronautical-arena-5847/)
 
   items:
-    - name: Example Awared One
-      awarder: by Example
-      date: 2022
-      link: '#'
-      description: |
-        It's my Example Awared One by Example.
-    - name: Example Awared Two
-      awarder: by Example
-      date: 2022
+    - name:
+      awarder:
+      date:
       link:
-      description: |
-        It's my Example Awared Two by Example.
+      description:
 
 patent:
-  show: true
+  show: false
   order: 9
   title: Patents
   description: |
@@ -388,7 +371,7 @@ patent:
     + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
 
 organization:
-  show: true
+  show: false
   order: 10
   title: Organizations
   description: |
@@ -416,7 +399,7 @@ language:
       level: Mother-tongue
 
 interest:
-  show: true
+  show: false
   order: 12
   title: Interests
   description: |
@@ -433,7 +416,7 @@ interest:
       link:
 
 evaluation:
-  show: true
+  show: false
   order: 13
   title: Self-evaluation
   description: |
