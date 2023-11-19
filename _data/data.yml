@@ -1,16 +1,16 @@
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
+  name: Mohd Afeef BADRI                      # name
+  title: Research Scientist at CEA, Paris-Saclay           # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
   # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  location: Paris, France  # location
+  email: mohd-afeef.badri@outlook.com    # email address
+  phone:                   # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: mohd-afeef-badri.github.io     # site URL without schema, like example.com, will automatically prepand "https://"
 
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -28,7 +28,7 @@ contact:
   threema:                 # userid            | https://threema.id/userid
 
   # programmer
-  github:                  # username          | https://github.com/username
+  github: mohd-afeef-badri                  # username          | https://github.com/username
   gitlab:                  # username          | https://gitlab.com/username
   bitbucket:               # username          | https://bitbucket.com/username
   stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
@@ -79,47 +79,136 @@ contact:
   strava:                  # useid             | https://www.strava.com/athletes/userid
 
 profile:
-  show: true
+  show: false
   order: 1
   title: Profile
   description: |
     The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
 
-    A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
-
 experience:
   show: true
   order: 2
   title: Experiences
-  description: |
-    The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
+  description:
 
   items:
-    - company: Second Company
-      link: '#'
+    - company: CEA -French Alternative Energies and Atomic Energy Commission 
+      link: 'https://www.cea.fr/'
       tags: Full-time
-      date: 2018.03 - 2019.03
-      role: Backend Developer
-      location: Beijing
+      date: 2021.01 - present
+      role: Research Scientist
+      location: Paris-Saclay, France
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        Developing a high performance computing tools for scientific simulations involved in nuclear technology.
+        + Devoloping tools like SALOME, ArcaeFEM, PSD, top-ii-vol
+        + Research and development in the field of meshing, FEM, HPC
 
-    - company: First Company
-      link:
-      tags: Part-time, remote
-      date: 2017.03 - 2018.03
-      role: Backend Developer
-      location: Beijing
+    - company: CEA -French Alternative Energies and Atomic Energy Commission
+      link: 'https://www.cea.fr/'
+      tags: CDD contract
+      date: 2019.01 - 2021.01
+      role: Post-doctoral researcher
+      location: Beijing, France
       description: |
-        Your key responsibilities and achievements in the company.
-        + First
-        + Second
+        Developed mathamatics/code for HPC FEM solvers for solving nonlinear structural mechanics problems involved in the nuclear technology. And a parallel mesher.
+        + Petascale nuerical code PSD (C++, FreeFEM, PETSc, MFRONT) for fracture, seismic, soil-structure.
 
-project:
+    - company: RIKEN Center for Computational Science 
+      link: 'https://www.riken.jp/en/research/labs/r-ccs/'
+      tags: visiting
+      date: 2020.10 - 2020.11
+      role: Visiting research scientist
+      location: Kobe, Japan
+      description: |
+        Collaborated with scientists at RIKEN on new ways of using supercomputing (exa-scale) efficiently in solving physics involved in nuclear technology.
+
+    - company: LTeN -Laboratoire de Thermique et d'Energie de Nantes, CNRS
+      link: 'https://polytech.univ-nantes.fr/fr/la-recherche-et-linnovation/laboratoires-et-equipes/umr-c-6607-laboratoire-de-thermocinetique-de-nantes'
+      tags: CDD contract
+      date: 2019.11 - 2019.12
+      role: Post-doctoral researcher
+      location: Nantes, France
+      description: |
+        Performed research on applied conduction–radiation physics in high temperature industrial material.
+        + used immerse meshing technique with mesh adaption on virtual materials.
+
+    - company: LTeN -Laboratoire de Thermique et d'Energie de Nantes, CNRS
+      link: 'https://polytech.univ-nantes.fr/fr/la-recherche-et-linnovation/laboratoires-et-equipes/umr-c-6607-laboratoire-de-thermocinetique-de-nantes'
+      tags: CDD contract
+      date: 2015.10 - 2018.10
+      role: Doctoral researcher
+      location: Nantes, France
+      description: |
+        Worked in collaboration with Airbus, Dassault Systems, and Safran composites (project SODA). Developed new parallel numerical method (FEM) and software that could solve complex radiative transfer problems.
+
+    - company: LTeN -Laboratoire de Thermique et d'Energie de Nantes, CNRS
+      link: 'https://polytech.univ-nantes.fr/fr/la-recherche-et-linnovation/laboratoires-et-equipes/umr-c-6607-laboratoire-de-thermocinetique-de-nantes'
+      tags: Internship contract
+      date: 2015.02 - 2015.06
+      role: Research intern
+      location: Nantes, France
+      description: |
+        Code development for solving nonlinear fluid problem with FVM. Developed FORTRAN code on Inverse Problem Solution for the NonLinear compressible flow Problem Shock tube case.
+
+    - company: S&I Engineering Solutions Pvt. Ltd.
+      link: 'https://sandi.co.in/'
+      tags: Internship contract
+      date: 2014.05 - 2014.08
+      role: Master intern
+      location: Bangalore, India
+      description: |
+        Worked for developing unstructured parallelized EULER fluid flow solver in FORTRAN & MPI. Developed a 2D-FVM fluid solver for compressible flow with shocks (subsonic to hypersonic).
+
+    - company: AETOS Design and Engineering
+      link: 'https://www.aetos.co.in/'
+      tags: Internship contract
+      date: 2011.06 - 2011.11
+      role: Bachelor intern
+      location: Bangalore, India
+      description: |
+        Worked with the organization to develop internal design for DLR F6 aircraft wing. Developed a FEM-based C++ code to give rib locations for the DLR F6 wing configuration.
+ 
+
+education:
   show: true
   order: 3
+  title: Education
+  description:
+  items:
+    - institution: University of Nantes, France
+      link: '#'
+      date: 2015 - 2018
+      major: Numerical modeling radiative transfer
+      degree: Doctor of Philosophy
+      description: |
+        Subject: Efficient finite element strategies for solving the radiative transfer equation
+
+    - institution: University of Nantes, France
+      link:
+      date: 2014 - 2015
+      major: Thermal/Fluid and Energy
+      degree: Master of Science (M2)
+      description: |
+        Batch Topper (Rank 1)
+
+    - institution: University of Petroleum and Energy Studies, India
+      link:
+      date: 2013 - 2014
+      major: Computational Fluid Dynamics
+      degree: Master of Technology (M1)
+      description: |
+        Batch Topper (Rank 1)
+
+    - institution: Aeronautical Society Of India, India
+      link:
+      date: 2008 - 2012
+      major: Aeronautical Engineering
+      degree: Bachelor of Technology
+      description:
+
+project:
+  show: false
+  order: 5
   title: Projects
   description: |
     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
@@ -151,108 +240,80 @@ skill:
   show: true
   order: 4
   title: Skills
-  description: |
-    The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
-
-    The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
-
-    When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
-
-    There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
+  description: 
 
   items:
-    - name: Skill A
+    - name:  FEM
       level: 5
-    - name: Skill B
-      level: 4
-    - name: Skill C
+    - name:  FVM
       level: 3
-    - name: Skill D
+    - name:  DOM
+      level: 5
+    - name: Meshing
       level: 4
-    - name: Skill E
+    - name: Precodnitiong
+      level: 4
+    - name: HPC - CPU
+      level: 4
+    - name: HPC - GPU
+      level: 2
+    - name: mesh-adaption
       level: 3
-    - name: Skill F
-      level: 1
-    - name: Skill G
-      level: 4
-    - name: Skill H
-      level: 4
-    - name: Skill I
-      level: 3
+    - name: SUPG
+      level: 5
 
   groups:
-    - name: Group A Skills
+    - name: Coding
       item:
-        - Skill A
-        - Skill B
-        - Skill C
-        - Skill D
-    - name: Group B Skills
+        - C++ 
+        - FreeFEM
+        - FEniCS
+        - FORTRAN
+        - Latex
+        - Git
+    - name: Software’s
       item:
-        - Skill E
-        - Skill F
-        - Skill G
-    - name: Group C Skills
+        - SALOME
+        - ParaView
+        - Gmsh
+        - GNUPLOT
+    - name: HPC
       item:
-        - Skill H
-        - Skill I
-
-education:
-  show: true
-  order: 5
-  title: Education
-  description: |
-    The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
-
-    In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
-
-  items:
-    - institution: Example University
-      link: '#'
-      date: 2015 - 2018
-      major: Machine Learning
-      degree: Master
-      description: |
-        Additional information for this institution.
-        + First
-        + Second
-
-    - institution: Example University
-      link:
-      date: 2011 - 2015
-      major: Computer Science
-      degree: Bachelor
-      description: |
-        Additional information for this institution.
-        + First
-        + Second
+        - MPI
+        - MPI I/O
+        - PETSc
 
 certificate:
   show: true
   order: 6
   title: Certificates
-  description: |
-    The certificate section in a resume is a dedicated section where you can showcase any additional certifications or specialized training you have received. This section provides potential employers with a more complete picture of your skills and expertise, and can help you stand out from other candidates.
-
-    Certificates can come from a variety of sources, such as online courses, workshops, or professional development programs. Examples of certificates that might be relevant to include on your resume could include certifications in a particular software or technology, industry-specific certifications, or certifications related to a specific skill or area of expertise.
-
-    When including your certificates in your resume, be sure to provide the name of the certification, the institution or organization that issued it, and the date it was issued. You may also want to include a brief description of the skills or knowledge that the certification demonstrates.
-
-    The certificate section of your resume should be tailored to the specific job you are applying for, and should only include certifications that are relevant to the position. By highlighting your certifications, you can demonstrate your commitment to professional development and your expertise in a particular area.
-
+  description:
   items:
-    - name: Example Certificate One
-      issuer: by Example
-      date: 2020
+    - name: The Finite Element Method for Problems in Physics
+      issuer: University of Michigan (Online)
+      date: 2018
       link: '#'
-      description: |
-        It's my Example Certificate One by Example.
-    - name: Example Certificate Two
-      issuer: by Example
-      date: 2020
+      description:
+    - name: Advance course in computational fluid dynamics
+      issuer: FACHWISSEN TECH Center LLP, India
+      date: 2014
       link:
-      description: |
-        It's my Example Certificate Two by Example.
+      description:
+    - name: Calculus
+      issuer: Ohio State University (Online)
+      date: 2014
+      link:
+      description:
+    - name: Advance course in Aerodynamics
+      issuer: Alpha Education Center, India
+      date: 2014
+      link:
+      description:
+    - name: Sports and Building Aerodynamics
+      issuer: Eindhoven University of Technology (Online)
+      date: 2013
+      link:
+      description:
 
 publication:
   show: true
@@ -341,16 +402,18 @@ language:
   show: true
   order: 11
   title: Languages
-  description: |
-    The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
-
-    It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
-
+  description:
   items:
-    - idiom: Chinese
-      level: Native
     - idiom: English
-      level: Professional
+      level: Bilingual
+    - idiom: French
+      level: Intermediate
+    - idiom: Urdu
+      level: Native
+    - idiom: Hindi
+      level: Native
+    - idiom: Kashmiri
+      level: Mother-tongue
 
 interest:
   show: true
@@ -381,7 +444,7 @@ evaluation:
     A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
 reference:
-  show: true
+  show: false
   order: 14
   title: References
   description: |
