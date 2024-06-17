@@ -5,6 +5,13 @@
   <a href="https://github.com/tarrex/online-resume/forks"><img src="https://img.shields.io/github/forks/tarrex/online-resume?style=flat-square" alt="GitHub forks"></a>
   <a href="https://github.com/tarrex/online-resume/stargazers"><img src="https://img.shields.io/github/stars/tarrex/online-resume?style=flat-square" alt="GitHub Repo stars"></a>
   <a href="https://tarrex.github.io/online-resume"><img src="https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=green&up_message=up&url=https%3A%2F%2Ftarrex.github.io%2Fonline-resume" alt="Demo Website"></a>
+  <a href="https://jekyll-themes.com/tarrex/online-resume">
+    <img
+      src="https://img.shields.io/badge/featured%20on-JT-red.svg"
+      height="20"
+      alt="Jekyll Themes Shield"
+    />
+  </a>
 </p>
 
 <h4 align="center">A minimalist Jekyll theme for your resume.</h4>
