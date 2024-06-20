@@ -1,16 +1,16 @@
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
+  name: Max Nieuwstad                     # name
+  title: Software Developer           # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
 
 contact:
   # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  location: Den Haag, Nederland       # location
+  email: maxnieuwstad@hotmail.com     # email address
+  phone: +31-643244371                # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: maxnieuwstad.com           # site URL without schema, like example.com, will automatically prepand "https://"
 
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -83,9 +83,11 @@ profile:
   order: 1
   title: Profile
   description: |
-    The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
-
-    A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
+    Ik ben een software developer met meer dan 5 jaar ervaring, en heb met diverse tegnologieen en gebieden gewerkt. De meeste ervaring heb ik met het Microsoft ecosysteem. 
+    Tegewoordig richt ik mij voornamelijk op de backend kant van software ontwikkeling, in C# applicaties onderhouden door terraform, en dit gaat vaak gepaard met devops. Toch ben ik zeker niet onbekend met de frond-end en zou mij zelf beschrijven als een full stack developer.
+    Ik werk nu als consultant, en ben veel op kantoor. Want ik vind klantcontact belangrijk en leuk.
+    
+    Naast het “spelen” als software engineer speel ik ook volleybal. Hier ben ik vijf avonden in de week zoet mee. Zowel in de zaal als op het strand speel ik eredivisie. Om dit allemaal te kunnen doen moet ik iets eerder uit bed dan de gemiddelde ontwikkelaar. Er is dan nog genoeg tijd in de dag om beide passies 100% te beoefenen!
 
 experience:
   show: true
