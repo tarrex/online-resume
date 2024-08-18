@@ -59,12 +59,12 @@ small {
   background: $wrapper-color;
   max-width: $content-width;
   margin: $spacing-unit auto;
-  padding: $spacing-unit * 2;
+  padding: calc($spacing-unit * 2);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
   section {
     &:not(:last-child) {
-      margin-bottom: $spacing-unit / 2;
+      margin-bottom: calc($spacing-unit / 2);
     }
 
     .section-title {
@@ -73,8 +73,8 @@ small {
 
       font-size: $large-font-size;
       color: $theme-color;
-      margin-bottom: $spacing-unit / 2;
-      padding: $spacing-unit / 10 0;
+      margin-bottom: calc($spacing-unit / 2);
+      padding: calc($spacing-unit / 10) 0;
       border-bottom-color: rgba($theme-color, 0.25);
       border-bottom-width: 1px;
 
@@ -91,12 +91,12 @@ small {
 
     .section-content {
       .description {
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: calc($spacing-unit / 2);
       }
 
       .items {
         .item {
-          margin-bottom: $spacing-unit / 2;
+          margin-bottom: calc($spacing-unit / 2);
 
           .row {
             display: flex;
@@ -111,7 +111,7 @@ small {
       }
 
       .groups {
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: calc($spacing-unit / 2);
       }
 
       .location,
@@ -143,7 +143,7 @@ small {
       .publication-title,
       .award-name,
       .reference-name {
-        font-weight: $base-font-weight * 1.50;
+        font-weight: calc($base-font-weight * 1.50);
       }
 
       .role,
@@ -182,7 +182,7 @@ small {
       .name {
         font-size: $huge-font-size;
         margin-top: 0;
-        margin-bottom: $spacing-unit / 4;
+        margin-bottom: calc($spacing-unit / 4);
       }
 
       .title {
@@ -190,7 +190,7 @@ small {
         font-size: $middle-font-size;
         font-weight: $base-font-weight;
         margin-top: 0;
-        margin-bottom: $spacing-unit / 4;
+        margin-bottom: calc($spacing-unit / 4);
       }
 
       .contact {
@@ -300,6 +300,7 @@ small {
     .section-content {
       .items {
         display: flex;
+        flex-wrap: wrap;
 
         .item {
           display: flex;
@@ -332,7 +333,7 @@ small {
 
   i {
     color: $heart-color;
-    padding: 0 $spacing-unit / 4;
+    padding: 0 calc($spacing-unit / 4);
   }
 }
 
