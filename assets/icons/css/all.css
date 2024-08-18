@@ -20,45 +20,39 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.icon-protonmail:before {
+.icon-codeforces:before {
   content: "\e900";
 }
-.icon-signal:before {
+.icon-codewars:before {
   content: "\e901";
 }
-.icon-topcoder:before {
+.icon-figshare:before {
   content: "\e902";
 }
-.icon-wire:before {
+.icon-fiverr:before {
   content: "\e903";
 }
-.icon-tryhackme:before {
+.icon-freelancer:before {
   content: "\e904";
 }
-.icon-threema:before {
+.icon-indeed:before {
   content: "\e905";
 }
 .icon-leetcode:before {
   content: "\e906";
 }
-.icon-indeed:before {
+.icon-protonmail:before {
   content: "\e907";
 }
-.icon-googlescholar:before {
+.icon-threema:before {
   content: "\e908";
 }
-.icon-freelancer:before {
+.icon-topcoder:before {
   content: "\e909";
 }
-.icon-fiverr:before {
+.icon-tryhackme:before {
   content: "\e90a";
 }
-.icon-figshare:before {
+.icon-wire:before {
   content: "\e90b";
-}
-.icon-codewars:before {
-  content: "\e90c";
-}
-.icon-codeforces:before {
-  content: "\e90d";
 }
