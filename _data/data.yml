@@ -6,77 +6,94 @@ basic:
     path: /assets/images/profile.png # avatar file path
 
 contact:
-  # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  location: Beijing, China  # location, text or markdown link syntax
+  email: me@example.com     # email address
+  phone: +86-111-2222-3333  # phone number, the format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: example.com      # site link without schema, like example.com, will automatically prepend "https://"
 
-  gender:                  # gender or pronoun
-  birthday:                # birthday
-  nationality:             # nationality
-  visa:                    # passport visa
-  drivinglicense:          # driving licence
+  gender:                   # gender or pronoun
+  birthday:                 # birthday
+  nationality:              # nationality
+  visa:                     # passport visa
+  drivinglicense:           # driving licence
 
-  # contact
-  wechat:                  # username
-  whatsapp:                # 8611122223333     | https://wa.me/8611122223333
-  telegram:                # username          | https://t.me/username
-  messenger:               # username          | https://m.me/username
-  line:                    # lineid            | https://line.me/R/ti/p/@lineid
-  viber:                   # username          | https://vb.me/username
-  threema:                 # userid            | https://threema.id/userid
+  # ! Do not paste the link directly.
+  # Please copy the <> part of the comment in the link to your profile on the relevant site and paste it here.
 
-  # programmer
-  github:                  # username          | https://github.com/username
-  gitlab:                  # username          | https://gitlab.com/username
-  bitbucket:               # username          | https://bitbucket.com/username
-  stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
-  leetcode:                # username          | https://leetcode.com/username
-  codeforces:              # username          | https://codeforces.com/profile/username
-  codewars:                # username          | https://www.codewars.com/users/username
-  codepen:                 # username          | https://codepen.io/username
-  tryhackme:               # username          | https://tryhackme.com/p/username
+  # programming
+  github:                   # https://github.com/<username>
+  gitlab:                   # https://gitlab.com/<username>
+  bitbucket:                # https://bitbucket.com/<username>
+  git:                      # selfhost git site link without schema "https://"
+  leetcode:                 # https://leetcode.com/<username>
+  codeforces:               # https://codeforces.com/profile/<username>
+  codewars:                 # https://www.codewars.com/users/<username>
+  topcoder:                 # https://profiles.topcoder.com/<username>
+  huggingface:              # https://huggingface.co/<username>
+  codepen:                  # https://codepen.io/<username>
+  tryhackme:                # https://tryhackme.com/p/<username>
 
-  # academic
-  googlescholar:           # username          | https://scholar.google.com/citations?user=username
-  researchgate:            # username          | https://www.researchgate.net/profile/username
-  kaggle:                  # username          | https://www.kaggle.com/username
-  orcid:                   # id                | https://orcid.org/id
-  figshare:                # name/id           | https://figshare.com/authors/name/id
+  # research
+  googlescholar:            # https://scholar.google.com/citations?user=<username>
+  researchgate:             # https://www.researchgate.net/profile/<username>
+  orcid:                    # https://orcid.org/<id>
+  figshare:                 # https://figshare.com/authors/<name/id>
+  kaggle:                   # https://www.kaggle.com/<username>
 
-  # writer
-  devto:                   # username          | https://dev.to/username
-  medium:                  # username          | https://medium.com/@username
-  wordpress:               # username          | https://username.wordpress.com
-  blogger:                 # username          | https://username.blogspot.com
-  wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
+  # writing
+  medium:                   # https://medium.com/@<username>
+  wordpress:                # https://<username>.wordpress.com
+  blogger:                  # https://<username>.blogspot.com
+  devto:                    # https://dev.to/<username>
+  
+  # creativity
+  figma:                    # https://www.figma.com/@<username>
+  behance:                  # https://www.behance.net/<username>
+  dribbble:                 # https://dribbble.com/<username>
+  artstation:               # https://www.artstation.com/<username>
+  pixiv:                    # https://www.pixiv.net/users/<id>
+  pinterest:                # https://www.pinterest.com/<username>
+  producthunt:              # https://www.producthunt.com/@<username>
 
-  # designer
-  figma:                   # username          | https://www.figma.com/@username
-  behance:                 # username          | https://www.behance.net/username
-  dribbble:                # username          | https://dribbble.com/username
-  artstation:              # username          | https://www.artstation.com/username
+  # cv
+  linkedin:                 # https://linkedin.com/in/<username>
+  indeed:                   # https://my.indeed.com/p/<id>
+  xing:                     # https://www.xing.com/profile/<username>
+  fiverr:                   # https://www.fiverr.com/<username>
+  freelancer:               # https://www.freelancer.com/u/<username>
 
-  # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
-  indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
-  xing:                    # username          | https://www.xing.com/profile/username
-  fiverr:                  # username          | https://www.fiverr.com/username
-  freelancer:              # username          | https://www.freelancer.com/u/username
+  # chat
+  wechat:                   # wechat id, text or markdown link syntax
+  whatsapp:                 # https://wa.me/<number>
+  telegram:                 # https://t.me/<username>
+  messenger:                # https://m.me/<username>
+  line:                     # https://line.me/R/ti/p/@<lineid>
+  viber:                    # https://vb.me/<username>
+  threema:                  # https://threema.id/<userid>
+  signal:                   # signal username, text or markdown link syntax
+  wire:                     # wire username, text or markdown link syntax
 
-  # social media
-  twitter:                 # username          | https://twitter.com/username
-  mastodon:                # username@server
-  instagram:               # username          | https://instagram.com/username
-  unsplash:                # username          | https://unsplash.com/@username
-  _500px:                  # username          | https://500px.com/p/username
-  youtube:                 # username          | https://www.youtube.com/@username
-  tiktok:                  # username          | https://www.tiktok.com/@username
-  quora:                   # username          | https://www.quora.com/profile/username
-  zhihu:                   # username          | https://www.zhihu.com/people/username
-  goodreads:               # username          | https://www.goodreads.com/user/show/username
-  strava:                  # useid             | https://www.strava.com/athletes/userid
+  # social
+  stackoverflow:            # https://stackoverflow.com/users/<id>
+  stackexchange:            # https://stackexchange.com/users/<id>
+  quora:                    # https://www.quora.com/profile/<username>
+  zhihu:                    # https://www.zhihu.com/people/<username>
+  goodreads:                # https://www.goodreads.com/user/show/<username>
+  strava:                   # https://www.strava.com/athletes/<id>
+  wikipedia:                # https://www.wikipedia.org/wiki/User:<username>
+  twitter:                  # https://twitter.com/<username>
+  x:                        # https://x.com/<username>
+  mastodon:                 # text, the format must be like "username@yourserver.com"
+  threads:                  # https://www.threads.net/@<username>
+  vk:                       # https://vk.com/<username>
+  weibo:                    # weibo username, text or markdown link syntax
+  instagram:                # https://instagram.com/<username>
+  unsplash:                 # https://unsplash.com/@<username>
+  _500px:                   # https://500px.com/p/<username>
+  youtube:                  # https://www.youtube.com/@<username>
+  tiktok:                   # https://www.tiktok.com/@<username>
+  snapchat:                 # https://www.snapchat.com/add/<username>
+  twitch:                   # https://www.twitch.tv/<username>
 
 profile:
   show: true

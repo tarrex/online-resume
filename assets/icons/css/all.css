@@ -35,24 +35,24 @@
 .icon-freelancer:before {
   content: "\e904";
 }
-.icon-indeed:before {
+.icon-huggingface:before {
   content: "\e905";
 }
-.icon-leetcode:before {
+.icon-indeed:before {
   content: "\e906";
 }
-.icon-protonmail:before {
+.icon-leetcode:before {
   content: "\e907";
 }
 .icon-threema:before {
-  content: "\e908";
-}
-.icon-topcoder:before {
   content: "\e909";
 }
-.icon-tryhackme:before {
+.icon-topcoder:before {
   content: "\e90a";
 }
-.icon-wire:before {
+.icon-tryhackme:before {
   content: "\e90b";
+}
+.icon-wire:before {
+  content: "\e90c";
 }
