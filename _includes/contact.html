@@ -26,7 +26,7 @@
   {%- if contact.phone %}
   {%- assign text = contact.phone %}
   {%- assign link = "tel:" | append: text %}
-  <div class="contact-item" title="Phone Number">
+  <div class="contact-item" title="Phone number">
     <i class="fa-solid fa-phone"></i>
     <a href="{{ link }}" title="{{ link }}">{{ text }}</a>
   </div>
@@ -67,7 +67,7 @@
 
   {%- if contact.visa %}
   {%- assign text = contact.visa %}
-  <div class="contact-item" title="Passport Visa">
+  <div class="contact-item" title="Passport visa">
     <i class="fa-solid fa-passport"></i>
     <span>{{ text }}</span>
   </div>
