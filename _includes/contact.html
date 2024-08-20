@@ -23,15 +23,6 @@
   </div>
   {%- endif %}
 
-  {%- if contact.protoemail %}
-  {%- assign text = contact.email %}
-  {%- assign link = "mailto:" | append: text %}
-  <div class="contact-item" title="Email">
-    <i class="fa-solid fa-envelope"></i>
-    <a href="{{ link }}" title="{{ link }}">{{ text }}</a>
-  </div>
-  {%- endif %}
-
   {%- if contact.phone %}
   {%- assign text = contact.phone %}
   {%- assign link = "tel:" | append: text %}
