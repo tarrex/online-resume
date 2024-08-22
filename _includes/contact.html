@@ -575,7 +575,7 @@
   {%- assign text = contact.weibo %}
   <div class="contact-item" title="新浪微博">
     <i class="fa-brands fa-weibo"></i>
-    {%- assign start = text | strip | slice: 0 %}
+    {%- assign start = text | slice: 0 %}
     {%- if start == '[' %}
       {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
     {%- else %}
