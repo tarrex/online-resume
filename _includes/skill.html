@@ -23,9 +23,9 @@
         <div class="skill-level">
           {%- for i in (1..5) %}
           {%- if i <= item.level %}
-          <i class="fa-solid fa-{{ site.skill_level_icon | default: "star" }}"></i>
+          <i class='fa-solid fa-{{ site.skill_level_icon | default: "star" }}'></i>
           {%- else %}
-          <i class="fa-regular fa-{{ site.skill_level_icon | default: "star" }}"></i>
+          <i class='fa-regular fa-{{ site.skill_level_icon | default: "star" }}'></i>
           {%- endif %}
           {%- endfor %}
         </div>

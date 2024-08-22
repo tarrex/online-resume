@@ -36,11 +36,9 @@ $contact-delimiter: "{{ site.contact_delimiter | default: "·" }}";
   "sanitize",
   "base",
   "responsive",
-  "print";
-
-{% if site.text_direction == "rtl" %}
-body { direction: rtl; }
-{% endif %}
+  "print",
+  "fonts"
+;
 
 section {
   .section-title {

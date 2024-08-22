@@ -39,10 +39,12 @@
           <div class="role">
             <span>{{ item.role }}</span>
           </div>
+          {%- if item.location %}
           <div class="location">
             <i class="fa-solid fa-location-dot"></i>
             <span>{{ item.location }}</span>
           </div>
+          {%- endif %}
         </div>
 
         {%- if item.description.size > 0 %}

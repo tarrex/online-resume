@@ -1,5 +1,7 @@
 {%- if site.open %}
-<div class="wrapper">
+<div class="wrapper"
+  lang='{{ data.meta.language | default: "en" }}'
+  dir='{{ data.meta.direction | default: "ltr" }}'>
   {%- include basic.html%}
   {%- include profile.html %}
   {%- include experience.html %}

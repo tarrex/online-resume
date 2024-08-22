@@ -22,10 +22,9 @@ analytics:
 description:
 open_graph:
   enable: true                        # enable open graph meta tags
-  image: /assets/images/profile.png   # open graph image path
+  image: /assets/images/profile.png   # path or link to the open graph image
 
 # Style
-text_direction: ltr         # text direction, 'ltr' or 'rtl'
 date_format: "%Y-%m-%d"     # date format
 theme_color: "#1DA1F2"      # your favorite theme color
 contact_delimiter: "·"      # contact delimiter, '·', '/' or '|'
