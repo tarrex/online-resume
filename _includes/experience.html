@@ -22,7 +22,7 @@
         <div class="row">
           <div class="company">
             {%- if item.link %}
-            <a href="{{ item.link }}">{{ item.company }}</a>
+            <a href="{{ item.link }}" target="_blank">{{ item.company }}</a>
             {%- else %}
             <span>{{ item.company }}</span>
             {%- endif %}
@@ -39,10 +39,12 @@
           <div class="role">
             <span>{{ item.role }}</span>
           </div>
+          {%- if item.location %}
           <div class="location">
             <i class="fa-solid fa-location-dot"></i>
             <span>{{ item.location }}</span>
           </div>
+          {%- endif %}
         </div>
 
         {%- if item.description.size > 0 %}

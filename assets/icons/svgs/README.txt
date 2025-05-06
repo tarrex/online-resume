@@ -1,0 +1,1 @@
+All icons from https://simpleicons.org/

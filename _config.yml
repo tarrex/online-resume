@@ -4,28 +4,17 @@ url:
 baseurl:
 
 # Sass setting
-sass:
-  sass_dir: _sass
-  style:    compressed
+sass/style: compressed
 
-# Custom
-lang: en
+# Privacy
 open: true                  # show or hide your resume
 allow_search_engines: true  # allow your resume indexing by search engine, 'true' or 'false'
-analytics:
-  google:                   # google analytics
-  cloudflare:               # cloudflare analytics
-  umami:
-    script: https://u.tarrex.com/u.js                # umami analytics script src (Replace it with your own config)
-    website_id: af636e2d-31ae-46f1-9071-82b1745143a9 # umami analytics website id (Replace it with your own config)
-    domains: tarrex.github.io,tarrex.com             # umami analytics domains (Replace it with your own config)
-description:
+description:                # your resume description
 open_graph:
   enable: true                        # enable open graph meta tags
-  image: /assets/images/profile.png   # open graph image path
+  image: /assets/images/profile.png   # path or link to the open graph image
 
 # Style
-text_direction: ltr         # text direction, 'ltr' or 'rtl'
 date_format: "%Y-%m-%d"     # date format
 theme_color: "#1DA1F2"      # your favorite theme color
 contact_delimiter: "·"      # contact delimiter, '·', '/' or '|'
@@ -37,3 +26,12 @@ section_background: false   # section title backound, 'true' or 'false'
 skill_level_icon: lightbulb # skill rate icon, 'heart', 'star', 'circle' or 'lightbulb'
 link_icon: true             # show link icon, 'true' or 'false'
 site_footer: true           # show site footer, 'true' or 'false'
+
+# Analytics
+analytics:
+  google:                   # google
+  cloudflare:               # cloudflare
+  umami:                    # umami (Replace it with your own)
+    script: https://u.tarrex.com/u.js
+    website_id: af636e2d-31ae-46f1-9071-82b1745143a9
+    domains: tarrex.github.io,tarrex.com

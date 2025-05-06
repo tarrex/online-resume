@@ -171,7 +171,7 @@ small {
     .avatar {
       max-height: 100px;
       border: 0px solid $wrapper-color;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
 
     .header {
@@ -275,14 +275,14 @@ small {
 
           .group-name {
             font-weight: $base-font-weight * 1.50;
-            flex-basis: 20%;
+            flex: 0 0 auto;
           }
 
           .group-item {
             display: flex;
             flex-wrap: wrap;
             justify-content: end;
-            flex-basis: 80%;
+            flex: 1;
 
             span:not(:last-child)::after {
               content: "/";
@@ -300,6 +300,7 @@ small {
     .section-content {
       .items {
         display: flex;
+        flex-wrap: wrap;
 
         .item {
           display: flex;

@@ -2,387 +2,648 @@
 {%- if contact %}
 <div class="contact" {% if data.basic.avatar.show != true %}style="justify-content: center;"{% endif %}>
   {%- if contact.location %}
-  <div class="contact-item" title="location">
+  {%- assign text = contact.location %}
+  <div class="contact-item" title="Location">
     <i class="fa-solid fa-location-dot"></i>
-    <span>{{ contact.location }}</span>
+    {%- assign start = text | strip | slice: 0 %}
+    {%- if start == '[' %}
+      {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+    {%- else %}
+      <span>{{ text }}</span>
+    {%- endif %}
   </div>
   {%- endif %}
 
   {%- if contact.email %}
-  <div class="contact-item" title="email">
+  {%- assign text = contact.email %}
+  {%- assign link = "mailto:" | append: text %}
+  <div class="contact-item" title="Email">
     <i class="fa-solid fa-envelope"></i>
-    <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+    <a href="{{ link }}" title="{{ link }}">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.phone %}
-  <div class="contact-item" title="phone">
+  {%- assign text = contact.phone %}
+  {%- assign link = "tel:" | append: text %}
+  <div class="contact-item" title="Phone number">
     <i class="fa-solid fa-phone"></i>
-    <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
+    <a href="{{ link }}" title="{{ link }}">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.website %}
-  <div class="contact-item" title="website">
-    <i class="fa-solid fa-globe"></i>
-    <a href="https://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
+  {%- assign text = contact.website %}
+  {%- assign link = "https://" | append: text %}
+  <div class="contact-item" title="Website">
+    <i class="fa-solid fa-link"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.gender %}
-  <div class="contact-item" title="gender">
+  {%- assign text = contact.gender %}
+  <div class="contact-item" title="Gender">
     <i class="fa-solid fa-venus-mars"></i>
-    <span title="gender">{{ contact.gender }}</span>
+    <span>{{ gender }}</span>
   </div>
   {%- endif %}
 
   {%- if contact.birthday %}
-  <div class="contact-item" title="birthday">
+  {%- assign text = contact.birthday %}
+  <div class="contact-item" title="Birthday">
     <i class="fa-solid fa-cake-candles"></i>
-    <span>{{ contact.birthday }}</span>
+    <span>{{ text }}</span>
   </div>
   {%- endif %}
 
   {%- if contact.nationality %}
-  <div class="contact-item" title="nationality">
+  {%- assign text = contact.nationality %}
+  <div class="contact-item" title="Nationality">
     <i class="fa-solid fa-flag"></i>
-    <span>{{ contact.nationality }}</span>
+    <span>{{ text }}</span>
   </div>
   {%- endif %}
 
   {%- if contact.visa %}
-  <div class="contact-item" title="passport visa">
+  {%- assign text = contact.visa %}
+  <div class="contact-item" title="Passport visa">
     <i class="fa-solid fa-passport"></i>
-    <span>{{ contact.visa }}</span>
+    <span>{{ text }}</span>
   </div>
   {%- endif %}
 
   {%- if contact.drivinglicense %}
-  <div class="contact-item" title="driving license">
+  {%- assign text = contact.drivinglicense %}
+  <div class="contact-item" title="Driving license">
     <i class="fa-solid fa-car"></i>
-    <span>{{ contact.drivinglicense }}</span>
-  </div>
-  {%- endif %}
-
-  {%- if contact.wechat %}
-  <div class="contact-item" title="wechat">
-    <i class="fa-brands fa-weixin"></i>
-    <span>{{ contact.wechat }}</span>
-  </div>
-  {%- endif %}
-
-  {%- if contact.whatsapp %}
-  <div class="contact-item" title="whatsapp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <a href="https://wa.me/{{ contact.whatsapp }}" target="_blank">{{ contact.whatsapp }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.telegram %}
-  <div class="contact-item" title="telegram">
-    <i class="fa-brands fa-telegram"></i>
-    <a href="https://t.me/{{ contact.telegram }}" target="_blank">{{ contact.telegram }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.messenger %}
-  <div class="contact-item" title="facebook messenger">
-    <i class="fa-brands fa-facebook-messenger"></i>
-    <a href="https://m.me/{{ contact.messenger }}" target="_blank">{{ contact.messenger }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.line %}
-  <div class="contact-item" title="line">
-    <i class="fa-brands fa-line"></i>
-    <a href="https://line.me/R/ti/p/@{{ contact.line }}" target="_blank">{{ contact.line }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.viber %}
-  <div class="contact-item" title="viber">
-    <i class="fa-brands fa-viber"></i>
-    <a href="https://vb.me/R/{{ contact.viber }}" target="_blank">{{ contact.viber }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.threema %}
-  <div class="contact-item" title="threema">
-    <i class="icon icon-threema"></i>
-    <a href="https://threema.id/R/{{ contact.threema }}" target="_blank">{{ contact.threema }}</a>
+    <span>{{ text }}</span>
   </div>
   {%- endif %}
 
   {%- if contact.github %}
-  <div class="contact-item" title="github">
+  {%- assign text = contact.github %}
+  {%- assign link = "https://github.com/" | append: text %}
+  <div class="contact-item" title="GitHub">
     <i class="fa-brands fa-github"></i>
-    <a href="https://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.gitlab %}
-  <div class="contact-item" title="gitlab">
+  {%- assign text = contact.gitlab %}
+  {%- assign link = "https://gitlab.com/" | append: text %}
+  <div class="contact-item" title="GitLab">
     <i class="fa-brands fa-gitlab"></i>
-    <a href="https://gitlab.com/{{ contact.gitlab }}" target="_blank">{{ contact.gitlab }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.bitbucket %}
-  <div class="contact-item" title="bitbucket">
+  {%- assign text = contact.bitbucket %}
+  {%- assign link = "https://bitbucket.com/" | append: text %}
+  <div class="contact-item" title="Bitbucket">
     <i class="fa-brands fa-bitbucket"></i>
-    <a href="https://bitbucket.com/{{ contact.bitbucket }}" target="_blank">{{ contact.bitbucket }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.stackoverflow %}
-  <div class="contact-item" title="stackoverflow">
-    <i class="fa-brands fa-stack-overflow"></i>
-    <a href="https://stackoverflow.com/users/{{ contact.stackoverflow }}" target="_blank">{{ contact.stackoverflow }}</a>
+  {%- if contact.git %}
+  {%- assign text = contact.git %}
+  {%- assign link = "https://" | append: text %}
+  <div class="contact-item" title="Git">
+    <i class="fa-brands fa-git"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.leetcode %}
-  <div class="contact-item" title="leetcode">
+  {%- assign text = contact.leetcode %}
+  {%- assign link = "https://leetcode.com/" | append: text %}
+  <div class="contact-item" title="LeetCode">
     <i class="icon icon-leetcode"></i>
-    <a href="https://leetcode.com/{{ contact.leetcode }}" target="_blank">{{ contact.leetcode }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.codeforces %}
-  <div class="contact-item" title="codeforces">
+  {%- assign text = contact.codeforces %}
+  {%- assign link = "https://codeforces.com/profile/" | append: text %}
+  <div class="contact-item" title="Codeforces">
     <i class="icon icon-codeforces"></i>
-    <a href="https://codeforces.com/profile/{{ contact.codeforces }}" target="_blank">{{ contact.codeforces }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.codewars %}
-  <div class="contact-item" title="codewars">
+  {%- assign text = contact.codewars %}
+  {%- assign link = "https://www.codewars.com/users/" | append: text %}
+  <div class="contact-item" title="Codewars">
     <i class="icon icon-codewars"></i>
-    <a href="https://www.codewars.com/users/{{ contact.codewars }}" target="_blank">{{ contact.codewars }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.topcoder %}
+  {%- assign text = contact.topcoder %}
+  {%- assign link = "https://profiles.topcoder.com/" | append: text %}
+  <div class="contact-item" title="Topcoder">
+    <i class="icon icon-topcoder"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.huggingface %}
+  {%- assign text = contact.huggingface %}
+  {%- assign link = "https://huggingface.co/" | append: text %}
+  <div class="contact-item" title="Hugging Face">
+    <i class="icon icon-huggingface"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.codepen %}
-  <div class="contact-item" title="codepen">
+  {%- assign text = contact.codepen %}
+  {%- assign link = "https://codepen.io/" | append: text %}
+  <div class="contact-item" title="CodePen">
     <i class="fa-brands fa-codepen"></i>
-    <a href="https://codepen.io/{{ contact.codepen }}" target="_blank">{{ contact.codepen }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.tryhackme %}
-  <div class="contact-item" title="tryhackme">
+  {%- assign text = contact.tryhackme %}
+  {%- assign link = "https://tryhackme.com/p/" | append: text %}
+  <div class="contact-item" title="TryHackMe">
     <i class="icon icon-tryhackme"></i>
-    <a href="https://tryhackme.com/p/{{ contact.tryhackme }}" target="_blank">{{ contact.tryhackme }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.googlescholar %}
-  <div class="contact-item" title="google scholar">
-    <i class="icon icon-googlescholar"></i>
-    <a href="https://scholar.google.com/citations?user={{ contact.googlescholar }}" target="_blank">{{ contact.googlescholar }}</a>
+  {%- assign text = contact.googlescholar %}
+  {%- assign link = "https://scholar.google.com/citations?user=" | append: text %}
+  <div class="contact-item" title="Google Scholar">
+    <i class="fa-brands fa-google-scholar"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.researchgate %}
-  <div class="contact-item" title="researchgate">
+  {%- assign text = contact.researchgate %}
+  {%- assign link = "https://www.researchgate.net/profile/" | append: text %}
+  <div class="contact-item" title="ResearchGate">
     <i class="fa-brands fa-researchgate"></i>
-    <a href="https://www.researchgate.net/profile/{{ contact.researchgate }}" target="_blank">{{ contact.researchgate }}</a>
-  </div>
-  {%- endif %}
-
-  {%- if contact.kaggle %}
-  <div class="contact-item" title="kaggle">
-    <i class="fa-brands fa-kaggle"></i>
-    <a href="https://www.kaggle.com/{{ contact.kaggle }}" target="_blank">{{ contact.kaggle }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.orcid %}
-  <div class="contact-item" title="orcid">
+  {%- assign text = contact.orcid %}
+  {%- assign link = "https://orcid.org/" | append: text %}
+  <div class="contact-item" title="ORCID">
     <i class="fa-brands fa-orcid"></i>
-    <a href="https://orcid.org/{{ contact.orcid }}" target="_blank">{{ contact.orcid }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.figshare %}
+  {%- assign text = contact.figshare %}
+  {%- assign link = "https://figshare.com/authors/" | append: text %}
   <div class="contact-item" title="figshare">
     <i class="icon icon-figshare"></i>
-    <a href="https://figshare.com/authors/{{ contact.figshare }}" target="_blank">{{ contact.figshare }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.devto %}
-  <div class="contact-item" title="devto">
-    <i class="fa-brands fa-dev"></i>
-    <a href="https://dev.to/@{{ contact.devto }}" target="_blank">{{ contact.devto }}</a>
+  {%- if contact.kaggle %}
+  {%- assign text = contact.kaggle %}
+  {%- assign link = "https://www.kaggle.com/" | append: text %}
+  <div class="contact-item" title="Kaggle">
+    <i class="fa-brands fa-kaggle"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.medium %}
-  <div class="contact-item" title="medium">
+  {%- assign text = contact.medium %}
+  {%- assign link = "https://medium.com/@" | append: text %}
+  <div class="contact-item" title="Medium">
     <i class="fa-brands fa-medium"></i>
-    <a href="https://medium.com/@{{ contact.medium }}" target="_blank">{{ contact.medium }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.wordpress %}
-  <div class="contact-item" title="wordpress">
+  {%- assign text = contact.wordpress %}
+  {%- assign link = ".wordpress.com" | prepend: text | prepend: "https://" %}
+  <div class="contact-item" title="WordPress">
     <i class="fa-brands fa-wordpress"></i>
-    <a href="https://{{ contact.wordpress }}.wordpress.com" target="_blank">{{ contact.wordpress }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.blogger %}
-  <div class="contact-item" title="blogger">
+  {%- assign text = contact.blogger %}
+  {%- assign link = ".blogspot.com" | prepend: text | prepend: "https://" %}
+  <div class="contact-item" title="Blogger">
     <i class="fa-brands fa-blogger"></i>
-    <a href="https://{{ contact.blogger }}.blogspot.com" target="_blank">{{ contact.blogger }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.wikipedia %}
-  <div class="contact-item" title="wikipedia">
-    <i class="fa-brands fa-wikipedia-w"></i>
-    <a href="https://www.wikipedia.org/wiki/User:{{ contact.wikipedia }}" target="_blank">{{ contact.wikipedia }}</a>
+  {%- if contact.devto %}
+  {%- assign text = contact.devto %}
+  {%- assign link = "https://dev.to/@" | append: text %}
+  <div class="contact-item" title="DEV Community">
+    <i class="fa-brands fa-dev"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.figma %}
-  <div class="contact-item" title="figma">
+  {%- assign text = contact.figma %}
+  {%- assign link = "https://www.figma.com/@" | append: text %}
+  <div class="contact-item" title="Figma">
     <i class="fa-brands fa-figma"></i>
-    <a href="https://www.figma.com/@{{ contact.figma }}" target="_blank">{{ contact.figma }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.behance %}
-  <div class="contact-item" title="behance">
+  {%- assign text = contact.behance %}
+  {%- assign link = "https://www.behance.net/" | append: text %}
+  <div class="contact-item" title="Behance">
     <i class="fa-brands fa-behance"></i>
-    <a href="https://www.behance.net/{{ contact.behance }}" target="_blank">{{ contact.behance }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.dribble %}
-  <div class="contact-item" title="dribble">
-    <i class="fa-brands fa-dribble"></i>
-    <a href="https://dribbble.com/{{ contact.dribble }}" target="_blank">{{ contact.dribble }}</a>
+  {%- if contact.dribbble %}
+  {%- assign text = contact.dribbble %}
+  {%- assign link = "https://dribbble.com/" | append: text %}
+  <div class="contact-item" title="Dribbble">
+    <i class="fa-brands fa-dribbble"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.artstation %}
-  <div class="contact-item" title="artstation">
+  {%- assign text = contact.artstation %}
+  {%- assign link = "https://www.artstation.com/" | append: text %}
+  <div class="contact-item" title="ArtStation">
     <i class="fa-brands fa-artstation"></i>
-    <a href="https://www.artstation.com/{{ contact.artstation }}" target="_blank">{{ contact.artstation }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.pixiv %}
+  {%- assign text = contact.pixiv %}
+  {%- assign link = "https://www.pixiv.net/users/" | append: text %}
+  <div class="contact-item" title="Pixiv">
+    <i class="fa-brands fa-pixiv"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.pinterest %}
+  {%- assign text = contact.pinterest %}
+  {%- assign link = "https://www.pinterest.com/" | append: text %}
+  <div class="contact-item" title="Pinterest">
+    <i class="fa-brands fa-pinterest"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.producthunt %}
+  {%- assign text = contact.producthunt %}
+  {%- assign link = "https://www.producthunt.com/@" | append: text %}
+  <div class="contact-item" title="Product Hunt">
+    <i class="fa-brands fa-product-hunt"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.linkedin %}
-  <div class="contact-item" title="linkedin">
+  {%- assign text = contact.linkedin %}
+  {%- assign link = "https://linkedin.com/in/" | append: text %}
+  <div class="contact-item" title="LinkedIn">
     <i class="fa-brands fa-linkedin"></i>
-    <a href="https://linkedin.com/in/{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.indeed %}
-  <div class="contact-item" title="indeed">
+  {%- assign text = contact.indeed %}
+  {%- assign link = "https://my.indeed.com/p/" | append: text %}
+  <div class="contact-item" title="Indeed">
     <i class="icon icon-indeed"></i>
-    <a href="https://my.indeed.com/p/{{ contact.indeed }}" target="_blank">{{ contact.indeed }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.xing %}
-  <div class="contact-item" title="xing">
+  {%- assign text = contact.xing %}
+  {%- assign link = "https://www.xing.com/profile/" | append: text %}
+  <div class="contact-item" title="XING">
     <i class="fa-brands fa-xing"></i>
-    <a href="https://www.xing.com/profile/{{ contact.xing }}" target="_blank">{{ contact.xing }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.fiverr %}
-  <div class="contact-item" title="fiverr">
+  {%- assign text = contact.fiverr %}
+  {%- assign link = "https://www.fiverr.com/" | append: text %}
+  <div class="contact-item" title="Fiverr">
     <i class="icon icon-fiverr"></i>
-    <a href="https://www.fiverr.com/{{ contact.fiverr }}" target="_blank">{{ contact.fiverr }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.freelancer %}
-  <div class="contact-item" title="freelancer">
+  {%- assign text = contact.freelancer %}
+  {%- assign link = "https://www.freelancer.com/u/" | append: text %}
+  <div class="contact-item" title="Freelancer">
     <i class="icon icon-freelancer"></i>
-    <a href="https://www.freelancer.com/u/{{ contact.freelancer }}" target="_blank">{{ contact.freelancer }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.twitter %}
-  <div class="contact-item" title="twitter">
-    <i class="fa-brands fa-twitter"></i>
-    <a href="https://twitter.com/{{ contact.twitter }}" target="_blank">{{ contact.twitter }}</a>
+  {%- if contact.wechat %}
+  {%- assign text = contact.wechat %}
+  <div class="contact-item" title="Wechat">
+    <i class="fa-brands fa-weixin"></i>
+    {%- assign start = text | strip | slice: 0 %}
+    {%- if start == '[' %}
+      {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+    {%- else %}
+      <span>{{ text }}</span>
+    {%- endif %}
   </div>
   {%- endif %}
 
-  {%- if contact.mastodon %}
-  <div class="contact-item" title="mastodon">
-    <i class="fa-brands fa-mastodon"></i>
-    <span>{{ contact.mastodon }}</span>
+  {%- if contact.whatsapp %}
+  {%- assign text = contact.whatsapp %}
+  {%- assign link = "https://wa.me/" | append: text %}
+  <div class="contact-item" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.instagram %}
-  <div class="contact-item" title="instagram">
-    <i class="fa-brands fa-instagram"></i>
-    <a href="https://instagram.com/{{ contact.instagram }}" target="_blank">{{ contact.instagram }}</a>
+  {%- if contact.telegram %}
+  {%- assign text = contact.telegram %}
+  {%- assign link = "https://t.me/" | append: text %}
+  <div class="contact-item" title="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.unsplash %}
-  <div class="contact-item" title="unsplash">
-    <i class="fa-brands fa-unsplash"></i>
-    <a href="https://unsplash.com/@{{ contact.unsplash }}" target="_blank">{{ contact.unsplash }}</a>
+  {%- if contact.messenger %}
+  {%- assign text = contact.messenger %}
+  {%- assign link = "https://m.me/" | append: text %}
+  <div class="contact-item" title="Messenger">
+    <i class="fa-brands fa-facebook-messenger"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.500px %}
-  <div class="contact-item" title="500px">
-    <i class="fa-brands fa-500px"></i>
-    <a href="https://500px.com/p/{{ contact.500px }}" target="_blank">{{ contact.500px }}</a>
+  {%- if contact.line %}
+  {%- assign text = contact.line %}
+  {%- assign link = "https://line.me/R/ti/p/@" | append: text %}
+  <div class="contact-item" title="LINE">
+    <i class="fa-brands fa-line"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.youtube %}
-  <div class="contact-item" title="youtube">
-    <i class="fa-brands fa-youtube"></i>
-    <a href="https://www.youtube.com/@{{ contact.youtube }}" target="_blank">{{ contact.youtube }}</a>
+  {%- if contact.viber %}
+  {%- assign text = contact.viber %}
+  {%- assign link = "https://vb.me/R/" | append: text %}
+  <div class="contact-item" title="Viber">
+    <i class="fa-brands fa-viber"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
-  {%- if contact.tiktok %}
-  <div class="contact-item" title="tiktok">
-    <i class="fa-brands fa-tiktok"></i>
-    <a href="https://www.tiktok.com/@{{ contact.tiktok }}" target="_blank">{{ contact.tiktok }}</a>
+  {%- if contact.threema %}
+  {%- assign text = contact.threema %}
+  {%- assign link = "https://threema.id/R/" | append: text %}
+  <div class="contact-item" title="Threema">
+    <i class="icon icon-threema"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.signal %}
+  {%- assign text = contact.signal %}
+  <div class="contact-item" title="Signal">
+    <i class="fa-brands fa-signal-messenger"></i>
+    {%- assign start = text | strip | slice: 0 %}
+    {%- if start == '[' %}
+      {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+    {%- else %}
+      <span>{{ text }}</span>
+    {%- endif %}
+  </div>
+  {%- endif %}
+
+  {%- if contact.wire %}
+  {%- assign text = contact.wire %}
+  <div class="contact-item" title="Wire">
+    <i class="icon icon-wire"></i>
+    {%- assign start = text | strip | slice: 0 %}
+    {%- if start == '[' %}
+      {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+    {%- else %}
+      <span>{{ text }}</span>
+    {%- endif %}
+  </div>
+  {%- endif %}
+
+  {%- if contact.stackoverflow %}
+  {%- assign text = contact.stackoverflow %}
+  {%- assign link = "https://stackoverflow.com/users/" | append: text %}
+  <div class="contact-item" title="Stack Overflow">
+    <i class="fa-brands fa-stack-overflow"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.stackexchange %}
+  {%- assign text = contact.stackexchange %}
+  {%- assign link = "https://stackexchange.com/users/" | append: text %}
+  <div class="contact-item" title="Stack Exchange">
+    <i class="fa-brands fa-stack-exchange"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.quora %}
-  <div class="contact-item" title="quora">
+  {%- assign text = contact.quora %}
+  {%- assign link = "https://www.quora.com/profile/" | append: text %}
+  <div class="contact-item" title="Quora">
     <i class="fa-brands fa-quora"></i>
-    <a href="https://www.quora.com/profile/{{ contact.quora }}" target="_blank">{{ contact.quora }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.zhihu %}
-  <div class="contact-item" title="zhihu">
+  {%- assign text = contact.zhihu %}
+  {%- assign link = "https://www.zhihu.com/people/" | append: text %}
+  <div class="contact-item" title="知乎">
     <i class="fa-brands fa-zhihu"></i>
-    <a href="https://www.zhihu.com/people/{{ contact.zhihu }}" target="_blank">{{ contact.zhihu }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.goodreads %}
-  <div class="contact-item" title="goodreads">
+  {%- assign text = contact.goodreads %}
+  {%- assign link = "https://www.goodreads.com/user/show/" | append: text %}
+  <div class="contact-item" title="Goodreads">
     <i class="fa-brands fa-goodreads"></i>
-    <a href="https://www.goodreads.com/user/show/{{ contact.goodreads }}" target="_blank">{{ contact.goodreads }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 
   {%- if contact.strava %}
-  <div class="contact-item" title="strava">
+  {%- assign text = contact.strava %}
+  {%- assign link = "https://www.strava.com/athletes/" | append: text %}
+  <div class="contact-item" title="Strava">
     <i class="fa-brands fa-strava"></i>
-    <a href="https://www.strava.com/athletes/{{ contact.strava }}" target="_blank">{{ contact.strava }}</a>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.wikipedia %}
+  {%- assign text = contact.wikipedia %}
+  {%- assign link = "https://www.wikipedia.org/wiki/User:" | append: text %}
+  <div class="contact-item" title="Wikipedia">
+    <i class="fa-brands fa-wikipedia-w"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.twitter %}
+  {%- assign text = contact.twitter %}
+  {%- assign link = "https://twitter.com/" | append: text %}
+  <div class="contact-item" title="Twitter">
+    <i class="fa-brands fa-twitter"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.x %}
+  {%- assign text = contact.x %}
+  {%- assign link = "https://x.com/" | append: text %}
+  <div class="contact-item" title="X">
+    <i class="fa-brands fa-x-twitter"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.mastodon %}
+  {%- assign text = contact.mastodon %}
+  {%- assign parts = text | split: "@" %}
+  {%- assign link = "https://" | append: parts[1] | append: "/@" | append: parts[0] %}
+  <div class="contact-item" title="Mastodon">
+    <i class="fa-brands fa-mastodon"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.threads %}
+  {%- assign text = contact.threads %}
+  {%- assign link = "https://www.threads.net/@" | append: text %}
+  <div class="contact-item" title="Threads">
+    <i class="fa-brands fa-threads"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.vk %}
+  {%- assign text = contact.vk %}
+  {%- assign link = "https://vk.com/" | append: text %}
+  <div class="contact-item" title="VK">
+    <i class="fa-brands fa-vk"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.weibo %}
+  {%- assign text = contact.weibo %}
+  <div class="contact-item" title="新浪微博">
+    <i class="fa-brands fa-weibo"></i>
+    {%- assign start = text | slice: 0 %}
+    {%- if start == '[' %}
+      {{ text | markdownify | remove: '<p>' | remove: '</p>' }}
+    {%- else %}
+      <span>{{ text }}</span>
+    {%- endif %}
+  </div>
+  {%- endif %}
+
+  {%- if contact.instagram %}
+  {%- assign text = contact.instagram %}
+  {%- assign link = "https://instagram.com/" | append: text %}
+  <div class="contact-item" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.unsplash %}
+  {%- assign text = contact.unsplash %}
+  {%- assign link = "https://unsplash.com/@" | append: text %}
+  <div class="contact-item" title="Unsplash">
+    <i class="fa-brands fa-unsplash"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact._500px %}
+  {%- assign text = contact._500px %}
+  {%- assign link = "https://500px.com/p/" | append: text %}
+  <div class="contact-item" title="500px">
+    <i class="fa-brands fa-500px"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.youtube %}
+  {%- assign text = contact.youtube %}
+  {%- assign link = "https://www.youtube.com/@" | append: text %}
+  <div class="contact-item" title="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.tiktok %}
+  {%- assign text = contact.tiktok %}
+  {%- assign link = "https://www.tiktok.com/@" | append: text %}
+  <div class="contact-item" title="TikTok">
+    <i class="fa-brands fa-tiktok"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.snapchat %}
+  {%- assign text = contact.snapchat %}
+  {%- assign link = "https://www.snapchat.com/add/" | append: text %}
+  <div class="contact-item" title="Snapchat">
+    <i class="fa-brands fa-snapchat"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
+  </div>
+  {%- endif %}
+
+  {%- if contact.twitch %}
+  {%- assign text = contact.twitch %}
+  {%- assign link = "https://www.twitch.tv/" | append: text %}
+  <div class="contact-item" title="Twitch">
+    <i class="fa-brands fa-twitch"></i>
+    <a href="{{ link }}" title="{{ link }}" target="_blank">{{ text }}</a>
   </div>
   {%- endif %}
 </div>
