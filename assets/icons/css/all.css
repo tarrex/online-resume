@@ -1,23 +1,24 @@
 @font-face {
   font-family: "Icons";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   font-display: block;
   src: url("../webfonts/icons.woff2") format("woff2"),
        url("../webfonts/icons.ttf")   format("truetype");
 }
 
 .icon {
-  font-family: "Icons" !important;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
   display: inline-block;
+  font-family: "Icons" !important;
+  font-feature-settings: normal;
+  font-style: normal;
+  font-synthesis: none;
+  font-variant: normal;
+  font-weight: 900;
   line-height: 1;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-rendering: auto;
+  width: 1.25em;
 }
 
 .icon-codeforces:before {

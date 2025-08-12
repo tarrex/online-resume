@@ -113,11 +113,6 @@ small {
       .degree {
         display: inline-flex;
         align-items: baseline;
-
-        i::after {
-          content: "\00a0";
-          font-family: initial;
-        }
       }
 
       .company,
@@ -200,11 +195,6 @@ small {
             content: $contact-delimiter;
             color: $text-third-color;
             margin: 0 0.5em;
-          }
-
-          i::after {
-            content: "\00a0";
-            font-family: initial;
           }
         }
       }
