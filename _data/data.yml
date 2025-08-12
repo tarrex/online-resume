@@ -4,7 +4,7 @@ meta:
 
 basic:
   name: Foo Bar                      # name
-  title: Backend Developer           # job title 
+  title: Backend Developer           # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # file path or link to your avatar
