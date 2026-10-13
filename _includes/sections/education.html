@@ -11,6 +11,7 @@
     {%- if section.items %}
       <div class="items">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             {%- if item.institution %}
               <div class="item-line">
@@ -35,6 +36,7 @@
               {%- if item.summary %}<div class="summary">{{ item.summary | markdownify }}</div>{% endif %}
             {%- endif %}
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}

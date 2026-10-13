@@ -13,6 +13,7 @@
     {%- if section.items %}
       <div class="items">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             {%- if item.name %}
               <div class="item-line">
@@ -39,6 +40,7 @@
               {%- endif %}
             {%- endif %}
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}

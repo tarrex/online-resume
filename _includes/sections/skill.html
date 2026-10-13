@@ -13,6 +13,7 @@
     {%- if section.items %}
       <div class="items">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             <div class="skill-name"><span>{{ item.name }}</span></div>
             <div class="skill-level">
@@ -25,18 +26,21 @@
               {%- endfor %}
             </div>
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}
     {%- if section.groups %}
       <div class="groups">
         {%- for group in section.groups %}
+        {%- if group.show == true or group.show contains resume.variation %}
           <div class="group">
             <div class="group-name"><span>{{ group.name }}</span></div>
             <div class="group-items">
               {%- for item in group.item %}<span>{{ item }}</span>{%- endfor %}
             </div>
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}

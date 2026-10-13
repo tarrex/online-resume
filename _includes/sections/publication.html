@@ -9,6 +9,7 @@
     {%- if section.items %}
       <div class="items">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             {%- if item.title %}
               {%- assign publication_title = item.title | markdownify | remove: "<p>" | remove: "</p>" -%}
@@ -22,6 +23,7 @@
               {%- if item.conference %}<div class="conference"><span>{{ item.conference | escape }}</span></div>{% endif %}
             {%- endif %}
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}

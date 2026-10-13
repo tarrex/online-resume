@@ -5,9 +5,10 @@
     {%- if resume.title %}<h2 class="title">{{ resume.title | escape }}</h2>{% endif %}
     {%- include sections/contact.html resume=resume -%}
   </div>
-  {%- if resume.headshot %}
+  {%- if resume.headshot and resume.headshot.show %}
+  {%- if resume.headshot.show == true or resume.headshot.show contains resume.variation %}
     {%- assign headshot = resume.headshot -%}
-    {%- assign headshot_start = headshot | slice: 0, 2 -%}
+    {%- assign headshot_start = headshot.path | slice: 0, 2 -%}
     {%- if headshot contains "://" or headshot_start == "//" -%}
       {%- assign headshot_url = headshot -%}
     {%- else -%}
@@ -18,5 +19,6 @@
       {%- assign headshot_url = headshot | relative_url -%}
     {%- endif -%}
     <img class="headshot" src="{{ headshot_url | escape }}" alt="{{ resume.name | escape }}">
+  {%- endif %}
   {%- endif %}
 </section>

@@ -9,10 +9,12 @@
     {%- if section.items %}
       <div class="items items--inline">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             <span>{{ item.idiom | escape }}</span>
             {%- if item.level %}<small>[{{ item.level | escape }}]</small>{% endif %}
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}
