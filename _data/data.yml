@@ -11,10 +11,15 @@
 # In item lists, link is optional; use a complete URL or leave it empty. Keep date
 # formats consistent throughout the resume (for example, YYYY.MM - YYYY.MM).
 updated: "2026-08-27"         # Last updated date in YYYY-MM-DD format; omit it to use the build date
+variation: jobhunt-type1      # Controls which part to show.
+  # Add current variation into 'show' variable of a section to show the section in current variation of resume
+  # section with 'show' variable set to true will be shown no matter what current variation we are in
 
 name: Foo Bar                 # Your full name
 title: Backend Developer      # Your current or target job title
-headshot: images/profile.png  # File path or URL for your headshot
+headshot:
+  - show: true
+  - path: images/profile.png  # File path or URL for your headshot
 
 # Contact values support three forms:
 # 1. Account or ID: github: octocat (the known platform URL is added automatically).
@@ -131,6 +136,7 @@ experience:
 
   items:
     - company: Second Company
+      show: true
       link: https://example.com/link/to/second-company
       tags: Full-time
       date: 2018.03 - 2019.03
@@ -142,6 +148,7 @@ experience:
         + Second
 
     - company: First Company
+      show: true
       link:
       tags: Part-time, remote
       date: 2017.03 - 2018.03
@@ -165,6 +172,7 @@ project:
 
   items:
     - name: Personal project
+      show: true
       link: https://example.com/link/to/personal-project
       tags:
       date: 2015 - 2017
@@ -174,6 +182,7 @@ project:
         + Second
 
     - name: OSS project
+      show: true
       link:
       tags: committer
       date:
@@ -199,37 +208,49 @@ skill:
   # Levels 1–5 correspond to Beginner / Amateur / Competent / Proficient / Expert
   items:
     - name: Skill A
+      show: true
       level: 5
     - name: Skill B
+      show: true
       level: 4
     - name: Skill C
+      show: true
       level: 3
     - name: Skill D
+      show: true
       level: 4
     - name: Skill E
+      show: true
       level: 3
     - name: Skill F
+      show: true
       level: 1
     - name: Skill G
+      show: true
       level: 4
     - name: Skill H
+      show: true
       level: 4
     - name: Skill I
+      show: true
       level: 3
 
   groups:
     - name: Group A Skills
+      show: true
       item:
         - Skill A
         - Skill B
         - Skill C
         - Skill D
     - name: Group B Skills
+      show: true
       item:
         - Skill E
         - Skill F
         - Skill G
     - name: Group C Skills
+      show: true
       item:
         - Skill H
         - Skill I
@@ -245,6 +266,7 @@ education:
 
   items:
     - institution: Example University
+      show: true
       link: https://example.com/link/to/example-university
       date: 2015 - 2018
       major: Machine Learning
@@ -255,6 +277,7 @@ education:
         + Second
 
     - institution: Example University
+      show: true
       link:
       date: 2011 - 2015
       major: Computer Science
@@ -272,12 +295,14 @@ course:
     Include only substantial courses that are relevant to the target role and add knowledge not already clear from your education or certifications. Give the course name, provider, completion date, and a credential link when available.
   items:
     - name: Example Course One
+      show: true
       institution: by Example
       date: 2022
       link: https://example.com/link/to/example-course-one
       summary: |
         It's my Example Course One by Example.
     - name: Example Course Two
+      show: true
       institution: by Example
       date: 2022
       link:
@@ -299,6 +324,7 @@ certificate:
 
   items:
     - name: Example Certificate One
+      show: true
       issuer: by Example
       date: 2020
       link: https://example.com/link/to/example-certificate-one
@@ -326,10 +352,12 @@ publication:
 
   items:
     - title: Example Publication in Action
+      show: true
       authors: Foo Bar
       conference: Foobar, 2019
       link: https://example.com/link/to/example-publication-in-action
     - title: The Art of Example Publication
+      show: true
       authors: Foo Bar
       conference: Foobar, 2019
       link:
@@ -347,12 +375,14 @@ award:
 
   items:
     - name: Example Award One
+      show: true
       awarder: by Example
       date: 2022
       link: https://example.com/link/to/example-award-one
       summary: |
         It's my Example Awared One by Example.
     - name: Example Award Two
+      show: true
       awarder: by Example
       date: 2022
       link:
@@ -405,8 +435,10 @@ language:
 
   items:
     - idiom: Chinese
+      show: true
       level: Native
     - idiom: English
+      show: true
       level: Professional
 
 interest:
@@ -422,8 +454,10 @@ interest:
 
   items:
     - item: Reading
+      show: true
       link: https://example.com/link/to/reading
     - item: Cooking
+      show: true
       link:
 
 evaluation:
@@ -451,6 +485,7 @@ reference:
   # publishing a reference's personal information.
   items:
     - name: Foo One
+      show: true
       link: https://example.com/link/to/foo-one
       title: Backend Developer
       institution: Second Company
@@ -461,6 +496,7 @@ reference:
         Foo One was my colleague in Second Company.
 
     - name: Bar Two
+      show: true
       link:
       title: Professor
       institution: Example University

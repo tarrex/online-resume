@@ -9,9 +9,11 @@
     {%- if section.items %}
       <div class="items items--inline">
         {%- for item in section.items %}
+        {%- if item.show == true or item.show contains resume.variation %}
           <div class="item">
             {%- if item.link %}<a href="{{ item.link | escape }}">{{ item.item | escape }}</a>{% else %}<span>{{ item.item | escape }}</span>{% endif %}
           </div>
+        {%- endif %}
         {%- endfor %}
       </div>
     {%- endif %}
